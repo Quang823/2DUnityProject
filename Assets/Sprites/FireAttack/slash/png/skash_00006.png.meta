@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      skash_00006_0: -2832772768964313351
+      skash_00006_1: -2307838475366925304
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
