@@ -3,8 +3,12 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 5f;
-    public float jumpForce = 10f;
+    public float speed = 20f;
+    public float jumpForce = 20f;
+
+    public Vector2 minBounds;  
+    public Vector2 maxBounds;  
+
     private Rigidbody2D body;
     private Animator anim;
     private bool grounded;
@@ -20,8 +24,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        float horizontalInput = Input.GetAxis("Horizontal");
+     
+        horizontalInput = Input.GetAxis("Horizontal");
 
+ 
         body.linearVelocity = new Vector2(horizontalInput * speed, body.linearVelocity.y);
 
         if (horizontalInput > 0.01f)
@@ -48,6 +54,8 @@ public class PlayerMovement : MonoBehaviour
         {
             anim.SetBool("grounded", grounded);
         }
+
+        LimitPlayerPosition();
     }
 
     public void Jump()
@@ -83,5 +91,13 @@ public class PlayerMovement : MonoBehaviour
         {
             grounded = true;
         }
+    }
+
+    private void LimitPlayerPosition()
+    {
+        float clampedX = Mathf.Clamp(transform.position.x, minBounds.x, maxBounds.x);
+        float clampedY = Mathf.Clamp(transform.position.y, minBounds.y, maxBounds.y);
+
+        transform.position = new Vector3(clampedX, clampedY, transform.position.z);
     }
 }

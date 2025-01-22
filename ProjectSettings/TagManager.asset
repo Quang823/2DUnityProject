@@ -12,7 +12,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Ground
   - 
   - 
   - 
@@ -45,20 +45,20 @@ TagManager:
   - name: Background
     uniqueID: 2801775775
     locked: 0
+  - name: OnBackground
+    uniqueID: 3712482981
+    locked: 0
   - name: Foreground
     uniqueID: 4180860393
     locked: 0
-  - name: Top
-    uniqueID: 491412111
+  - name: Tree
+    uniqueID: 2532560889
     locked: 0
   - name: Ground
-    uniqueID: 3860568433
+    uniqueID: 546291161
     locked: 0
-  - name: Front
-    uniqueID: 331460893
-    locked: 0
-  - name: Character
-    uniqueID: 2802187101
+  - name: Player
+    uniqueID: 3303228409
     locked: 0
   m_RenderingLayers:
   - Default
