@@ -60,6 +60,9 @@ TagManager:
   - name: Ground
     uniqueID: 546291161
     locked: 0
+  - name: HealthMana
+    uniqueID: 789465987
+    locked: 0
   - name: Player
     uniqueID: 3303228409
     locked: 0

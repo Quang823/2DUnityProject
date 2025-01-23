@@ -1,106 +1,165 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
-    public Animator enemyAnimator;  // Đảm bảo rằng Animator của quái đã được gắn
-    public Transform player;        // Nhân vật chính
+    [Header("Enemy Stats")]
+    public float maxHealth = 100f;
+    private float currentHealth; 
 
-    public float attackDistance = 5f;
-    public float runDistance = 10f;
-    public float flyHeight = 2f;
+    public float walkSpeed = 2f; 
+    public float runSpeed = 4f;   
+    public float attackRange = 1.5f; 
+    public float detectionRange = 5f; 
 
-    private bool isAttacking = false;
+    [Header("References")]
+    [SerializeField] private Transform leftPoint;
+    [SerializeField] private Transform rightPoint;
+    public Transform player;     
+    public Animator anim;       
 
-    void Start()
+    private Vector3 patrolTarget; 
+    private bool movingLeft = true;
+    private bool isPlayerDetected = false; 
+
+    private void Start()
     {
-        if (enemyAnimator == null)
-        {
-            enemyAnimator = GetComponent<Animator>();  // Nếu chưa gắn Animator, gắn từ component
-        }
+        currentHealth = maxHealth;
+        patrolTarget = leftPoint.position; 
+        anim.SetBool("isWalking", true);   
     }
 
-    void Update()
+    private void Update()
     {
-        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
-
-        if (distanceToPlayer < attackDistance && !isAttacking)
+        if (currentHealth <= 0)
         {
-            // Quái bay đến gần nhân vật và tấn công
-            StartCoroutine(FlyToPlayerAndAttack());
+            Die(); 
+            return;
         }
-        else if (distanceToPlayer > attackDistance && distanceToPlayer < runDistance)
+
+        if (isPlayerDetected)
         {
-            // Quái chạy ra xa nhân vật
-            RunAwayFromPlayer();
+            ChasePlayer(); 
         }
         else
         {
-            // Quái di chuyển qua lại hoặc đứng yên
-            enemyAnimator.SetBool("isWalking", true);
-            enemyAnimator.SetBool("isFlying", false);
-            enemyAnimator.SetBool("isAttacking", false);
-            enemyAnimator.SetBool("isIdle", false);
+            Patrol(); 
         }
+
+        DetectPlayer(); 
     }
 
-    private IEnumerator FlyToPlayerAndAttack()
+    private void Patrol()
     {
-        // Bắt đầu animation bay
-        enemyAnimator.SetBool("isFlying", true);
-        enemyAnimator.SetBool("isWalking", false);
+      
+        transform.position = Vector2.MoveTowards(transform.position, patrolTarget, walkSpeed * Time.deltaTime);
 
-        // Bay đến vị trí gần nhân vật
-        Vector3 targetPosition = new Vector3(player.position.x, transform.position.y + flyHeight, player.position.z);
-        float flyTime = 2f;  // Thời gian bay
-        float elapsedTime = 0f;
-
-        while (elapsedTime < flyTime)
+       
+        if (Vector2.Distance(transform.position, patrolTarget) < 0.1f)
         {
-            transform.position = Vector3.Lerp(transform.position, targetPosition, elapsedTime / flyTime);
-            elapsedTime += Time.deltaTime;
-            yield return null;
+            anim.SetBool("isWalking", false);
+            anim.SetBool("isIdle", true);
+
+           
+            if (patrolTarget == leftPoint.position)
+            {
+                patrolTarget = rightPoint.position;
+                movingLeft = false;
+            }
+            else
+            {
+                patrolTarget = leftPoint.position;
+                movingLeft = true;
+            }
+
+           
+            Flip();
         }
-
-        // Hạ cánh
-        transform.position = targetPosition;
-
-        // Tấn công
-        enemyAnimator.SetTrigger("attackTrigger");  // Kích hoạt animation tấn công
-        yield return new WaitForSeconds(1f);  // Giả sử tấn công mất 1 giây
-
-        // Sau khi tấn công, chạy ra xa
-        StartCoroutine(RunAwayFromPlayerCoroutine());
-    }
-
-    private IEnumerator RunAwayFromPlayerCoroutine()
-    {
-        // Chờ một lúc trước khi chạy ra xa
-        yield return new WaitForSeconds(5f);  // Quái sẽ ở lại trong 5 giây
-
-        RunAwayFromPlayer();
-    }
-
-    private void RunAwayFromPlayer()
-    {
-        // Chạy xa khỏi nhân vật
-        enemyAnimator.SetBool("isWalking", false);
-        enemyAnimator.SetBool("isFlying", false);
-        enemyAnimator.SetBool("isAttacking", false);
-        enemyAnimator.SetBool("isIdle", false);
-
-        enemyAnimator.SetBool("isRunning", true);
-
-        // Tính hướng chạy ra xa
-        Vector3 direction = (transform.position - player.position).normalized;
-        transform.position += direction * Time.deltaTime * 5f;  // Tốc độ chạy
-
-        // Sau khi chạy đủ xa, dừng và chuyển về trạng thái Idle
-        if (Vector3.Distance(transform.position, player.position) > runDistance)
+        else
         {
-            enemyAnimator.SetBool("isRunning", false);
-            enemyAnimator.SetBool("isIdle", true);  // Quái sẽ đứng yên một lúc
+            anim.SetBool("isWalking", true);
+            anim.SetBool("isIdle", false);
         }
+    }
+
+    private void DetectPlayer()
+    {
+      
+        if (Vector2.Distance(transform.position, player.position) <= detectionRange)
+        {
+            isPlayerDetected = true;
+            anim.SetBool("isWalking", false);
+            anim.SetBool("isFlying", true); 
+        }
+    }
+
+    private void ChasePlayer()
+    {
+        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
+
+        if (distanceToPlayer > attackRange)
+        {
+           
+            anim.SetBool("isRunning", true);
+            anim.SetBool("isFlying", false);
+            transform.position = Vector2.MoveTowards(transform.position, player.position, runSpeed * Time.deltaTime);
+        }
+        else
+        {
+           
+            anim.SetBool("isRunning", false);
+            anim.SetBool("isFlying", false);
+            anim.SetTrigger("attack");
+        }
+
+      
+        if ((player.position.x < transform.position.x && transform.localScale.x > 0) ||
+     (player.position.x > transform.position.x && transform.localScale.x < 0))
+        {
+            Flip();
+        }
+    }
+
+    public void TakeDamage(float damage)
+    {
+        currentHealth -= damage;
+
+        if (currentHealth > 0)
+        {
+            anim.SetTrigger("hurt");
+        }
+        else
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        anim.SetTrigger("dead"); 
+        this.enabled = false; 
+        Destroy(gameObject, 2f); 
+    }
+
+    private void Flip()
+    {
+        Vector3 localScale = transform.localScale;
+        if ((patrolTarget == leftPoint.position && localScale.x > 0) ||
+            (patrolTarget == rightPoint.position && localScale.x < 0))
+        {
+            localScale.x *= -1;
+            transform.localScale = localScale;
+        }
+    }
+
+
+    private void OnDrawGizmosSelected()
+    {
+       
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, detectionRange);
+
+        
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, attackRange);
     }
 }
