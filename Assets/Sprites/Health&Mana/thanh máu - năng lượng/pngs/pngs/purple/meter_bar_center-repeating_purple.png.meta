@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      meter_bar_center-repeating_purple_0: 6933924481548709227
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

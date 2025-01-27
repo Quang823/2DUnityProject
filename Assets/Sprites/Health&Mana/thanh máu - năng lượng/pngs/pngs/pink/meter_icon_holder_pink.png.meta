@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      meter_icon_holder_pink_0: 4678771710327995867
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
