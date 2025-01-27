@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 633465019394825656}
   - component: {fileID: 4790737430928686318}
-  - component: {fileID: 4761756207116495405}
   - component: {fileID: 188119852157863475}
   - component: {fileID: 2895712456366818761}
   - component: {fileID: 7865376360674909609}
+  - component: {fileID: 1218124110486522170}
   m_Layer: 0
   m_Name: FireAttack (6)
   m_TagString: Untagged
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -991738887
-  m_SortingLayer: 7
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: -2869492898450948551, guid: 11506be612db92a40a37aa041b0c81c0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -91,19 +91,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4761756207116495405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2412288385084787103}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbf23921d321ca14fb7c7fff6b3f70f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
 --- !u!61 &188119852157863475
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -199,6 +186,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1218124110486522170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2412288385084787103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d21755feded56854eb9a5e58c99074db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
 --- !u!1 &2641808941199038641
 GameObject:
   m_ObjectHideFlags: 0
@@ -281,7 +281,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -991738887
-  m_SortingLayer: 7
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: 8886490851947454144, guid: 7b46b608190bef64f818668c4bf94741, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -331,6 +331,7 @@ MonoBehaviour:
   - {fileID: 8623201865216807449}
   - {fileID: 3806147357049404277}
   - {fileID: 4393723309732101727}
+  manaCost: 20
 --- !u!114 &8401070054834422073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -489,10 +490,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2976808681797530738}
   - component: {fileID: 4861635087191774630}
-  - component: {fileID: 6612060080980695602}
   - component: {fileID: 8364496551207406410}
   - component: {fileID: 1599199535629161471}
   - component: {fileID: 7470058366724593125}
+  - component: {fileID: 1339205175175893905}
   m_Layer: 0
   m_Name: FireAttack (4)
   m_TagString: Untagged
@@ -557,7 +558,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -991738887
-  m_SortingLayer: 7
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: -2869492898450948551, guid: 11506be612db92a40a37aa041b0c81c0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -570,19 +571,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6612060080980695602
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3220257615753020783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbf23921d321ca14fb7c7fff6b3f70f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
 --- !u!61 &8364496551207406410
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -678,6 +666,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1339205175175893905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3220257615753020783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d21755feded56854eb9a5e58c99074db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
 --- !u!1 &3806147357049404277
 GameObject:
   m_ObjectHideFlags: 0
@@ -688,10 +689,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2473153181264062575}
   - component: {fileID: 2998900132453502621}
-  - component: {fileID: 2746628481939186929}
   - component: {fileID: 823196919094744426}
   - component: {fileID: 5720394138512722456}
   - component: {fileID: 6227842190939397915}
+  - component: {fileID: 580141258543735236}
   m_Layer: 0
   m_Name: FireAttack (8)
   m_TagString: Untagged
@@ -756,7 +757,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -991738887
-  m_SortingLayer: 7
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: -2869492898450948551, guid: 11506be612db92a40a37aa041b0c81c0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -769,19 +770,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2746628481939186929
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3806147357049404277}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbf23921d321ca14fb7c7fff6b3f70f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
 --- !u!61 &823196919094744426
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -877,6 +865,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &580141258543735236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3806147357049404277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d21755feded56854eb9a5e58c99074db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
 --- !u!1 &3881392674434678269
 GameObject:
   m_ObjectHideFlags: 0
@@ -887,10 +888,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1852638205628758159}
   - component: {fileID: 108724717474829781}
-  - component: {fileID: 4990612858577742355}
   - component: {fileID: 301849280789562876}
   - component: {fileID: 108690273020609131}
   - component: {fileID: 4524664029020517238}
+  - component: {fileID: 2070240534530520359}
   m_Layer: 0
   m_Name: FireAttack (5)
   m_TagString: Untagged
@@ -955,7 +956,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -991738887
-  m_SortingLayer: 7
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: -2869492898450948551, guid: 11506be612db92a40a37aa041b0c81c0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -968,19 +969,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4990612858577742355
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3881392674434678269}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbf23921d321ca14fb7c7fff6b3f70f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
 --- !u!61 &301849280789562876
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1076,6 +1064,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2070240534530520359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3881392674434678269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d21755feded56854eb9a5e58c99074db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
 --- !u!1 &4304256613767980426
 GameObject:
   m_ObjectHideFlags: 0
@@ -1127,10 +1128,10 @@ GameObject:
   m_Component:
   - component: {fileID: 491608066072807400}
   - component: {fileID: 275956054424022834}
-  - component: {fileID: 6275916263957829211}
   - component: {fileID: 7033921197646612337}
   - component: {fileID: 5232743704934799530}
   - component: {fileID: 7515579748323810049}
+  - component: {fileID: 8961337371581156907}
   m_Layer: 0
   m_Name: FireAttack (9)
   m_TagString: Untagged
@@ -1195,7 +1196,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -991738887
-  m_SortingLayer: 7
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: -2869492898450948551, guid: 11506be612db92a40a37aa041b0c81c0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1208,19 +1209,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6275916263957829211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4393723309732101727}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbf23921d321ca14fb7c7fff6b3f70f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
 --- !u!61 &7033921197646612337
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1316,6 +1304,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8961337371581156907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4393723309732101727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d21755feded56854eb9a5e58c99074db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
 --- !u!1 &5076828473463931304
 GameObject:
   m_ObjectHideFlags: 0
@@ -1326,10 +1327,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4170136186445777147}
   - component: {fileID: 587818078109138049}
-  - component: {fileID: 4162916424116890685}
   - component: {fileID: 5443073237285279937}
   - component: {fileID: 6787260143524577116}
   - component: {fileID: 6525602616943613825}
+  - component: {fileID: 7949039422549370777}
   m_Layer: 0
   m_Name: FireAttack
   m_TagString: Untagged
@@ -1394,7 +1395,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -991738887
-  m_SortingLayer: 7
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: -2869492898450948551, guid: 11506be612db92a40a37aa041b0c81c0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1407,19 +1408,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4162916424116890685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5076828473463931304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbf23921d321ca14fb7c7fff6b3f70f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
 --- !u!61 &5443073237285279937
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1515,6 +1503,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7949039422549370777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5076828473463931304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d21755feded56854eb9a5e58c99074db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
 --- !u!1 &5813222039717671599
 GameObject:
   m_ObjectHideFlags: 0
@@ -1525,10 +1526,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6321398474689357952}
   - component: {fileID: 1306812770958340395}
-  - component: {fileID: 2244038480444820567}
   - component: {fileID: 5676654087621301515}
   - component: {fileID: 4116056998188434760}
   - component: {fileID: 5065349046130437713}
+  - component: {fileID: 6165151716866129045}
   m_Layer: 0
   m_Name: FireAttack (2)
   m_TagString: Untagged
@@ -1606,19 +1607,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2244038480444820567
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5813222039717671599}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbf23921d321ca14fb7c7fff6b3f70f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
 --- !u!61 &5676654087621301515
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1714,6 +1702,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6165151716866129045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5813222039717671599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d21755feded56854eb9a5e58c99074db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
 --- !u!1 &6856474805150157605
 GameObject:
   m_ObjectHideFlags: 0
@@ -1724,10 +1725,10 @@ GameObject:
   m_Component:
   - component: {fileID: 3604532516951536231}
   - component: {fileID: 1855818559352486939}
-  - component: {fileID: 3542295016205840452}
   - component: {fileID: 3624752470829924252}
   - component: {fileID: 2973214007736416479}
   - component: {fileID: 8927046626300909796}
+  - component: {fileID: 410706646012873569}
   m_Layer: 0
   m_Name: FireAttack (1)
   m_TagString: Untagged
@@ -1792,7 +1793,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -991738887
-  m_SortingLayer: 7
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: -2869492898450948551, guid: 11506be612db92a40a37aa041b0c81c0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1805,19 +1806,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3542295016205840452
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6856474805150157605}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbf23921d321ca14fb7c7fff6b3f70f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
 --- !u!61 &3624752470829924252
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1913,6 +1901,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &410706646012873569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6856474805150157605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d21755feded56854eb9a5e58c99074db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
 --- !u!1 &8623201865216807449
 GameObject:
   m_ObjectHideFlags: 0
@@ -1923,10 +1924,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8411596005341843499}
   - component: {fileID: 4422497763158718688}
-  - component: {fileID: 7667472094811471825}
   - component: {fileID: 5447962509993718626}
   - component: {fileID: 7330530105415005851}
   - component: {fileID: 6337083941750880506}
+  - component: {fileID: 8850905131326901858}
   m_Layer: 0
   m_Name: FireAttack (7)
   m_TagString: Untagged
@@ -1991,7 +1992,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -991738887
-  m_SortingLayer: 7
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: -2869492898450948551, guid: 11506be612db92a40a37aa041b0c81c0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2004,19 +2005,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7667472094811471825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8623201865216807449}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbf23921d321ca14fb7c7fff6b3f70f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
 --- !u!61 &5447962509993718626
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2112,6 +2100,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8850905131326901858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8623201865216807449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d21755feded56854eb9a5e58c99074db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
 --- !u!1 &9027723335976125039
 GameObject:
   m_ObjectHideFlags: 0
@@ -2122,10 +2123,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1183431125086475628}
   - component: {fileID: 2940051247277640068}
-  - component: {fileID: 3805572383312361704}
   - component: {fileID: 4258817288831026316}
   - component: {fileID: 2606346298088878003}
   - component: {fileID: 4796445054676958503}
+  - component: {fileID: 7738172518754806438}
   m_Layer: 0
   m_Name: FireAttack (3)
   m_TagString: Untagged
@@ -2190,7 +2191,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -991738887
-  m_SortingLayer: 7
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: -2869492898450948551, guid: 11506be612db92a40a37aa041b0c81c0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2203,19 +2204,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3805572383312361704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9027723335976125039}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbf23921d321ca14fb7c7fff6b3f70f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
 --- !u!61 &4258817288831026316
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2311,3 +2299,16 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7738172518754806438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9027723335976125039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d21755feded56854eb9a5e58c99074db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
