@@ -1,0 +1,1430 @@
+fileFormatVersion: 2
+guid: c1229326934722440929f43b481c8fdc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 779419162970601311
+    second: xmas game tileset_0
+  - first:
+      213: 8855746466688529596
+    second: xmas game tileset_1
+  - first:
+      213: -5327282042890382428
+    second: xmas game tileset_2
+  - first:
+      213: -1896357441698320869
+    second: xmas game tileset_3
+  - first:
+      213: -2484022827309781178
+    second: xmas game tileset_4
+  - first:
+      213: -3184697626550472494
+    second: xmas game tileset_5
+  - first:
+      213: -6285410671314787636
+    second: xmas game tileset_6
+  - first:
+      213: 1518365778160820417
+    second: xmas game tileset_7
+  - first:
+      213: 7456041112760799192
+    second: xmas game tileset_8
+  - first:
+      213: 412874800845898331
+    second: xmas game tileset_9
+  - first:
+      213: -4153278076153678334
+    second: xmas game tileset_10
+  - first:
+      213: 8838511428082344975
+    second: xmas game tileset_11
+  - first:
+      213: -7752915755256505132
+    second: xmas game tileset_12
+  - first:
+      213: -3615748260791373630
+    second: xmas game tileset_13
+  - first:
+      213: 1352608697448420237
+    second: xmas game tileset_14
+  - first:
+      213: -7796372970449795926
+    second: xmas game tileset_15
+  - first:
+      213: -5662798723258570909
+    second: xmas game tileset_16
+  - first:
+      213: -4197650352009414122
+    second: xmas game tileset_17
+  - first:
+      213: -7684983827405552805
+    second: xmas game tileset_18
+  - first:
+      213: -5117224557547986053
+    second: xmas game tileset_19
+  - first:
+      213: 7352741403880063876
+    second: xmas game tileset_20
+  - first:
+      213: -2180846988584690043
+    second: xmas game tileset_21
+  - first:
+      213: -9068993525246557107
+    second: xmas game tileset_22
+  - first:
+      213: -3307550883875244983
+    second: xmas game tileset_23
+  - first:
+      213: -4132979379425861103
+    second: xmas game tileset_24
+  - first:
+      213: 8777482046842426809
+    second: xmas game tileset_25
+  - first:
+      213: -741321996244279054
+    second: xmas game tileset_26
+  - first:
+      213: 4388632711286573279
+    second: xmas game tileset_27
+  - first:
+      213: 3276648044158159420
+    second: xmas game tileset_28
+  - first:
+      213: 184065439489864311
+    second: xmas game tileset_29
+  - first:
+      213: -2427688033009311370
+    second: xmas game tileset_30
+  - first:
+      213: 7881118384755386713
+    second: xmas game tileset_31
+  - first:
+      213: 4625982353652728884
+    second: xmas game tileset_32
+  - first:
+      213: 8485985179986414995
+    second: xmas game tileset_33
+  - first:
+      213: -240106351680875187
+    second: xmas game tileset_34
+  - first:
+      213: -1168008867691028063
+    second: xmas game tileset_35
+  - first:
+      213: 637467747657016156
+    second: xmas game tileset_36
+  - first:
+      213: -8405649112927856345
+    second: xmas game tileset_37
+  - first:
+      213: 5811346312862833016
+    second: xmas game tileset_38
+  - first:
+      213: -6248215621983189301
+    second: xmas game tileset_39
+  - first:
+      213: -2660142989391153359
+    second: xmas game tileset_40
+  - first:
+      213: -1924804807655671046
+    second: xmas game tileset_41
+  - first:
+      213: 5793714551854213534
+    second: xmas game tileset_42
+  - first:
+      213: 6663745766757614173
+    second: xmas game tileset_43
+  - first:
+      213: -6147645790783634202
+    second: xmas game tileset_44
+  - first:
+      213: 3366090729122787287
+    second: xmas game tileset_45
+  - first:
+      213: -2248379123377587596
+    second: xmas game tileset_46
+  - first:
+      213: 5208493337677207196
+    second: xmas game tileset_47
+  - first:
+      213: 6066382175551977277
+    second: xmas game tileset_48
+  - first:
+      213: -4228056010147272831
+    second: xmas game tileset_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: xmas game tileset_0
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 2666
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f57bef3699d01da00800000000000000
+      internalID: 779419162970601311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_1
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 2666
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb4f3efdd7ee5ea70800000000000000
+      internalID: 8855746466688529596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_2
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 2666
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a393370531b116b0800000000000000
+      internalID: -5327282042890382428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_3
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 2684
+        width: 194
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1e276044f8cea5e0800000000000000
+      internalID: -1896357441698320869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_4
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 2684
+        width: 193
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64f2d34466af68dd0800000000000000
+      internalID: -2484022827309781178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_5
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 2749
+        width: 152
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d0fd64c16eadc3d0800000000000000
+      internalID: -3184697626550472494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_6
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 2736
+        width: 66
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc225d4cb4cb5c8a0800000000000000
+      internalID: -6285410671314787636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_7
+      rect:
+        serializedVersion: 2
+        x: 1993
+        y: 2767
+        width: 96
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c0a26e61a1521510800000000000000
+      internalID: 1518365778160820417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_8
+      rect:
+        serializedVersion: 2
+        x: 2190
+        y: 2772
+        width: 102
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dfc0d463ed297760800000000000000
+      internalID: 7456041112760799192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_9
+      rect:
+        serializedVersion: 2
+        x: 2539
+        y: 2756
+        width: 259
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b524121a173dab500800000000000000
+      internalID: 412874800845898331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_10
+      rect:
+        serializedVersion: 2
+        x: 2862
+        y: 2795
+        width: 139
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 206317148979c56c0800000000000000
+      internalID: -4153278076153678334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_11
+      rect:
+        serializedVersion: 2
+        x: 3010
+        y: 2847
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f04241eb053b8aa70800000000000000
+      internalID: 8838511428082344975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_12
+      rect:
+        serializedVersion: 2
+        x: 3167
+        y: 2757
+        width: 184
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dc1862823c186490800000000000000
+      internalID: -7752915755256505132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_13
+      rect:
+        serializedVersion: 2
+        x: 3443
+        y: 2686
+        width: 111
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c03b462d1842ddc0800000000000000
+      internalID: -3615748260791373630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_14
+      rect:
+        serializedVersion: 2
+        x: 3685
+        y: 2592
+        width: 208
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d835483a17e65c210800000000000000
+      internalID: 1352608697448420237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_15
+      rect:
+        serializedVersion: 2
+        x: 3765
+        y: 2845
+        width: 30
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa402ef1718bdc390800000000000000
+      internalID: -7796372970449795926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_16
+      rect:
+        serializedVersion: 2
+        x: 3432
+        y: 2736
+        width: 57
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36723a16092b961b0800000000000000
+      internalID: -5662798723258570909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_17
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 2530
+        width: 554
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61a7f25be33feb5c0800000000000000
+      internalID: -4197650352009414122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_18
+      rect:
+        serializedVersion: 2
+        x: 1591
+        y: 2590
+        width: 126
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b53cedefce3795590800000000000000
+      internalID: -7684983827405552805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_19
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 2570
+        width: 66
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b73627b8067fbf8b0800000000000000
+      internalID: -5117224557547986053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_20
+      rect:
+        serializedVersion: 2
+        x: 1979
+        y: 2588
+        width: 120
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 483049fa95f2a0660800000000000000
+      internalID: 7352741403880063876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_21
+      rect:
+        serializedVersion: 2
+        x: 2190
+        y: 2556
+        width: 120
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58eddefe7331cb1e0800000000000000
+      internalID: -2180846988584690043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_22
+      rect:
+        serializedVersion: 2
+        x: 2625
+        y: 2565
+        width: 139
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d448c593076742280800000000000000
+      internalID: -9068993525246557107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_23
+      rect:
+        serializedVersion: 2
+        x: 2911
+        y: 2565
+        width: 247
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 944361acef73912d0800000000000000
+      internalID: -3307550883875244983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_24
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 2380
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 112ae41e625b4a6c0800000000000000
+      internalID: -4132979379425861103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_25
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 2380
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b55960aa61efc970800000000000000
+      internalID: 8777482046842426809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_26
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 2377
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f02da5729b46b5f0800000000000000
+      internalID: -741321996244279054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_27
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 2141
+        width: 311
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd845ede23e87ec30800000000000000
+      internalID: 4388632711286573279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_28
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 2274
+        width: 115
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3a8606290ef87d20800000000000000
+      internalID: 3276648044158159420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_29
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 2425
+        width: 125
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7723830ca8eed8200800000000000000
+      internalID: 184065439489864311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_30
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 2399
+        width: 66
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 671630fa89e1f4ed0800000000000000
+      internalID: -2427688033009311370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_31
+      rect:
+        serializedVersion: 2
+        x: 1979
+        y: 2399
+        width: 97
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 959252c3a6b5f5d60800000000000000
+      internalID: 7881118384755386713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_32
+      rect:
+        serializedVersion: 2
+        x: 2182
+        y: 2349
+        width: 120
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43442bee07ac23040800000000000000
+      internalID: 4625982353652728884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_33
+      rect:
+        serializedVersion: 2
+        x: 2521
+        y: 2131
+        width: 518
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39dc15e7f8644c570800000000000000
+      internalID: 8485985179986414995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_34
+      rect:
+        serializedVersion: 2
+        x: 3099
+        y: 2129
+        width: 396
+        height: 414
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d451fb79b88faacf0800000000000000
+      internalID: -240106351680875187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_35
+      rect:
+        serializedVersion: 2
+        x: 3547
+        y: 2129
+        width: 396
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a125ca8f166acfe0800000000000000
+      internalID: -1168008867691028063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_36
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 2096
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c536ddef98db8d800800000000000000
+      internalID: 637467747657016156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_37
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 2096
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7299b55baa2295b80800000000000000
+      internalID: -8405649112927856345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_38
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 2009
+        width: 208
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87917f48eac06a050800000000000000
+      internalID: 5811346312862833016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_39
+      rect:
+        serializedVersion: 2
+        x: 1601
+        y: 2179
+        width: 85
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc645ab0ff0e949a0800000000000000
+      internalID: -6248215621983189301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_40
+      rect:
+        serializedVersion: 2
+        x: 1754
+        y: 2179
+        width: 85
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13738919b06451bd0800000000000000
+      internalID: -2660142989391153359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_41
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 1468
+        width: 515
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afa38b9b938b945e0800000000000000
+      internalID: -1924804807655671046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_42
+      rect:
+        serializedVersion: 2
+        x: 2113
+        y: 1718
+        width: 139
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e99284140b8676050800000000000000
+      internalID: 5793714551854213534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_43
+      rect:
+        serializedVersion: 2
+        x: 2261
+        y: 1770
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d52c91508716a7c50800000000000000
+      internalID: 6663745766757614173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_44
+      rect:
+        serializedVersion: 2
+        x: 3902
+        y: 1758
+        width: 259
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e48a6399bc2faaa0800000000000000
+      internalID: -6147645790783634202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_45
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 164
+        width: 3519
+        height: 1527
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7df691f0fa1c6be20800000000000000
+      internalID: 3366090729122787287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_46
+      rect:
+        serializedVersion: 2
+        x: 2441
+        y: 1548
+        width: 266
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47abca689172cc0e0800000000000000
+      internalID: -2248379123377587596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_47
+      rect:
+        serializedVersion: 2
+        x: 3090
+        y: 1578
+        width: 61
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c961d374819484840800000000000000
+      internalID: 5208493337677207196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_48
+      rect:
+        serializedVersion: 2
+        x: 3191
+        y: 1578
+        width: 61
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d377985927e103450800000000000000
+      internalID: 6066382175551977277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_49
+      rect:
+        serializedVersion: 2
+        x: 3431
+        y: 1550
+        width: 266
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18767b0c57de255c0800000000000000
+      internalID: -4228056010147272831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      xmas game tileset_0: 779419162970601311
+      xmas game tileset_1: 8855746466688529596
+      xmas game tileset_10: -4153278076153678334
+      xmas game tileset_11: 8838511428082344975
+      xmas game tileset_12: -7752915755256505132
+      xmas game tileset_13: -3615748260791373630
+      xmas game tileset_14: 1352608697448420237
+      xmas game tileset_15: -7796372970449795926
+      xmas game tileset_16: -5662798723258570909
+      xmas game tileset_17: -4197650352009414122
+      xmas game tileset_18: -7684983827405552805
+      xmas game tileset_19: -5117224557547986053
+      xmas game tileset_2: -5327282042890382428
+      xmas game tileset_20: 7352741403880063876
+      xmas game tileset_21: -2180846988584690043
+      xmas game tileset_22: -9068993525246557107
+      xmas game tileset_23: -3307550883875244983
+      xmas game tileset_24: -4132979379425861103
+      xmas game tileset_25: 8777482046842426809
+      xmas game tileset_26: -741321996244279054
+      xmas game tileset_27: 4388632711286573279
+      xmas game tileset_28: 3276648044158159420
+      xmas game tileset_29: 184065439489864311
+      xmas game tileset_3: -1896357441698320869
+      xmas game tileset_30: -2427688033009311370
+      xmas game tileset_31: 7881118384755386713
+      xmas game tileset_32: 4625982353652728884
+      xmas game tileset_33: 8485985179986414995
+      xmas game tileset_34: -240106351680875187
+      xmas game tileset_35: -1168008867691028063
+      xmas game tileset_36: 637467747657016156
+      xmas game tileset_37: -8405649112927856345
+      xmas game tileset_38: 5811346312862833016
+      xmas game tileset_39: -6248215621983189301
+      xmas game tileset_4: -2484022827309781178
+      xmas game tileset_40: -2660142989391153359
+      xmas game tileset_41: -1924804807655671046
+      xmas game tileset_42: 5793714551854213534
+      xmas game tileset_43: 6663745766757614173
+      xmas game tileset_44: -6147645790783634202
+      xmas game tileset_45: 3366090729122787287
+      xmas game tileset_46: -2248379123377587596
+      xmas game tileset_47: 5208493337677207196
+      xmas game tileset_48: 6066382175551977277
+      xmas game tileset_49: -4228056010147272831
+      xmas game tileset_5: -3184697626550472494
+      xmas game tileset_6: -6285410671314787636
+      xmas game tileset_7: 1518365778160820417
+      xmas game tileset_8: 7456041112760799192
+      xmas game tileset_9: 412874800845898331
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

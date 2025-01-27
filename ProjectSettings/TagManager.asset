@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 3
   tags:
   - Ground
+  - Enemy
+  - Ladder
   layers:
   - Default
   - TransparentFX
@@ -13,9 +15,9 @@ TagManager:
   - Water
   - UI
   - Ground
-  - 
-  - 
-  - 
+  - Player
+  - Enemy
+  - Projectile
   - 
   - 
   - 
@@ -57,17 +59,20 @@ TagManager:
   - name: Tree
     uniqueID: 2532560889
     locked: 0
+  - name: Lantern
+    uniqueID: 1366609053
+    locked: 0
+  - name: Light
+    uniqueID: 903295801
+    locked: 0
   - name: Ground
     uniqueID: 546291161
     locked: 0
-  - name: Light
-    uniqueID: 1112217171
-    locked: 0
   - name: HealthMana
-    uniqueID: 789465987
+    uniqueID: 2509969713
     locked: 0
   - name: Player
-    uniqueID: 3303228409
+    uniqueID: 491506773
     locked: 0
   m_RenderingLayers:
   - Default
