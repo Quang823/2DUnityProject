@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      6 Layer River_0: -6443289237440882797
+      6 Layer River_1: 5985620474065890582
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

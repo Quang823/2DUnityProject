@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      meter_bar_right_edge_yellow_0: -7327955210308119990
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

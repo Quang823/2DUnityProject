@@ -922,7 +922,39 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      xmas game tileset fon_0: -7857394680776098979
+      xmas game tileset fon_1: -7195923640750376053
+      xmas game tileset fon_10: -5838926583029754340
+      xmas game tileset fon_11: 4045271307053948617
+      xmas game tileset fon_12: 4713571598470711338
+      xmas game tileset fon_13: 4931073533965258923
+      xmas game tileset fon_14: 7604298005033258678
+      xmas game tileset fon_15: 756338673262656073
+      xmas game tileset fon_16: -8623716501279084998
+      xmas game tileset fon_17: -265217441456378383
+      xmas game tileset fon_18: 6235800713938543901
+      xmas game tileset fon_19: -64569530122150021
+      xmas game tileset fon_2: -8527170656867470747
+      xmas game tileset fon_20: -8171523191006569790
+      xmas game tileset fon_21: -1452912410439127797
+      xmas game tileset fon_22: 6003998846493391960
+      xmas game tileset fon_23: 7167754923772280251
+      xmas game tileset fon_24: -4742326721490238968
+      xmas game tileset fon_25: -3232711038732875618
+      xmas game tileset fon_26: 5427061557480416575
+      xmas game tileset fon_27: -3052894592483578291
+      xmas game tileset fon_28: -5496601350072240615
+      xmas game tileset fon_29: 4524255113316020224
+      xmas game tileset fon_3: 7196899184753209257
+      xmas game tileset fon_30: -8425697966796381101
+      xmas game tileset fon_31: 8117956614952107869
+      xmas game tileset fon_4: 4028145574823057694
+      xmas game tileset fon_5: -6096699148714012709
+      xmas game tileset fon_6: 3017461141046994629
+      xmas game tileset fon_7: -1602161955673989576
+      xmas game tileset fon_8: 5164222238757419898
+      xmas game tileset fon_9: 8366393135629253554
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

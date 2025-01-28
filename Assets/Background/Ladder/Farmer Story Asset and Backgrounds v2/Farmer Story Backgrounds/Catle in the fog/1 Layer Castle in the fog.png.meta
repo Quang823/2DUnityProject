@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      1 Layer Castle in the fog_0: 6936901281276716374
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

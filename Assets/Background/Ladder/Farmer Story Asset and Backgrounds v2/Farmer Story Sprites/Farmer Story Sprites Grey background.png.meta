@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Farmer Story Sprites Grey background_0: 38055456079245598
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

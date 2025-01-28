@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      2 layer Curse forest_0: -5173453869278413755
+      2 layer Curse forest_1: 4364365880786637718
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

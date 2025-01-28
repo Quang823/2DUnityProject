@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      meter_bar_holder_center-repeating_red_0: -6867916547649770076
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

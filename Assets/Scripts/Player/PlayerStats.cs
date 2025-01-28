@@ -88,10 +88,17 @@ public class PlayerStats : MonoBehaviour
             currentMana = Mathf.Clamp(currentMana - manaCost, 0, maxMana);
             UpdateManaUI();
         }
-        else
+ 
+    }
+
+    public void UseDash(float manaDashCost)
+    {
+        if (CanUseSkill(manaDashCost))
         {
-            Debug.Log("Not enough mana!");
+            currentMana = Mathf.Clamp(currentMana - manaDashCost, 0, maxMana);
+            UpdateManaUI();
         }
+
     }
 
     public bool CanUseSkill(float manaCost)

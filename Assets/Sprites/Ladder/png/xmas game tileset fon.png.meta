@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      xmas game tileset fon_0: -7857394680776098979
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
