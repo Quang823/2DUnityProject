@@ -6821,7 +6821,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &201157849
+
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6891,8 +6891,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< HEAD
-=======
+
 --- !u!1 &224258432
 GameObject:
   m_ObjectHideFlags: 0
@@ -7491,7 +7490,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
->>>>>>> f4fb7b94b513a911dec14eedf074709a7d31cca8
+
 --- !u!1 &297478571
 GameObject:
   m_ObjectHideFlags: 0
@@ -7579,8 +7578,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< HEAD
-=======
+
 --- !u!1 &313808692
 GameObject:
   m_ObjectHideFlags: 0
@@ -8005,7 +8003,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
->>>>>>> f4fb7b94b513a911dec14eedf074709a7d31cca8
+
 --- !u!1 &390600931
 GameObject:
   m_ObjectHideFlags: 0
@@ -10066,8 +10064,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< HEAD
-=======
+
 --- !u!1 &715292385
 GameObject:
   m_ObjectHideFlags: 0
@@ -10850,7 +10847,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 609312041}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> f4fb7b94b513a911dec14eedf074709a7d31cca8
+
+
 --- !u!1 &848509271
 GameObject:
   m_ObjectHideFlags: 0
@@ -11286,8 +11284,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< HEAD
-=======
+
 --- !u!1 &891338545
 GameObject:
   m_ObjectHideFlags: 0
@@ -12341,7 +12338,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
->>>>>>> f4fb7b94b513a911dec14eedf074709a7d31cca8
+
 --- !u!1 &1015444989
 GameObject:
   m_ObjectHideFlags: 0
@@ -12665,9 +12662,9 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< HEAD
+
 --- !u!114 &1103062447 stripped
-=======
+
 --- !u!1 &1065811559
 GameObject:
   m_ObjectHideFlags: 0
@@ -13043,7 +13040,7 @@ RectTransform:
   m_SizeDelta: {x: 9.9515, y: 0.09}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1103062447
->>>>>>> f4fb7b94b513a911dec14eedf074709a7d31cca8
+
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6295479237806527187, guid: f695ec1493fd0154888e4423341628ba, type: 3}
   m_PrefabInstance: {fileID: 158442941504211482}
@@ -13054,8 +13051,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-=======
+
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -13230,7 +13226,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
->>>>>>> f4fb7b94b513a911dec14eedf074709a7d31cca8
+
 --- !u!1 &1120846118
 GameObject:
   m_ObjectHideFlags: 0
@@ -90740,8 +90736,7 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
-<<<<<<< HEAD
-=======
+
 --- !u!1 &1122670671
 GameObject:
   m_ObjectHideFlags: 0
@@ -90949,7 +90944,7 @@ Transform:
   - {fileID: 1598013}
   m_Father: {fileID: 1230026669}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> f4fb7b94b513a911dec14eedf074709a7d31cca8
+
 --- !u!1 &1151607802
 GameObject:
   m_ObjectHideFlags: 0
@@ -93609,8 +93604,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< HEAD
-=======
+
 --- !u!1 &1535047365
 GameObject:
   m_ObjectHideFlags: 0
@@ -93698,7 +93692,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1601000236}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> f4fb7b94b513a911dec14eedf074709a7d31cca8
+
 --- !u!1 &1539145841
 GameObject:
   m_ObjectHideFlags: 0
@@ -93786,8 +93780,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< HEAD
-=======
+
 --- !u!1 &1546641172
 GameObject:
   m_ObjectHideFlags: 0
@@ -94049,7 +94042,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
->>>>>>> f4fb7b94b513a911dec14eedf074709a7d31cca8
+
 --- !u!1 &1590063373
 GameObject:
   m_ObjectHideFlags: 0
@@ -94575,8 +94568,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1027275082}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
-=======
+
 --- !u!1 &1631135869
 GameObject:
   m_ObjectHideFlags: 0
@@ -94746,7 +94738,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1893709552}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> f4fb7b94b513a911dec14eedf074709a7d31cca8
+
 --- !u!1 &1639047591
 GameObject:
   m_ObjectHideFlags: 0
@@ -94834,9 +94826,9 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< HEAD
+
 --- !u!114 &1711088263 stripped
-=======
+
 --- !u!1 &1653536507
 GameObject:
   m_ObjectHideFlags: 0
@@ -95086,7 +95078,7 @@ RectTransform:
   m_SizeDelta: {x: 9.9515, y: 0.09}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1711088263
->>>>>>> f4fb7b94b513a911dec14eedf074709a7d31cca8
+
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4275484912534149660, guid: f695ec1493fd0154888e4423341628ba, type: 3}
   m_PrefabInstance: {fileID: 158442941504211482}
@@ -95965,9 +95957,9 @@ Transform:
   - {fileID: 464688950}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
+
 --- !u!114 &1878707533 stripped
-=======
+
 --- !u!1 &1865149678
 GameObject:
   m_ObjectHideFlags: 0
@@ -96385,7 +96377,7 @@ RectTransform:
   m_SizeDelta: {x: 8.0199, y: 0.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1878707533
->>>>>>> f4fb7b94b513a911dec14eedf074709a7d31cca8
+
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5356958319783963743, guid: f695ec1493fd0154888e4423341628ba, type: 3}
   m_PrefabInstance: {fileID: 158442941504211482}
@@ -96396,8 +96388,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-=======
+
   m_Material: {fileID: 0}
   m_Color: {r: 0.78113204, g: 0, b: 0.2665039, a: 1}
   m_RaycastTarget: 1
@@ -96727,7 +96718,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1601000236}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> f4fb7b94b513a911dec14eedf074709a7d31cca8
+
 --- !u!1 &1938210303
 GameObject:
   m_ObjectHideFlags: 0

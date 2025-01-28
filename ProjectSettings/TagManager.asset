@@ -68,8 +68,17 @@ TagManager:
   - name: Ground
     uniqueID: 546291161
     locked: 0
+  - name: Stair(Ground)
+    uniqueID: 740623741
+    locked: 0
+  - name: Ladder
+    uniqueID: 3327442639
+    locked: 0
   - name: HealthMana
     uniqueID: 2509969713
+    locked: 0
+  - name: Enemy
+    uniqueID: 440471965
     locked: 0
   - name: Player
     uniqueID: 491506773
