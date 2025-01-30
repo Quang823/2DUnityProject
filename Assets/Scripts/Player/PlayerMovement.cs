@@ -46,9 +46,14 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         HandleInput();
-        HandleMovement();
         LimitPlayerPosition();
     }
+
+    private void FixedUpdate()
+    {
+        HandleMovement();
+    }
+
 
     private void HandleInput()
     {

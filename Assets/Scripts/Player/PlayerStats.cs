@@ -29,6 +29,11 @@ public class PlayerStats : MonoBehaviour
     public float moveSpeed = 5f;
     private float horizontalMove;
 
+    public float GetCurrentHealth()
+    {
+        return currentHealth;
+    }
+
     private void Start()
     {
         currentHealth = maxHealth;

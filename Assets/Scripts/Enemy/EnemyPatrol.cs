@@ -20,6 +20,7 @@ public class EnemyPatrol : MonoBehaviour
 
     [Header("EnemyAnamitor")]
     [SerializeField] private Animator anim;
+    private bool isPaused = false;
     private void Awake()
     {
         initScale = enemy.localScale;
@@ -28,7 +29,7 @@ public class EnemyPatrol : MonoBehaviour
     {
         anim.SetBool("moving", false);
     }
-    private bool isPaused = false;
+  
 
     private void Update()
     {

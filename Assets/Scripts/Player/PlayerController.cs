@@ -1,19 +1,22 @@
-using UnityEngine;
-using UnityEngine.InputSystem;
+﻿using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     private static PlayerController instance;
-        void Awake()
+    public static PlayerController Instance { get { return instance; } }
+
+    public GameObject Player { get; private set; }
+
+    void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject); 
-        }
-        else
+        if (instance != null && instance != this)
         {
             Destroy(gameObject);
+            return;
         }
+
+        instance = this;
+        DontDestroyOnLoad(gameObject);
+        Player = gameObject;
     }
 }

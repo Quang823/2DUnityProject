@@ -7,7 +7,7 @@ public class EnemyMeleeAttack : MonoBehaviour
     [SerializeField] private float range; 
     [SerializeField] private int damage; 
 
-    [Header("Attack Parameter")]
+    [Header("Collider Parameter")]
     [SerializeField] private float colliderDistance;
     [SerializeField] private BoxCollider2D boxCollider;
 

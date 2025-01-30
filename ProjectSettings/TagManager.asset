@@ -18,10 +18,10 @@ TagManager:
   - Player
   - Enemy
   - Projectile
-  - 
-  - 
-  - 
-  - 
+  - BackGround
+  - Ladder
+  - MiniMapLight
+  - EnemyProjectile
   - 
   - 
   - 
