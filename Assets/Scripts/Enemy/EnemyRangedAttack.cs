@@ -17,6 +17,8 @@ public class EnemyRangedAttack : MonoBehaviour
     [Header("Collider Parameters")]
     [SerializeField] private float colliderDistance;
     [SerializeField] private BoxCollider2D boxCollider;
+    [SerializeField] private float boxcastYOffset = -0.3f; // Điều chỉnh độ cao của BoxCast
+
 
     [Header("Player Layer")]
     [SerializeField] private LayerMask playerLayer;
@@ -94,8 +96,6 @@ public class EnemyRangedAttack : MonoBehaviour
         fireball.GetComponent<EnemyProjectile>().ActivateProjectile(direction);
     }
 
-
-
     private int FindFireball()
     {
         for (int i = 0; i < fireballs.Length; i++)
@@ -108,8 +108,13 @@ public class EnemyRangedAttack : MonoBehaviour
 
     private bool PlayerInSight()
     {
-        Vector2 boxSize = new Vector2(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y);
-        Vector2 boxCenter = (Vector2)boxCollider.bounds.center + (Vector2.right * transform.localScale.x * range * colliderDistance);
+        float adjustedHeight = boxCollider.bounds.size.y * 0.5f;
+        Vector2 boxSize = new Vector2(boxCollider.bounds.size.x * range, adjustedHeight);
+
+        // Dịch vùng BoxCast xuống thấp hơn bằng cách thêm boxcastYOffset
+        Vector2 boxCenter = (Vector2)boxCollider.bounds.center +
+                            (Vector2.right * transform.localScale.x * range * colliderDistance) +
+                            new Vector2(0, boxcastYOffset);
 
         RaycastHit2D hit = Physics2D.BoxCast(boxCenter, boxSize, 0, Vector2.right * transform.localScale.x, 0, playerLayer);
 
@@ -126,18 +131,26 @@ public class EnemyRangedAttack : MonoBehaviour
 
 
 
-
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(boxCollider.bounds.center + transform.right * range * transform.localScale.x * colliderDistance,
-            new Vector3(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y, boxCollider.bounds.size.z));
+        Gizmos.DrawWireCube(boxCollider.bounds.center +
+                            transform.right * range * transform.localScale.x * colliderDistance +
+                            new Vector3(0, boxcastYOffset, 0),
+                            new Vector3(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y * 0.5f, boxCollider.bounds.size.z));
     }
 
-    private void DamagePalyer()
+
+    private void DamagePlayer()
     {
-        Vector2 boxCenter = boxCollider.bounds.center + transform.right * range * transform.localScale.x * colliderDistance;
-        Vector2 boxSize = new Vector2(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y);
+        float adjustedHeight = boxCollider.bounds.size.y * 0.5f;
+        Vector2 boxSize = new Vector2(boxCollider.bounds.size.x * range, adjustedHeight);
+
+        // Dịch vùng sát thương xuống dưới
+        Vector3 boxCenter = (Vector3)boxCollider.bounds.center +
+                    (Vector3)(Vector2.right * transform.localScale.x * range * colliderDistance) +
+                    new Vector3(0, boxcastYOffset, 0);
+
         RaycastHit2D hit = Physics2D.BoxCast(boxCenter, boxSize, 0, Vector2.zero, 0, playerLayer);
         if (hit.collider != null)
         {
@@ -148,4 +161,6 @@ public class EnemyRangedAttack : MonoBehaviour
             }
         }
     }
+
+
 }

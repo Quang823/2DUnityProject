@@ -7,6 +7,8 @@ TagManager:
   - Ground
   - Enemy
   - Ladder
+  - Checkpoint
+  - Trap
   layers:
   - Default
   - TransparentFX
@@ -73,6 +75,9 @@ TagManager:
     locked: 0
   - name: Ladder
     uniqueID: 3327442639
+    locked: 0
+  - name: Checkpoint
+    uniqueID: 501109759
     locked: 0
   - name: HealthMana
     uniqueID: 2509969713

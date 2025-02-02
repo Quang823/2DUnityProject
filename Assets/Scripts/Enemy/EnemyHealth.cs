@@ -59,32 +59,14 @@ public class EnemyHealth : MonoBehaviour
         {
             animator.SetTrigger("dead");
         }
-
         healthBar.transform.parent.gameObject.SetActive(false);
-        AdjustPositionToGround();
+        GameController.instance.EnemyDefeated();
         StartCoroutine(HideAndDestroy());
     }
 
-    private void AdjustPositionToGround()
-    {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 10f, LayerMask.GetMask("Ground"));
-        if (hit.collider != null)
-        {
-            Vector3 newPosition = transform.position;
-            newPosition.y = hit.point.y + (GetComponent<Collider2D>().bounds.size.y / 2);
-            transform.position = newPosition;
-        }
-        else
-        {
-            Debug.LogWarning("Enemy is not above the ground! Using fallback position.");
-            transform.position = new Vector3(transform.position.x, 0f, transform.position.z); 
-        }
-
-    }
-
     private System.Collections.IEnumerator HideAndDestroy()
-    {     
-        float animationLength = 2f; 
+    {
+        float animationLength = 1f;
         if (animator != null)
         {
             AnimationClip[] clips = animator.runtimeAnimatorController.animationClips;
@@ -96,10 +78,16 @@ public class EnemyHealth : MonoBehaviour
                     break;
                 }
             }
-        }   
+        }
+
         yield return new WaitForSeconds(animationLength);
-        gameObject.SetActive(false);       
-        yield return new WaitForSeconds(5f);
-        Destroy(gameObject);
+        if (transform.parent != null)
+        {
+            Destroy(transform.parent.gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 }
