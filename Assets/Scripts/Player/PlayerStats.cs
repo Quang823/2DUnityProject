@@ -201,6 +201,12 @@ public class PlayerStats : MonoBehaviour
         StartCoroutine(FallToCheckpoint(checkpointPosition));
     }
 
+    public void Heal(float healAmount)
+    {
+        currentHealth = Mathf.Clamp(currentHealth + healAmount, 0, maxHealth);
+        UpdateHealthUI();
+    }
+
 
     private IEnumerator FallToCheckpoint(Vector2 checkpointPosition)
     {
@@ -221,6 +227,11 @@ public class PlayerStats : MonoBehaviour
 
         transform.position = checkpointPosition;
         isInvincible = false;
+    }
+    public void RestoreMana(float manaAmount)
+    {
+        currentMana = Mathf.Clamp(currentMana + manaAmount, 0, maxMana);
+        UpdateManaUI();
     }
 
 

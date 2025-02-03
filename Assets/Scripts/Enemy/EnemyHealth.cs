@@ -53,12 +53,19 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
+    private bool isDead = false;
+
     private void Die()
     {
+        if (isDead) return;  
+
+        isDead = true; 
+
         if (animator != null)
         {
             animator.SetTrigger("dead");
         }
+
         healthBar.transform.parent.gameObject.SetActive(false);
         GameController.instance.EnemyDefeated();
         StartCoroutine(HideAndDestroy());
@@ -90,4 +97,5 @@ public class EnemyHealth : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
 }

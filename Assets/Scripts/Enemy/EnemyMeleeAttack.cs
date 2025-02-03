@@ -50,17 +50,16 @@ public class EnemyMeleeAttack : MonoBehaviour
     }
 
     private void DamagePalyer()
-    {       
+    {
         Vector2 boxCenter = boxCollider.bounds.center + transform.right * range * transform.localScale.x * colliderDistance;
-        Vector2 boxSize = new Vector2(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y);     
+        Vector2 boxSize = new Vector2(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y);
         RaycastHit2D hit = Physics2D.BoxCast(boxCenter, boxSize, 0, Vector2.zero, 0, playerLayer);
         if (hit.collider != null)
-        {        
+        {
             PlayerStats player = hit.collider.GetComponent<PlayerStats>();
             if (player != null)
             {
                 player.TakeDamage(damage);
-               // Debug.Log($"Player bị tấn công: {damage} sát thương");
             }
         }
     }

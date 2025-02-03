@@ -9,6 +9,9 @@ TagManager:
   - Ladder
   - Checkpoint
   - Trap
+  - Boss
+  - Portal
+  - BossGround
   layers:
   - Default
   - TransparentFX
@@ -87,6 +90,9 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 491506773
+    locked: 0
+  - name: SpacePortal
+    uniqueID: 568733487
     locked: 0
   m_RenderingLayers:
   - Default
