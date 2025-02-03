@@ -71,7 +71,7 @@ public class PlayerAttack : MonoBehaviour
             enemy.GetComponent<EnemyHealth>()?.TakeDamage(meleeAttackDamage);
         }
 
-        cooldownTimer = 0; // Chỉ reset cooldown khi thực sự gây sát thương
+        cooldownTimer = 0; 
     }
 
 

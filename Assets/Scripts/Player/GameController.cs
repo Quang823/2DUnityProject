@@ -16,16 +16,16 @@ public class GameController : MonoBehaviour
     [Header("Enemy Counter UI")]
     public TextMeshProUGUI enemyCountText;
 
-    [Header("Boss UI")]
-    public GameObject bossPrefab;
-    public Transform bossSpawnPoint;
-    public GameObject dangerEffect; 
+    [Header("Portal UI")]
+    public GameObject portal;
+    public Transform portalSpawnPoint;
+    public GameObject notifyEffect; 
 
 
     private int lives = 5;
     private int totalEnemies;
     private int remainingEnemies;
-
+    
     public static GameController instance; 
 
     private void Awake()
@@ -48,8 +48,20 @@ public class GameController : MonoBehaviour
         }
 
         CountEnemies();
+   
+
         UpdateEnemyUI();
         UpdateLivesUI();
+
+        if (portal != null)
+        {
+            portal.SetActive(false); 
+        }
+
+        if (notifyEffect != null)
+        {
+            notifyEffect.SetActive(false); 
+        }
     }
 
     public void PlayerDied()
@@ -103,9 +115,12 @@ public class GameController : MonoBehaviour
         remainingEnemies--;
         UpdateEnemyUI();
 
+       
+
         if (remainingEnemies <= 0)
         {
-            SpawnBoss();
+         
+            StartCoroutine(SpawnPortalSequence()); 
         }
     }
 
@@ -117,58 +132,108 @@ public class GameController : MonoBehaviour
         }
     }
 
-    private void SpawnBoss()
+    private void SpawnPortal()
     {
-        StartCoroutine(SpawnBossSequence());
+        StartCoroutine(SpawnPortalSequence());
     }
 
-    private IEnumerator SpawnBossSequence()
+    private IEnumerator SpawnPortalSequence()
     {
-        if (dangerEffect != null)
+        if (notifyEffect != null)
         {
-            dangerEffect.SetActive(true);
+            notifyEffect.SetActive(true);
+            Animator notifyAnimator = notifyEffect.GetComponent<Animator>();
+            if (notifyAnimator != null)
+            {
+                notifyAnimator.SetTrigger("Notified");
+            }
         }
 
         yield return new WaitForSeconds(3f);
 
-        if (dangerEffect != null)
+        if (notifyEffect != null)
         {
-            dangerEffect.SetActive(false);
+            notifyEffect.SetActive(false);
         }
 
-        if (bossPrefab != null && bossSpawnPoint != null)
+        if (portal != null && portalSpawnPoint != null)
         {
-            GameObject boss = Instantiate(bossPrefab, bossSpawnPoint.position, Quaternion.identity);
-            Debug.Log("Boss xuất hiện!");
+            Vector3 spawnPosition = new Vector3(-10f, portalSpawnPoint.position.y, 0);
 
-            // Kiểm tra nếu boss có BossController, gán targetPosition để boss biết nơi di chuyển đến
-            BossController bossController = boss.GetComponent<BossController>();
-            if (bossController != null)
+            // Kiểm tra xem vị trí spawn có bị chặn không
+            RaycastHit2D hit = Physics2D.Raycast(spawnPosition, Vector2.down, 1f);
+            if (hit.collider != null)
             {
-                bossController.targetPosition = GameObject.Find("BossTargetPoint").transform;
+                spawnPosition = new Vector3(-10f, portalSpawnPoint.position.y + 2f, 0); // Dịch lên nếu bị chặn
             }
-        }
-        else
-        {
-            Debug.LogWarning("Boss chưa được thiết lập, vui lòng thêm bossPrefab!");
+
+            GameObject portals = Instantiate(portal, spawnPosition, Quaternion.identity);
+            portals.SetActive(true);
+
+            Vector3 cameraStartPos = Camera.main.transform.position;
+
+            FollowPlayer followPlayerScript = Camera.main.GetComponent<FollowPlayer>();
+            if (followPlayerScript != null)
+            {
+                followPlayerScript.enabled = false;
+            }
+
+            yield return StartCoroutine(MoveCameraToPortal(portals, cameraStartPos));
+
+            yield return new WaitForSeconds(3f);
+
+            StartCoroutine(MoveCameraBackToPlayer(cameraStartPos));
+            if (followPlayerScript != null)
+            {
+                followPlayerScript.enabled = true;
+            }
         }
     }
 
 
-    private IEnumerator BossEnterMap(GameObject boss)
-    {
-        Vector3 targetPosition = new Vector3(0, boss.transform.position.y, 0); // Điều chỉnh vị trí mục tiêu vào map
-        float speed = 2f;
 
-        while (Vector3.Distance(boss.transform.position, targetPosition) > 0.1f)
+    private IEnumerator MoveCameraToPortal(GameObject portals, Vector3 cameraStartPos)
+    {
+    
+        Vector3 cameraTargetPos = new Vector3(portals.transform.position.x, portals.transform.position.y, Camera.main.transform.position.z);
+
+
+        float timeToMove = 5f;
+        float elapsedTime = 0f;
+
+
+        while (elapsedTime < timeToMove)
         {
-            boss.transform.position = Vector3.MoveTowards(boss.transform.position, targetPosition, speed * Time.deltaTime);
+            Camera.main.transform.position = Vector3.Lerp(cameraStartPos, cameraTargetPos, (elapsedTime / timeToMove));
+            elapsedTime += Time.deltaTime;
             yield return null;
         }
 
-        // Khi boss đã vào map, bắt đầu tấn công player
-        boss.GetComponent<BossController>().StartAttack();
+        Camera.main.transform.position = cameraTargetPos; 
     }
+
+
+
+
+    private IEnumerator MoveCameraBackToPlayer(Vector3 cameraStartPos)
+    {
+        float timeToMove = 2f;
+        float elapsedTime = 0f;
+
+        while (elapsedTime < timeToMove)
+        {
+            Camera.main.transform.position = Vector3.Lerp(Camera.main.transform.position, cameraStartPos, (elapsedTime / timeToMove));
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        Camera.main.transform.position = cameraStartPos; 
+    }
+
+
+    
+
+
 
     public void SetCheckpoint(Vector2 checkpointPosition)
     {

@@ -177,14 +177,14 @@ public class PlayerStats : MonoBehaviour
         }
 
         spriteRenderer.color = Color.clear;
-        gameObject.SetActive(false); // Biến mất hoàn toàn
+        gameObject.SetActive(false); 
     }
 
     public void Respawn(Vector2 checkpointPosition)
     {
         gameObject.SetActive(true);
-        isDead = false; // Reset trạng thái chết
-        isInvincible = true; // Hồi sinh xong vẫn được miễn damage 1 thời gian
+        isDead = false;
+        isInvincible = true; 
 
         Vector2 spawnPosition = checkpointPosition + Vector2.up * 2f;
         transform.position = spawnPosition;

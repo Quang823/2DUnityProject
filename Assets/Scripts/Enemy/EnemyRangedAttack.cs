@@ -17,7 +17,7 @@ public class EnemyRangedAttack : MonoBehaviour
     [Header("Collider Parameters")]
     [SerializeField] private float colliderDistance;
     [SerializeField] private BoxCollider2D boxCollider;
-    [SerializeField] private float boxcastYOffset = -0.3f; // Điều chỉnh độ cao của BoxCast
+    [SerializeField] private float boxcastYOffset = -0.3f;
 
 
     [Header("Player Layer")]
@@ -110,8 +110,6 @@ public class EnemyRangedAttack : MonoBehaviour
     {
         float adjustedHeight = boxCollider.bounds.size.y * 0.5f;
         Vector2 boxSize = new Vector2(boxCollider.bounds.size.x * range, adjustedHeight);
-
-        // Dịch vùng BoxCast xuống thấp hơn bằng cách thêm boxcastYOffset
         Vector2 boxCenter = (Vector2)boxCollider.bounds.center +
                             (Vector2.right * transform.localScale.x * range * colliderDistance) +
                             new Vector2(0, boxcastYOffset);
@@ -130,7 +128,6 @@ public class EnemyRangedAttack : MonoBehaviour
     }
 
 
-
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
@@ -145,8 +142,6 @@ public class EnemyRangedAttack : MonoBehaviour
     {
         float adjustedHeight = boxCollider.bounds.size.y * 0.5f;
         Vector2 boxSize = new Vector2(boxCollider.bounds.size.x * range, adjustedHeight);
-
-        // Dịch vùng sát thương xuống dưới
         Vector3 boxCenter = (Vector3)boxCollider.bounds.center +
                     (Vector3)(Vector2.right * transform.localScale.x * range * colliderDistance) +
                     new Vector3(0, boxcastYOffset, 0);
