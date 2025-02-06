@@ -20,7 +20,22 @@ public class MinimapZoomController : MonoBehaviour
         if (closeButton != null)
             closeButton.onClick.AddListener(CloseFullMap);
 
-        SetMinimapState(false); 
+        isZoomed = false;
+        SetMinimapState(isZoomed);
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            ToggleFullMap();
+        }
+    }
+
+    void ToggleFullMap()
+    {
+        isZoomed = !isZoomed;
+        SetMinimapState(isZoomed);
     }
 
     void OpenFullMap()

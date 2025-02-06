@@ -160,11 +160,10 @@ public class GameController : MonoBehaviour
         {
             Vector3 spawnPosition = new Vector3(-10f, portalSpawnPoint.position.y, 0);
 
-            // Kiểm tra xem vị trí spawn có bị chặn không
             RaycastHit2D hit = Physics2D.Raycast(spawnPosition, Vector2.down, 1f);
             if (hit.collider != null)
             {
-                spawnPosition = new Vector3(-10f, portalSpawnPoint.position.y + 2f, 0); // Dịch lên nếu bị chặn
+                spawnPosition = new Vector3(-10f, portalSpawnPoint.position.y + 2f, 0);
             }
 
             GameObject portals = Instantiate(portal, spawnPosition, Quaternion.identity);

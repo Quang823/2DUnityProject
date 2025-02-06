@@ -14,24 +14,14 @@ public class BossTrigger : MonoBehaviour
         {
             hasTriggered = true;
             StartCoroutine(StartBossSequence());
+
             PlayerMovement player = other.GetComponent<PlayerMovement>();
-            if (player != null)
-            {
-                player.minBounds = new Vector2(-435, -2);
-                player.maxBounds = new Vector2(-256, 64);
-            }
         }
     }
 
     private IEnumerator StartBossSequence()
     {
-        if (boss.TryGetComponent<BossController>(out var bossAI))
-        {
-            bossAI.enabled = false;
-        }
-
-        Transform boss1 = boss;
-        BossPatrol bossPatrol = boss1.GetComponent<BossPatrol>();
+        BossPatrol bossPatrol = boss.GetComponent<BossPatrol>();
         if (bossPatrol != null)
         {
             bossPatrol.PausePatrol();
@@ -70,11 +60,6 @@ public class BossTrigger : MonoBehaviour
         {
             followPlayerScript.enabled = true;
         }
-
-        if (bossAI != null)
-        {
-            bossAI.enabled = true; 
-        }
     }
 
     private IEnumerator MoveCameraToBoss(Vector3 cameraStartPos)
@@ -95,7 +80,7 @@ public class BossTrigger : MonoBehaviour
 
     private IEnumerator MoveCameraBackToPlayer(Vector3 cameraStartPos)
     {
-        float timeToMove = 2f;
+        float timeToMove = 1f;
         float elapsedTime = 0f;
 
         while (elapsedTime < timeToMove)

@@ -16,12 +16,12 @@ public class BossAttack : MonoBehaviour
     private float cooldownTimer = Mathf.Infinity;
 
     private Animator anim;
-    private EnemyPatrol enemyPatrol;
+    private BossPatrol bossPatrol;
 
     private void Awake()
     {
         anim = GetComponent<Animator>();
-        enemyPatrol = GetComponentInParent<EnemyPatrol>();
+        bossPatrol = GetComponentInParent<BossPatrol>();
     }
 
     private void Update()
@@ -35,9 +35,9 @@ public class BossAttack : MonoBehaviour
                 anim.SetTrigger("attack");
             }
         }
-        if (enemyPatrol != null)
+        if (bossPatrol != null)
         {
-            enemyPatrol.enabled = !PlayerInSight();
+            bossPatrol.enabled = !PlayerInSight();
         }
     }
 
@@ -60,7 +60,6 @@ public class BossAttack : MonoBehaviour
             if (player != null)
             {
                 player.TakeDamage(damage);
-                // Debug.Log($"Player bị tấn công: {damage} sát thương");
             }
         }
     }

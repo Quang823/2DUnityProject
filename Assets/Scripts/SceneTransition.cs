@@ -30,13 +30,12 @@ public class SceneTransition : MonoBehaviour
 
     private IEnumerator FadeAndMove(Vector3 newPosition, Transform player)
     {
-        yield return StartCoroutine(FadeToBlack()); // Đợi màn hình đen hoàn toàn trước
+        yield return StartCoroutine(FadeToBlack());
 
-        // Sau khi màn hình đen mới di chuyển player và camera
         player.position = newPosition;
         Camera.main.transform.position = new Vector3(newPosition.x, newPosition.y, Camera.main.transform.position.z);
 
-        yield return StartCoroutine(FadeFromBlack()); // Sau đó mới fade từ từ trở lại
+        yield return StartCoroutine(FadeFromBlack());
     }
 
 
@@ -47,7 +46,7 @@ public class SceneTransition : MonoBehaviour
 
         float timer = 0f;
         Color color = fadeImage.color;
-        while (timer < fadeDuration) // Làm tối màn hình dần dần
+        while (timer < fadeDuration)
         {
             timer += Time.deltaTime;
             color.a = Mathf.Lerp(0, 1, timer / fadeDuration);
@@ -55,7 +54,7 @@ public class SceneTransition : MonoBehaviour
             yield return null;
         }
 
-        yield return new WaitForSeconds(0.5f); // Giữ màn hình đen một lúc rồi tiếp tục
+        yield return new WaitForSeconds(0.5f);
     }
 
 

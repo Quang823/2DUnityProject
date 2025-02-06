@@ -67,7 +67,6 @@ public class BossHealth : MonoBehaviour
         }
 
         healthBar.transform.parent.gameObject.SetActive(false);
-        GameController.instance.EnemyDefeated();
         StartCoroutine(HideAndDestroy());
     }
 

@@ -18,6 +18,14 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private GameObject[] farattack;
     [SerializeField] private float manaCost;
 
+    [Header("Blocking Settings")]
+    [SerializeField] private GameObject shieldEffect;
+    public bool isBlocking = false;
+    [SerializeField] private float blockDuration = 1.5f;
+    [SerializeField] private float blockCooldown = 2f;
+    private float lastBlockTime = Mathf.NegativeInfinity;
+    private float lastAttackTime = Mathf.NegativeInfinity;
+
     private Animator anim;
     private PlayerMovement playerMovement;
     private PlayerStats playerStats;
@@ -31,12 +39,20 @@ public class PlayerAttack : MonoBehaviour
         playerCollider = GetComponent<Collider2D>();
     }
 
+    private void Start()
+    {
+        isBlocking = false;
+        shieldEffect.SetActive(false);
+    }
+
+
     private void Update()
     {
         cooldownTimer += Time.deltaTime;
 
         if (Input.GetKeyDown(KeyCode.J) && playerMovement.canAttack() && cooldownTimer >= meleeattackCooldown)
         {
+            cooldownTimer = 0;
             MeleeAttack();
         }
 
@@ -48,32 +64,48 @@ public class PlayerAttack : MonoBehaviour
                 playerStats.UseSkill(manaCost);
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.H) && Time.time - lastBlockTime >= blockCooldown)
+        {
+            StartBlocking();
+        }
     }
 
 
     private void MeleeAttack()
     {
+        if (Time.time - lastAttackTime < meleeattackCooldown)
+            return;
+
         anim.SetTrigger("attack");
-        cooldownTimer = 0;
+        lastAttackTime = Time.time;
     }
-    public void DealMeleeDamage()
+
+    private void DealMeleeDamage()
     {
-        if (cooldownTimer < meleeattackCooldown) return; // Đảm bảo không đánh quá nhanh
+        Vector2 attackPosition = (Vector2)transform.position + new Vector2(meleeAttackOffset * Mathf.Sign(transform.localScale.x), 0);
 
-        Vector2 playerSize = playerCollider.bounds.size;
-        Vector2 attackCenter = (Vector2)transform.position + new Vector2(transform.localScale.x * (playerSize.x / 2 + meleeAttackOffset), 0);
-        Vector2 attackSize = new Vector2(playerSize.x * 1.5f, playerSize.y * 0.7f);
-
-        Collider2D[] hitEnemies = Physics2D.OverlapBoxAll(attackCenter, attackSize, 0f, enemyLayer);
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPosition, 0.5f, enemyLayer);
 
         foreach (Collider2D enemy in hitEnemies)
         {
-            enemy.GetComponent<EnemyHealth>()?.TakeDamage(meleeAttackDamage);
+            if (enemy.TryGetComponent<EnemyHealth>(out EnemyHealth enemyHealth))
+            {
+                enemyHealth.TakeDamage(meleeAttackDamage);
+            }
+            else if (enemy.TryGetComponent<BossHealth>(out BossHealth bossHealth))
+            {
+                bossHealth.TakeDamage(meleeAttackDamage);
+            }
         }
-
-        cooldownTimer = 0; 
     }
 
+    private void OnDrawGizmosSelected()
+    {
+        Vector2 attackPosition = (Vector2)transform.position + new Vector2(meleeAttackOffset * Mathf.Sign(transform.localScale.x), 0);
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackPosition, 0.5f);
+    }
 
     private void FireAttack()
     {
@@ -90,15 +122,17 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
-    private void OnDrawGizmosSelected()
+    private void StartBlocking()
     {
-        if (GetComponent<Collider2D>() == null) return;
+        isBlocking = true;
+        lastBlockTime = Time.time;
+        shieldEffect.SetActive(true);
+        Invoke(nameof(StopBlocking), blockDuration);
+    }
 
-        Gizmos.color = Color.red;
-        Vector2 playerSize = GetComponent<Collider2D>().bounds.size;
-        Vector2 attackCenter = (Vector2)transform.position + new Vector2(transform.localScale.x * (playerSize.x / 2 + meleeAttackOffset), 0);
-        Vector2 attackSize = new Vector2(playerSize.x * 1.5f, playerSize.y * 0.7f);
-
-        Gizmos.DrawWireCube(attackCenter, attackSize);
+    private void StopBlocking()
+    {
+        isBlocking = false;
+        shieldEffect.SetActive(false);
     }
 }

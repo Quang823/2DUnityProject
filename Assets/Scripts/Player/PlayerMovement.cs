@@ -33,6 +33,9 @@ public class PlayerMovement : MonoBehaviour
     private bool isDashing = false;
     private float horizontalInput;
     private Vector3 initialScale;
+    public GameObject miniMap;
+    public GameObject fullMap;
+    private bool isFullMapActive = false;
 
     private void Awake()
     {
@@ -41,6 +44,12 @@ public class PlayerMovement : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         playerStats = GetComponent<PlayerStats>();
         initialScale = transform.localScale;
+    }
+
+    private void Start()
+    {
+        miniMap.SetActive(true);
+        fullMap.SetActive(false);
     }
 
     private void Update()
@@ -67,6 +76,11 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.L) && Time.time >= lastDashTime + dashCooldown && playerStats.CanUseSkill(dashManaCost))
         {
             Dash();
+        }
+
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            ToggleMap();
         }
     }
 
@@ -123,6 +137,12 @@ public class PlayerMovement : MonoBehaviour
         lastDashTime = Time.time;
 
         StartCoroutine(StopDash());
+    }
+    public void ToggleMap()
+    {
+        isFullMapActive = !isFullMapActive;
+        miniMap.SetActive(!isFullMapActive);
+        fullMap.SetActive(isFullMapActive);
     }
 
     private IEnumerator StopDash()

@@ -17,7 +17,7 @@ public class Checkpoint : MonoBehaviour
         if (!isActivated)
         {
             isActivated = true;
-            spriteRenderer.color = Color.green;
+            spriteRenderer.color = Color.red;
         }
     }
 

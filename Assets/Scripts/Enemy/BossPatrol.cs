@@ -6,8 +6,8 @@ public class BossPatrol : MonoBehaviour
     [SerializeField] private Transform leftEdge;
     [SerializeField] private Transform rightEdge;
 
-    [Header("Enemy")]
-    [SerializeField] private Transform enemy;
+    [Header("Boss")]
+    [SerializeField] private Transform boss;
 
     [Header("Movement parameters")]
     [SerializeField] private float speed;
@@ -23,8 +23,9 @@ public class BossPatrol : MonoBehaviour
     private bool isPaused = false;
     private void Awake()
     {
-        initScale = enemy.localScale;
+        initScale = boss.localScale;
     }
+
     private void OnDisable()
     {
         anim.SetBool("moving", false);
@@ -37,7 +38,7 @@ public class BossPatrol : MonoBehaviour
 
         if (movingLeft)
         {
-            if (enemy.position.x >= leftEdge.position.x)
+            if (boss.position.x >= leftEdge.position.x)
             {
                 MoveinDirection(-1);
             }
@@ -48,7 +49,7 @@ public class BossPatrol : MonoBehaviour
         }
         else
         {
-            if (enemy.position.x <= rightEdge.position.x)
+            if (boss.position.x <= rightEdge.position.x)
             {
                 MoveinDirection(1);
             }
@@ -64,10 +65,10 @@ public class BossPatrol : MonoBehaviour
         anim.SetBool("moving", false);
     }
 
-   
 
 
-private void DirectionChange()
+
+    private void DirectionChange()
     {
         anim.SetBool("moving", false);
         idleTimer += Time.deltaTime;
@@ -75,20 +76,20 @@ private void DirectionChange()
         if (idleTimer > idleDuration)
         {
             movingLeft = !movingLeft;
-            idleTimer = 0;  // Đặt lại idleTimer khi đổi hướng
-           
+            idleTimer = 0;  
+
         }
     }
 
     private void MoveinDirection(int _direction)
     {
-        if (isPaused) return; // Nếu bị pause, không di chuyển
+        if (isPaused) return;
 
         idleTimer = 0;
         anim.SetBool("moving", true);
 
-        enemy.localScale = new Vector2(initScale.x * _direction, initScale.y);
-        enemy.position = new Vector2(enemy.position.x + Time.deltaTime * _direction * speed,
-            enemy.position.y);
+        boss.localScale = new Vector2(initScale.x * _direction, initScale.y);
+        boss.position = new Vector2(boss.position.x + Time.deltaTime * _direction * speed,
+            boss.position.y);
     }
 }

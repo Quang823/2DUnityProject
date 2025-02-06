@@ -26,12 +26,21 @@ public class ProjecTile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // Kiểm tra EnemyHealth
         EnemyHealth enemyHealth = collision.GetComponent<EnemyHealth>();
         if (enemyHealth != null)
         {
             enemyHealth.TakeDamage(farAttackDamage);
         }
+
+        // Kiểm tra BossHealth
+        BossHealth bossHealth = collision.GetComponent<BossHealth>();
+        if (bossHealth != null)
+        {
+            bossHealth.TakeDamage(farAttackDamage);
+        }
     }
+
 
     public void SetDirection(float _direction)
     {

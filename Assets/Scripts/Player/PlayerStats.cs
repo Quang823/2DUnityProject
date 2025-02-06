@@ -23,12 +23,11 @@ public class PlayerStats : MonoBehaviour
     public Animator animator;
     private bool isInvincible = false;
     private bool isHurting = false;
-    //[SerializeField] private Transform respawnPoint;
 
     [Header("Movement")]
     public float moveSpeed = 5f;
     private float horizontalMove;
-
+    private PlayerAttack playerAttack;
     public float GetCurrentHealth()
     {
         return currentHealth;
@@ -42,7 +41,10 @@ public class PlayerStats : MonoBehaviour
         UpdateHealthUI();
         UpdateManaUI();
     }
-
+    private void Awake()
+    {
+        playerAttack = GetComponent<PlayerAttack>();
+    }
     private void Attack()
     {
         if (animator != null && !isHurting)
@@ -69,7 +71,7 @@ public class PlayerStats : MonoBehaviour
 
     public void TakeDamage(float damage = 10)
     {
-        if (isInvincible) return;
+        if (playerAttack.isBlocking || isInvincible) return;
 
         currentHealth = Mathf.Clamp(currentHealth - damage, 0, maxHealth);
         UpdateHealthUI();
@@ -84,7 +86,7 @@ public class PlayerStats : MonoBehaviour
     }
 
 
-    public void UseSkill(float manaCost = 10)
+public void UseSkill(float manaCost = 10)
     {
         if (CanUseSkill(manaCost))
         {

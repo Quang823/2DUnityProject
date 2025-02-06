@@ -3,16 +3,16 @@
 public class FollowPlayer : MonoBehaviour
 {
     public Transform player;
-    public Vector3 offset;  
+    public Vector3 offset;
 
-    public Vector2 minBounds; 
-    public Vector2 maxBounds; 
+    public Vector2 minBounds;
+    public Vector2 maxBounds;
 
     private Camera cam;
 
     void Start()
     {
-        cam = Camera.main; 
+        cam = Camera.main;
     }
 
     void LateUpdate()
@@ -26,7 +26,7 @@ public class FollowPlayer : MonoBehaviour
         float clampedX = Mathf.Clamp(desiredPosition.x, minBounds.x + halfWidth, maxBounds.x - halfWidth);
         float clampedY = Mathf.Clamp(desiredPosition.y, minBounds.y + halfHeight, maxBounds.y - halfHeight);
 
- 
+
         transform.position = new Vector3(clampedX, clampedY, desiredPosition.z);
     }
 }
