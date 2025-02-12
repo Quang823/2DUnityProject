@@ -121,7 +121,7 @@ TextureImporter:
         width: 4866
         height: 3000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -134,11 +134,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: xmas game tileset_1
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 2729
+        width: 304
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfa985e8bc53a4041811748057e6fc7d
+      internalID: -2145858585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b012d27c032f656488a881a39b1b40ad
     internalID: 0
     vertices: []
     indices: 
@@ -149,6 +171,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       xmas game tileset_0: 779419162970601311
+      xmas game tileset_1: -2145858585
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

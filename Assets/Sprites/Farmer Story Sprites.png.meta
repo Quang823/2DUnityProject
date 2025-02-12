@@ -810,7 +810,7 @@ TextureImporter:
         width: 48
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -832,7 +832,7 @@ TextureImporter:
         width: 16
         height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -841,6 +841,50 @@ TextureImporter:
       bones: []
       spriteID: 935c643d75fb7664ca3e99a06fe23ddf
       internalID: -2951101196120621853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Farmer Story Sprites_2
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 480
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1de53dcb910d45d489263fd44c7a4fcb
+      internalID: 974756728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Farmer Story Sprites_3
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 481
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a2696547a250bb43b990c77269975bb
+      internalID: -647158571
       vertices: []
       indices: 
       edges: []
@@ -861,6 +905,8 @@ TextureImporter:
     nameFileIdTable:
       Farmer Story Sprites_0: 60542387322119624
       Farmer Story Sprites_1: -2951101196120621853
+      Farmer Story Sprites_2: 974756728
+      Farmer Story Sprites_3: -647158571
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
