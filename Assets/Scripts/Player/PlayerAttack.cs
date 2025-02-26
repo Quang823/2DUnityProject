@@ -73,6 +73,17 @@ public class PlayerAttack : MonoBehaviour
 
         cooldownTimer = 0; // Chỉ reset cooldown khi thực sự gây sát thương
     }
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Boss")) // Nếu Player đánh trúng Boss
+        {
+            BossAimShoot boss = collision.GetComponent<BossAimShoot>();
+            if (boss != null)
+            {
+                boss.TakeDamage(10); // Boss mất 10 máu
+            }
+        }
+    }
 
 
     private void FireAttack()

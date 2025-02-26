@@ -3,6 +3,8 @@ using UnityEngine;
 public class PlayerAttack2 : MonoBehaviour
 {
     [SerializeField] private float attackCooldown;
+    [SerializeField] private Transform firePoint;
+    [SerializeField] private GameObject[] fireballs;
     private Animator anim;
     private PlayerMovement123 playerMovement;
     private float cooldownTimer = Mathf.Infinity;
@@ -25,7 +27,10 @@ public class PlayerAttack2 : MonoBehaviour
     private void Attack()
     {
         anim.SetTrigger("attack");
-        cooldownTimer = 0; 
+        cooldownTimer = 0;
+
+        fireballs[0].transform.position = firePoint.position;
+        fireballs[0].GetComponent<ProjecTile>().SetDirection(Mathf.Sign(transform.localScale.x));
 
     }
 
