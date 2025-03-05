@@ -1,0 +1,914 @@
+fileFormatVersion: 2
+guid: cde461cd47e009949955698d2f90a81a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 60542387322119624
+    second: Farmer Story Sprites_0
+  - first:
+      213: -2951101196120621853
+    second: Farmer Story Sprites_1
+  - first:
+      213: -8402417506469851022
+    second: Farmer Story Sprites_2
+  - first:
+      213: -8614955463815231068
+    second: Farmer Story Sprites_3
+  - first:
+      213: 2981618892293518247
+    second: Farmer Story Sprites_4
+  - first:
+      213: -8386859002652419547
+    second: Farmer Story Sprites_5
+  - first:
+      213: 3203616774291005928
+    second: Farmer Story Sprites_6
+  - first:
+      213: -3025169120397059710
+    second: Farmer Story Sprites_7
+  - first:
+      213: -8181028704116370612
+    second: Farmer Story Sprites_8
+  - first:
+      213: -38850552054116381
+    second: Farmer Story Sprites_9
+  - first:
+      213: 7123013428248206872
+    second: Farmer Story Sprites_10
+  - first:
+      213: 5220115057650910907
+    second: Farmer Story Sprites_11
+  - first:
+      213: 378407734491508411
+    second: Farmer Story Sprites_12
+  - first:
+      213: -882291625351096622
+    second: Farmer Story Sprites_13
+  - first:
+      213: 2697643210464945111
+    second: Farmer Story Sprites_14
+  - first:
+      213: 3377833600948528264
+    second: Farmer Story Sprites_15
+  - first:
+      213: -9207254939489769217
+    second: Farmer Story Sprites_16
+  - first:
+      213: -439822778859145850
+    second: Farmer Story Sprites_17
+  - first:
+      213: 6544268769632033364
+    second: Farmer Story Sprites_18
+  - first:
+      213: 190218688354053542
+    second: Farmer Story Sprites_19
+  - first:
+      213: 642314828976602124
+    second: Farmer Story Sprites_20
+  - first:
+      213: -8876773171219304369
+    second: Farmer Story Sprites_21
+  - first:
+      213: -4879394225855862310
+    second: Farmer Story Sprites_22
+  - first:
+      213: 5714480510764729969
+    second: Farmer Story Sprites_23
+  - first:
+      213: 6055612970883014104
+    second: Farmer Story Sprites_24
+  - first:
+      213: 425940699457593504
+    second: Farmer Story Sprites_25
+  - first:
+      213: 827828304751380553
+    second: Farmer Story Sprites_26
+  - first:
+      213: 208794674238991624
+    second: Farmer Story Sprites_27
+  - first:
+      213: 5665604566528718685
+    second: Farmer Story Sprites_28
+  - first:
+      213: -6661196667936990933
+    second: Farmer Story Sprites_29
+  - first:
+      213: -1064977475809883516
+    second: Farmer Story Sprites_30
+  - first:
+      213: -7759205120914856348
+    second: Farmer Story Sprites_31
+  - first:
+      213: 1771934338522633082
+    second: Farmer Story Sprites_32
+  - first:
+      213: 1567215456285237020
+    second: Farmer Story Sprites_33
+  - first:
+      213: 4215892155203610801
+    second: Farmer Story Sprites_34
+  - first:
+      213: 6601928490449960434
+    second: Farmer Story Sprites_35
+  - first:
+      213: -3865169039613149070
+    second: Farmer Story Sprites_36
+  - first:
+      213: -5308216414186033812
+    second: Farmer Story Sprites_37
+  - first:
+      213: -4196314795747232616
+    second: Farmer Story Sprites_38
+  - first:
+      213: 7269072296473389641
+    second: Farmer Story Sprites_39
+  - first:
+      213: 8376980994527712288
+    second: Farmer Story Sprites_40
+  - first:
+      213: 3255207953250904788
+    second: Farmer Story Sprites_41
+  - first:
+      213: -6348264132072607139
+    second: Farmer Story Sprites_42
+  - first:
+      213: 1257888780427960464
+    second: Farmer Story Sprites_43
+  - first:
+      213: -281472992444308583
+    second: Farmer Story Sprites_44
+  - first:
+      213: 7853912609445343759
+    second: Farmer Story Sprites_45
+  - first:
+      213: -2592192945485350067
+    second: Farmer Story Sprites_46
+  - first:
+      213: 1202822159357989465
+    second: Farmer Story Sprites_47
+  - first:
+      213: -4584083498816901601
+    second: Farmer Story Sprites_48
+  - first:
+      213: -1479419535665632362
+    second: Farmer Story Sprites_49
+  - first:
+      213: 9055974594867228850
+    second: Farmer Story Sprites_50
+  - first:
+      213: -173374113663276168
+    second: Farmer Story Sprites_51
+  - first:
+      213: 1046445300090672773
+    second: Farmer Story Sprites_52
+  - first:
+      213: -2456592456559478632
+    second: Farmer Story Sprites_53
+  - first:
+      213: -1901284111289218921
+    second: Farmer Story Sprites_54
+  - first:
+      213: -7101508025013735124
+    second: Farmer Story Sprites_55
+  - first:
+      213: -5674925343385512719
+    second: Farmer Story Sprites_56
+  - first:
+      213: 6076177903338268602
+    second: Farmer Story Sprites_57
+  - first:
+      213: -2302128074624609026
+    second: Farmer Story Sprites_58
+  - first:
+      213: -4717222688515727034
+    second: Farmer Story Sprites_59
+  - first:
+      213: 8087162112812067253
+    second: Farmer Story Sprites_60
+  - first:
+      213: 7526659300523426952
+    second: Farmer Story Sprites_61
+  - first:
+      213: -3649709624598753134
+    second: Farmer Story Sprites_62
+  - first:
+      213: -7053553920058382303
+    second: Farmer Story Sprites_63
+  - first:
+      213: -5006843290342839107
+    second: Farmer Story Sprites_64
+  - first:
+      213: -277953163937818522
+    second: Farmer Story Sprites_65
+  - first:
+      213: -352667685025769522
+    second: Farmer Story Sprites_66
+  - first:
+      213: 2706810870466690110
+    second: Farmer Story Sprites_67
+  - first:
+      213: 6640698089404698849
+    second: Farmer Story Sprites_68
+  - first:
+      213: 6337990870920866681
+    second: Farmer Story Sprites_69
+  - first:
+      213: -653218338746868764
+    second: Farmer Story Sprites_70
+  - first:
+      213: 4751014577366014536
+    second: Farmer Story Sprites_71
+  - first:
+      213: 7975389045860259605
+    second: Farmer Story Sprites_72
+  - first:
+      213: -6967178262748598156
+    second: Farmer Story Sprites_73
+  - first:
+      213: 5406615913966332162
+    second: Farmer Story Sprites_74
+  - first:
+      213: 3336819577974939588
+    second: Farmer Story Sprites_75
+  - first:
+      213: -8134033386017572170
+    second: Farmer Story Sprites_76
+  - first:
+      213: -7998832145057408359
+    second: Farmer Story Sprites_77
+  - first:
+      213: 4364041195862174424
+    second: Farmer Story Sprites_78
+  - first:
+      213: 5333514636672211255
+    second: Farmer Story Sprites_79
+  - first:
+      213: -197010934359175202
+    second: Farmer Story Sprites_80
+  - first:
+      213: 6234742459195588986
+    second: Farmer Story Sprites_81
+  - first:
+      213: 5848093476361346843
+    second: Farmer Story Sprites_82
+  - first:
+      213: 526499321174372690
+    second: Farmer Story Sprites_83
+  - first:
+      213: -5511831520852376941
+    second: Farmer Story Sprites_84
+  - first:
+      213: 4043158191640330117
+    second: Farmer Story Sprites_85
+  - first:
+      213: 3055170940647356412
+    second: Farmer Story Sprites_86
+  - first:
+      213: 9095094357040076017
+    second: Farmer Story Sprites_87
+  - first:
+      213: -3834374788410724032
+    second: Farmer Story Sprites_88
+  - first:
+      213: -7228167453463596800
+    second: Farmer Story Sprites_89
+  - first:
+      213: -5978831006875263512
+    second: Farmer Story Sprites_90
+  - first:
+      213: 2203826210312585910
+    second: Farmer Story Sprites_91
+  - first:
+      213: 1677172098880180427
+    second: Farmer Story Sprites_92
+  - first:
+      213: 2698444150871094151
+    second: Farmer Story Sprites_93
+  - first:
+      213: 6871955988826735441
+    second: Farmer Story Sprites_94
+  - first:
+      213: 5926507585317385163
+    second: Farmer Story Sprites_95
+  - first:
+      213: -9066930982997570036
+    second: Farmer Story Sprites_96
+  - first:
+      213: -2747717256905340992
+    second: Farmer Story Sprites_97
+  - first:
+      213: -681961605547715443
+    second: Farmer Story Sprites_98
+  - first:
+      213: 974164353421791342
+    second: Farmer Story Sprites_99
+  - first:
+      213: 3772238872826492677
+    second: Farmer Story Sprites_100
+  - first:
+      213: -8026105563637265226
+    second: Farmer Story Sprites_101
+  - first:
+      213: -2194312349072344003
+    second: Farmer Story Sprites_102
+  - first:
+      213: -754401635263389288
+    second: Farmer Story Sprites_103
+  - first:
+      213: 6232620692767986584
+    second: Farmer Story Sprites_104
+  - first:
+      213: -3196108911718245766
+    second: Farmer Story Sprites_105
+  - first:
+      213: -7923161537936155666
+    second: Farmer Story Sprites_106
+  - first:
+      213: -4272624667299250810
+    second: Farmer Story Sprites_107
+  - first:
+      213: 3587376632442094622
+    second: Farmer Story Sprites_108
+  - first:
+      213: -1606901290058876962
+    second: Farmer Story Sprites_109
+  - first:
+      213: -6083740116051104453
+    second: Farmer Story Sprites_110
+  - first:
+      213: 235872718981581133
+    second: Farmer Story Sprites_111
+  - first:
+      213: -2424909911261237130
+    second: Farmer Story Sprites_112
+  - first:
+      213: 2683855811676403767
+    second: Farmer Story Sprites_113
+  - first:
+      213: -7590738908397557498
+    second: Farmer Story Sprites_114
+  - first:
+      213: -3802168234367108767
+    second: Farmer Story Sprites_115
+  - first:
+      213: -2596484356421571891
+    second: Farmer Story Sprites_116
+  - first:
+      213: 4393767752949741570
+    second: Farmer Story Sprites_117
+  - first:
+      213: 3673644648037135482
+    second: Farmer Story Sprites_118
+  - first:
+      213: -1116385206538469998
+    second: Farmer Story Sprites_119
+  - first:
+      213: 7873034049983634354
+    second: Farmer Story Sprites_120
+  - first:
+      213: -8369419036196553104
+    second: Farmer Story Sprites_121
+  - first:
+      213: -4301346372372978244
+    second: Farmer Story Sprites_122
+  - first:
+      213: 855516103815954633
+    second: Farmer Story Sprites_123
+  - first:
+      213: -761506509706386103
+    second: Farmer Story Sprites_124
+  - first:
+      213: 466897862999520047
+    second: Farmer Story Sprites_125
+  - first:
+      213: -3112697270424806806
+    second: Farmer Story Sprites_126
+  - first:
+      213: -677609970525070237
+    second: Farmer Story Sprites_127
+  - first:
+      213: -1990088905691531746
+    second: Farmer Story Sprites_128
+  - first:
+      213: 2786522933449706756
+    second: Farmer Story Sprites_129
+  - first:
+      213: -569469205175082296
+    second: Farmer Story Sprites_130
+  - first:
+      213: 3070622710373179005
+    second: Farmer Story Sprites_131
+  - first:
+      213: 1581893353409532625
+    second: Farmer Story Sprites_132
+  - first:
+      213: -5081198108723731137
+    second: Farmer Story Sprites_133
+  - first:
+      213: 1504439961265309803
+    second: Farmer Story Sprites_134
+  - first:
+      213: -6239404813749023081
+    second: Farmer Story Sprites_135
+  - first:
+      213: 7897905890574751239
+    second: Farmer Story Sprites_136
+  - first:
+      213: 2300365162588613440
+    second: Farmer Story Sprites_137
+  - first:
+      213: 2029456746954150442
+    second: Farmer Story Sprites_138
+  - first:
+      213: -5921034381728726871
+    second: Farmer Story Sprites_139
+  - first:
+      213: -6475863539677080325
+    second: Farmer Story Sprites_140
+  - first:
+      213: -5175128804119545549
+    second: Farmer Story Sprites_141
+  - first:
+      213: 3939292383051611774
+    second: Farmer Story Sprites_142
+  - first:
+      213: -7041656902545909336
+    second: Farmer Story Sprites_143
+  - first:
+      213: -7798759218434070766
+    second: Farmer Story Sprites_144
+  - first:
+      213: 8970960194213498959
+    second: Farmer Story Sprites_145
+  - first:
+      213: -5645288701378397544
+    second: Farmer Story Sprites_146
+  - first:
+      213: 2108303359576744596
+    second: Farmer Story Sprites_147
+  - first:
+      213: -1015413760997816291
+    second: Farmer Story Sprites_148
+  - first:
+      213: 2752808770606323715
+    second: Farmer Story Sprites_149
+  - first:
+      213: -1668474558544412368
+    second: Farmer Story Sprites_150
+  - first:
+      213: 5132170805870793372
+    second: Farmer Story Sprites_151
+  - first:
+      213: 5922272372014247208
+    second: Farmer Story Sprites_152
+  - first:
+      213: 5314833963579147807
+    second: Farmer Story Sprites_153
+  - first:
+      213: -5617450923321817888
+    second: Farmer Story Sprites_154
+  - first:
+      213: 9098941202083377420
+    second: Farmer Story Sprites_155
+  - first:
+      213: 2797444674202115599
+    second: Farmer Story Sprites_156
+  - first:
+      213: 6758502489077388504
+    second: Farmer Story Sprites_157
+  - first:
+      213: -4268363395505047167
+    second: Farmer Story Sprites_158
+  - first:
+      213: 4093036754321899121
+    second: Farmer Story Sprites_159
+  - first:
+      213: -8707578408879264348
+    second: Farmer Story Sprites_160
+  - first:
+      213: 4023996396193692801
+    second: Farmer Story Sprites_161
+  - first:
+      213: 8010018831618967343
+    second: Farmer Story Sprites_162
+  - first:
+      213: 9189771589834057437
+    second: Farmer Story Sprites_163
+  - first:
+      213: 2601578599495554858
+    second: Farmer Story Sprites_164
+  - first:
+      213: 696951496919381100
+    second: Farmer Story Sprites_165
+  - first:
+      213: 6086474727558107493
+    second: Farmer Story Sprites_166
+  - first:
+      213: -1603120486831769300
+    second: Farmer Story Sprites_167
+  - first:
+      213: 2261801486539545410
+    second: Farmer Story Sprites_168
+  - first:
+      213: 1013503473942451072
+    second: Farmer Story Sprites_169
+  - first:
+      213: -3246595979340513849
+    second: Farmer Story Sprites_170
+  - first:
+      213: 3746463739974741347
+    second: Farmer Story Sprites_171
+  - first:
+      213: -2055301990473385764
+    second: Farmer Story Sprites_172
+  - first:
+      213: -8711640729840928467
+    second: Farmer Story Sprites_173
+  - first:
+      213: 8764743274167296830
+    second: Farmer Story Sprites_174
+  - first:
+      213: 881090234390023218
+    second: Farmer Story Sprites_175
+  - first:
+      213: -4415755962469246798
+    second: Farmer Story Sprites_176
+  - first:
+      213: -3435300093845940891
+    second: Farmer Story Sprites_177
+  - first:
+      213: -6393673806651136053
+    second: Farmer Story Sprites_178
+  - first:
+      213: 5164052156363123355
+    second: Farmer Story Sprites_179
+  - first:
+      213: 5659262033886042714
+    second: Farmer Story Sprites_180
+  - first:
+      213: -2302195802567069893
+    second: Farmer Story Sprites_181
+  - first:
+      213: 3099197563910162218
+    second: Farmer Story Sprites_182
+  - first:
+      213: -6682245999590582861
+    second: Farmer Story Sprites_183
+  - first:
+      213: 7671537963912410800
+    second: Farmer Story Sprites_184
+  - first:
+      213: -6796983930442828265
+    second: Farmer Story Sprites_185
+  - first:
+      213: -1849701033980033044
+    second: Farmer Story Sprites_186
+  - first:
+      213: 8732715100880786482
+    second: Farmer Story Sprites_187
+  - first:
+      213: 1200590530322034348
+    second: Farmer Story Sprites_188
+  - first:
+      213: -3138832293883224202
+    second: Farmer Story Sprites_189
+  - first:
+      213: -7987208447970027454
+    second: Farmer Story Sprites_190
+  - first:
+      213: -6483548757668525651
+    second: Farmer Story Sprites_191
+  - first:
+      213: -6837729219022537290
+    second: Farmer Story Sprites_192
+  - first:
+      213: 2348229125971769981
+    second: Farmer Story Sprites_193
+  - first:
+      213: 1239559201070822114
+    second: Farmer Story Sprites_194
+  - first:
+      213: -4054106579381255931
+    second: Farmer Story Sprites_195
+  - first:
+      213: 455779755783126047
+    second: Farmer Story Sprites_196
+  - first:
+      213: -309953655159867635
+    second: Farmer Story Sprites_197
+  - first:
+      213: -2929957752939979416
+    second: Farmer Story Sprites_198
+  - first:
+      213: -4333796816887126372
+    second: Farmer Story Sprites_199
+  - first:
+      213: 5398852929239801801
+    second: Farmer Story Sprites_200
+  - first:
+      213: 9095459768072391866
+    second: Farmer Story Sprites_201
+  - first:
+      213: -615204254877729062
+    second: Farmer Story Sprites_202
+  - first:
+      213: 4713142328704304366
+    second: Farmer Story Sprites_203
+  - first:
+      213: 1775603934852433488
+    second: Farmer Story Sprites_204
+  - first:
+      213: -3597110176442902057
+    second: Farmer Story Sprites_205
+  - first:
+      213: -6465716041619458767
+    second: Farmer Story Sprites_206
+  - first:
+      213: 1473587384107621604
+    second: Farmer Story Sprites_207
+  - first:
+      213: 4038455338581941038
+    second: Farmer Story Sprites_208
+  - first:
+      213: -5737820646280869382
+    second: Farmer Story Sprites_209
+  - first:
+      213: 5017604957752556142
+    second: Farmer Story Sprites_210
+  - first:
+      213: 8348447613068648956
+    second: Farmer Story Sprites_211
+  - first:
+      213: -5798563413211114805
+    second: Farmer Story Sprites_212
+  - first:
+      213: 7647155471156664589
+    second: Farmer Story Sprites_213
+  - first:
+      213: 8784373735181099032
+    second: Farmer Story Sprites_214
+  - first:
+      213: -2605485453821669620
+    second: Farmer Story Sprites_215
+  - first:
+      213: -3056166109154354573
+    second: Farmer Story Sprites_216
+  - first:
+      213: 6948998425161114963
+    second: Farmer Story Sprites_217
+  - first:
+      213: 1064768523111987519
+    second: Farmer Story Sprites_218
+  - first:
+      213: -233923083060407052
+    second: Farmer Story Sprites_219
+  - first:
+      213: 8639681801766049319
+    second: Farmer Story Sprites_220
+  - first:
+      213: 4604841321168700237
+    second: Farmer Story Sprites_221
+  - first:
+      213: -1229709869478614957
+    second: Farmer Story Sprites_222
+  - first:
+      213: 8531584648615918865
+    second: Farmer Story Sprites_223
+  - first:
+      213: 6429199569503476149
+    second: Farmer Story Sprites_224
+  - first:
+      213: 948875253691876007
+    second: Farmer Story Sprites_225
+  - first:
+      213: -8426016658157278258
+    second: Farmer Story Sprites_226
+  - first:
+      213: -1229113178157825173
+    second: Farmer Story Sprites_227
+  - first:
+      213: -5075645128549504126
+    second: Farmer Story Sprites_228
+  - first:
+      213: -1807145174357741899
+    second: Farmer Story Sprites_229
+  - first:
+      213: -5123976420129181271
+    second: Farmer Story Sprites_230
+  - first:
+      213: 6131053447171249325
+    second: Farmer Story Sprites_231
+  - first:
+      213: 2728998529737293433
+    second: Farmer Story Sprites_232
+  - first:
+      213: 1444259064017205744
+    second: Farmer Story Sprites_233
+  - first:
+      213: -3743742242432947445
+    second: Farmer Story Sprites_234
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 30
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Farmer Story Sprites_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c560320bf617d000800000000000000
+      internalID: 60542387322119624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Farmer Story Sprites_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 287
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 935c643d75fb7664ca3e99a06fe23ddf
+      internalID: -2951101196120621853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Farmer Story Sprites_2
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 480
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1de53dcb910d45d489263fd44c7a4fcb
+      internalID: 974756728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Farmer Story Sprites_3
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 481
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a2696547a250bb43b990c77269975bb
+      internalID: -647158571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ab881cbefe1761d4ab50ce5c3dc260de
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Farmer Story Sprites_0: 60542387322119624
+      Farmer Story Sprites_1: -2951101196120621853
+      Farmer Story Sprites_2: 974756728
+      Farmer Story Sprites_3: -647158571
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
