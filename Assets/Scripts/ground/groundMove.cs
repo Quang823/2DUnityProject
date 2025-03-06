@@ -11,13 +11,13 @@ public class GroundMove : MonoBehaviour
 
     void Update()
     {
-        // Di chuy?n ??i t??ng
+        
         transform.position += Vector3.right * direction * speed * Time.deltaTime;
 
-        // ??i h??ng khi ch?m ranh gi?i
+        
         if (transform.position.x >= rightBoundary || transform.position.x <= leftBoundary)
         {
-            direction *= -1; // ??o chi?u
+            direction *= -1; 
         }
     }
 }

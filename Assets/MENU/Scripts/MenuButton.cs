@@ -14,20 +14,43 @@ public class MenuButton : MonoBehaviour
 
     private bool isSelectingMap = false; // Kiểm soát trạng thái chọn map
 
+    //void Update()
+    //{
+    //    if (menuButtonController.index == thisIndex)
+    //    {
+    //        animator.SetBool("selected", true);
+    //        if (Input.GetAxis("Submit") == 1)
+    //        {
+    //            animator.SetBool("pressed", true);
+    //            HandleButtonClick();
+    //        }
+    //        else if (animator.GetBool("pressed"))
+    //        {
+    //            animator.SetBool("pressed", false);
+    //            animatorFunctions.disableOnce = true;
+    //        }
+    //    }
+    //    else
+    //    {
+    //        animator.SetBool("selected", false);
+    //    }
+    //}
     void Update()
     {
-        if (menuButtonController.index == thisIndex)
+        if (menuButtonController.currentState == MenuState.MainMenu && menuButtonController.index == thisIndex)
         {
             animator.SetBool("selected", true);
-            if (Input.GetAxis("Submit") == 1)
+            if (Input.GetButtonDown("Submit"))
             {
                 animator.SetBool("pressed", true);
                 HandleButtonClick();
             }
-            else if (animator.GetBool("pressed"))
+        }
+        else if (menuButtonController.currentState == MenuState.MapSelection && gameObject.name.StartsWith("Map"))
+        {
+            if (menuButtonController.index == thisIndex && Input.GetButtonDown("Submit"))
             {
-                animator.SetBool("pressed", false);
-                animatorFunctions.disableOnce = true;
+                LoadLevel(gameObject.name);
             }
         }
         else
@@ -35,6 +58,7 @@ public class MenuButton : MonoBehaviour
             animator.SetBool("selected", false);
         }
     }
+
 
     private void HandleButtonClick()
     {
@@ -59,11 +83,39 @@ public class MenuButton : MonoBehaviour
         }
     }
 
+    //private void ShowMapSelection()
+    //{
+    //    if (mapSelectionPanel != null && mainMenuPanel != null)
+    //    {
+    //        mainMenuPanel.SetActive(false);
+    //        mapSelectionPanel.SetActive(true);
+    //        menuButtonController.ChangeState(MenuState.MapSelection);
+    //    }
+    //}
+
+
+    //private void LoadLevel(string mapButtonName)
+    //{
+    //    string levelId = mapButtonName.Replace("Round", ""); // Lấy số từ tên button (Map5 -> 5)
+
+    //    string levelName = "Round" + levelId; // Tạo tên scene (Round5)
+    //    SceneManager.LoadScene(levelName);
+    //}
     private void LoadLevel(string mapButtonName)
     {
-        string levelId = mapButtonName.Replace("Round", ""); // Lấy số từ tên button (Map5 -> 5)
-      
+        string levelId = mapButtonName.Replace("Round", "").Trim(); // Lấy số từ tên button
         string levelName = "Round" + levelId; // Tạo tên scene (Round5)
-        SceneManager.LoadScene(levelName);
+
+        Debug.Log("Đang load scene: " + levelName);
+
+        if (Application.CanStreamedLevelBeLoaded(levelName))
+        {
+            SceneManager.LoadScene(levelName);
+        }
+        else
+        {
+            Debug.LogError("Scene " + levelName + " không tồn tại! Kiểm tra Build Settings.");
+        }
     }
+
 }
