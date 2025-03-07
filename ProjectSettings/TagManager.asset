@@ -12,6 +12,7 @@ TagManager:
   - Boss
   - Portal
   - BossGround
+  - HealthBar
   layers:
   - Default
   - TransparentFX
