@@ -10,5 +10,13 @@ public class Portal : MonoBehaviour
         {
             SceneTransition.instance.StartTransition(bossRoomSpawnPoint.position, other.transform);
         }
+
+        AudioSource portalAudio = GetComponent<AudioSource>();
+        if (portalAudio != null)
+        {
+            portalAudio.Stop();
+        }
+
+        Destroy(gameObject, 1f);
     }
 }

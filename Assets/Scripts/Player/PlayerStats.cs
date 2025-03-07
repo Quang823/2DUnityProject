@@ -203,6 +203,16 @@ public void UseSkill(float manaCost = 10)
         StartCoroutine(FallToCheckpoint(checkpointPosition));
     }
 
+    public void Heal(float healAmount)
+    {
+        currentHealth = Mathf.Clamp(currentHealth + healAmount, 0, maxHealth);
+        UpdateHealthUI();
+    }
+    public void RestoreMana(float manaAmount)
+    {
+        currentMana = Mathf.Clamp(currentMana + manaAmount, 0, maxMana);
+        UpdateManaUI();
+    }
 
     private IEnumerator FallToCheckpoint(Vector2 checkpointPosition)
     {
@@ -212,7 +222,6 @@ public void UseSkill(float manaCost = 10)
         float blinkDuration = 1f;
         float blinkInterval = 0.1f;
 
-        // Nhấp nháy trong khi rơi
         StartCoroutine(BlinkEffect(blinkDuration, blinkInterval));
 
         while (transform.position.y > checkpointPosition.y)
@@ -231,10 +240,10 @@ public void UseSkill(float manaCost = 10)
         float timer = 0f;
         while (timer < duration)
         {
-            spriteRenderer.enabled = !spriteRenderer.enabled; // Ẩn/hiện nhân vật
+            spriteRenderer.enabled = !spriteRenderer.enabled; 
             yield return new WaitForSeconds(interval);
             timer += interval;
         }
-        spriteRenderer.enabled = true; // Đảm bảo nhân vật hiện lại bình thường
+        spriteRenderer.enabled = true; 
     }
 }

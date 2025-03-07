@@ -12,6 +12,10 @@ TagManager:
   - Boss
   - Portal
   - BossGround
+  - Audio
+  - Parallax
+  - GemSlot
+  - MovingPlatform
   layers:
   - Default
   - TransparentFX
@@ -27,9 +31,9 @@ TagManager:
   - Ladder
   - MiniMapLight
   - EnemyProjectile
-  - 
-  - 
-  - 
+  - Checkpoint
+  - Lamp
+  - Item
   - 
   - 
   - 
@@ -93,6 +97,9 @@ TagManager:
     locked: 0
   - name: SpacePotral
     uniqueID: 3039406545
+    locked: 0
+  - name: Gem
+    uniqueID: 3405453087
     locked: 0
   m_RenderingLayers:
   - Default

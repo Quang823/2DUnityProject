@@ -1,6 +1,8 @@
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class BossHealth : MonoBehaviour
 {
@@ -15,11 +17,22 @@ public class BossHealth : MonoBehaviour
     [Header("Animation & Effects")]
     [SerializeField] private Animator animator;
     [SerializeField] private BossPatrol bossPatrol;
+
+    [Header("Rewards")]
+    public GameObject[] gems; // 5 viên ngọc
+    public Transform dropPoint; // Vị trí rơi ngọc
+    public CanvasGroup fadeScreen; // Hiệu ứng màn hình đen
+    public string menuSceneName = "MainMenu"; // Tên scene menu
+
+    private bool isDead = false;
+    private bool gemCollected = false; // Kiểm tra xem viên ngọc đã được nhặt chưa
+
     private void Start()
     {
         currentHealth = maxHealth;
         UpdateHealthUI();
     }
+
     public void TakeDamage(float damage)
     {
         currentHealth = Mathf.Clamp(currentHealth - damage, 0, maxHealth);
@@ -40,6 +53,7 @@ public class BossHealth : MonoBehaviour
             Die();
         }
     }
+
     private void UpdateHealthUI()
     {
         if (healthBar != null)
@@ -53,12 +67,9 @@ public class BossHealth : MonoBehaviour
         }
     }
 
-    private bool isDead = false;
-
     private void Die()
     {
         if (isDead) return;
-
         isDead = true;
 
         if (animator != null)
@@ -67,34 +78,80 @@ public class BossHealth : MonoBehaviour
         }
 
         healthBar.transform.parent.gameObject.SetActive(false);
-        StartCoroutine(HideAndDestroy());
+
+        StartCoroutine(HandleBossDeath());
     }
 
-    private System.Collections.IEnumerator HideAndDestroy()
+    private IEnumerator HandleBossDeath()
     {
-        float animationLength = 1f;
-        if (animator != null)
+        yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
+
+        healthBar.transform.parent.gameObject.SetActive(false);
+        GetComponent<Collider2D>().enabled = false;
+
+        if (gems.Length > 0)
         {
-            AnimationClip[] clips = animator.runtimeAnimatorController.animationClips;
-            foreach (var clip in clips)
+            int randomIndex = Random.Range(0, gems.Length);
+            Vector3 bossPosition = transform.position;
+            GameObject droppedGem = Instantiate(gems[randomIndex], bossPosition, Quaternion.identity);
+            droppedGem.GetComponent<GemPickup>().bossHealth = this;
+            droppedGem.SetActive(true);
+
+            Rigidbody2D rb = droppedGem.GetComponent<Rigidbody2D>();
+            if (rb != null)
             {
-                if (clip.name == "dead")
-                {
-                    animationLength = clip.length;
-                    break;
-                }
+                rb.gravityScale = 1f;
+                float randomForceX = Random.Range(-1f, 1f);
+                float randomForceY = Random.Range(3f, 5f);
+                rb.AddForce(new Vector2(randomForceX, randomForceY), ForceMode2D.Impulse);
             }
+
+            yield return new WaitForSeconds(0.5f);
+            AdjustGemPosition(droppedGem);
         }
 
-        yield return new WaitForSeconds(animationLength);
-        if (transform.parent != null)
+        yield return new WaitForSeconds(5f);
+        gameObject.SetActive(false);
+    }
+
+    private void AdjustGemPosition(GameObject gem)
+    {
+        Collider2D ground = Physics2D.OverlapCircle(gem.transform.position, 1f, LayerMask.GetMask("Ground"));
+        if (ground != null)
         {
-            Destroy(transform.parent.gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
+            Vector3 newPos = ground.bounds.center;
+            newPos.y = ground.bounds.max.y + 0.2f; 
+            gem.transform.position = newPos;
+
+            Rigidbody2D rb = gem.GetComponent<Rigidbody2D>();
+            if (rb != null) rb.linearVelocity = Vector2.zero;
         }
     }
 
+    public void OnGemCollected()
+    {
+        gemCollected = true;
+        GameController.instance.StartGlobalCoroutine(FadeAndReturnToMenu());
+
+    }
+
+    private IEnumerator FadeAndReturnToMenu()
+    {
+        if (fadeScreen != null)
+        {
+            float fadeDuration = 1.5f;
+            float elapsedTime = 0f;
+
+            while (elapsedTime < fadeDuration)
+            {
+                fadeScreen.alpha = Mathf.Lerp(0, 1, elapsedTime / fadeDuration);
+                elapsedTime += Time.deltaTime;
+                yield return null;
+            }
+            fadeScreen.alpha = 1;
+        }
+
+        yield return new WaitForSeconds(3f);
+        SceneManager.LoadScene(menuSceneName);
+    }
 }

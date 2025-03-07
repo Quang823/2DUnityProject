@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class EnemyFollow : MonoBehaviour
+public class EnemyFollow1 : MonoBehaviour
 {
     public Transform player;
     public float speed = 3f;

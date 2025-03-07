@@ -2,10 +2,16 @@
 
 public class PlayerAttack : MonoBehaviour
 {
+    [Header("Audio Settings")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip meleeAttackSound;
+    [SerializeField] private AudioClip fireAttackSound;
+
     [Header("General Settings")]
     [SerializeField] private float meleeattackCooldown;
     [SerializeField] private float farattackCooldown;
     private float cooldownTimer = Mathf.Infinity;
+    private float meleecooldownTimer = Mathf.Infinity;
     private int currentAttackIndex = 0;
 
     [Header("Melee Attack Settings")]
@@ -24,7 +30,6 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private float blockDuration = 1.5f;
     [SerializeField] private float blockCooldown = 2f;
     private float lastBlockTime = Mathf.NegativeInfinity;
-    private float lastAttackTime = Mathf.NegativeInfinity;
 
     private Animator anim;
     private PlayerMovement playerMovement;
@@ -49,17 +54,20 @@ public class PlayerAttack : MonoBehaviour
     private void Update()
     {
         cooldownTimer += Time.deltaTime;
+        meleecooldownTimer += Time.deltaTime; 
 
-        if (Input.GetKeyDown(KeyCode.J) && playerMovement.canAttack() && cooldownTimer >= meleeattackCooldown)
+        if (Input.GetKeyDown(KeyCode.J) && playerMovement.canAttack() && meleecooldownTimer >= meleeattackCooldown)
         {
-            cooldownTimer = 0;
+            meleecooldownTimer = 0;
             MeleeAttack();
         }
+
 
         if (Input.GetKeyDown(KeyCode.K) && playerMovement.canAttack() && cooldownTimer >= farattackCooldown)
         {
             if (playerStats.CanUseSkill(manaCost))
             {
+                cooldownTimer = 0; 
                 FireAttack();
                 playerStats.UseSkill(manaCost);
             }
@@ -72,14 +80,19 @@ public class PlayerAttack : MonoBehaviour
     }
 
 
+
     private void MeleeAttack()
     {
-        if (Time.time - lastAttackTime < meleeattackCooldown)
-            return;
-
         anim.SetTrigger("attack");
-        lastAttackTime = Time.time;
+
+  
+        if (meleeAttackSound != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(meleeAttackSound);
+        }
     }
+
+
 
     private void DealMeleeDamage()
     {
@@ -111,6 +124,12 @@ public class PlayerAttack : MonoBehaviour
     {
         anim.SetTrigger("fireattack");
         cooldownTimer = 0;
+
+        // Phát âm thanh đánh xa
+        if (fireAttackSound != null)
+        {
+            audioSource.PlayOneShot(fireAttackSound);
+        }
 
         if (farattack.Length > 0 && farattack[currentAttackIndex] != null)
         {

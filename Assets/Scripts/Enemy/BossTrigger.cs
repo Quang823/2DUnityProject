@@ -5,7 +5,7 @@ public class BossTrigger : MonoBehaviour
 {
     public GameObject dangerEffect;
     public Transform boss;
-    public float dangerDuration = 3f;
+    public float dangerDuration = 2f;
     private bool hasTriggered = false;
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -65,18 +65,12 @@ public class BossTrigger : MonoBehaviour
     private IEnumerator MoveCameraToBoss(Vector3 cameraStartPos)
     {
         Vector3 cameraTargetPos = new Vector3(boss.position.x, boss.position.y, Camera.main.transform.position.z);
-        float timeToMove = 3f;
-        float elapsedTime = 0f;
-
-        while (elapsedTime < timeToMove)
-        {
-            Camera.main.transform.position = Vector3.Lerp(cameraStartPos, cameraTargetPos, (elapsedTime / timeToMove));
-            elapsedTime += Time.deltaTime;
-            yield return null;
-        }
 
         Camera.main.transform.position = cameraTargetPos;
+
+        yield return null; 
     }
+
 
     private IEnumerator MoveCameraBackToPlayer(Vector3 cameraStartPos)
     {

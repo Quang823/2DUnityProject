@@ -25,7 +25,6 @@ public class BossPatrol : MonoBehaviour
     {
         initScale = boss.localScale;
     }
-
     private void OnDisable()
     {
         anim.SetBool("moving", false);
@@ -65,31 +64,40 @@ public class BossPatrol : MonoBehaviour
         anim.SetBool("moving", false);
     }
 
-
-
-
     private void DirectionChange()
     {
         anim.SetBool("moving", false);
         idleTimer += Time.deltaTime;
-
         if (idleTimer > idleDuration)
         {
             movingLeft = !movingLeft;
-            idleTimer = 0;  
-
         }
     }
-
     private void MoveinDirection(int _direction)
     {
-        if (isPaused) return;
-
         idleTimer = 0;
         anim.SetBool("moving", true);
-
-        boss.localScale = new Vector2(initScale.x * _direction, initScale.y);
+        boss.localScale = new Vector2(-initScale.x * _direction, initScale.y);
         boss.position = new Vector2(boss.position.x + Time.deltaTime * _direction * speed,
             boss.position.y);
     }
 }
+
+//private void DirectionChange()
+//    {
+//        anim.SetBool("moving", false);
+//        idleTimer += Time.deltaTime;
+//        if (idleTimer > idleDuration)
+//        {
+//            movingLeft = !movingLeft;
+//        }      
+//    }
+//    private void MoveinDirection(int _direction)
+//    {
+//        idleTimer = 0;
+//        anim.SetBool("moving", true);      
+//        enemy.localScale = new Vector2(Mathf.Abs(initScale.x) * _direction, initScale.y);
+//        enemy.position = new Vector2(enemy.position.x + Time.deltaTime * _direction * speed,
+//            enemy.position.y);
+//    }
+//}

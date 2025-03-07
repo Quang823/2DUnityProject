@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Walk : MonoBehaviour
+public class Walk1 : MonoBehaviour
 {
     [SerializeField] private Transform posA; // Điểm A
     [SerializeField] private Transform posB; // Điểm B

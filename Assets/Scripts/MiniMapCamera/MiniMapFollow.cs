@@ -3,12 +3,12 @@ using UnityEngine.Splines;
 
 public class MiniMapFollow : MonoBehaviour
 {
-    public Transform player; // Nhân vật
-    public Vector3 offset = new Vector3(0, 10, -10); // Điều chỉnh góc nhìn MiniMap
-    public Vector2 minBound; // Giới hạn nhỏ nhất của MiniMap Camera
-    public Vector2 maxBound; // Giới hạn lớn nhất của MiniMap Camera
+    public Transform player; 
+    public Vector3 offset = new Vector3(0, 10, -10); 
+    public Vector2 minBound; 
+    public Vector2 maxBound;
 
-    private float camSize; // Kích thước camera (orthographicSize)
+    private float camSize; 
     private Camera miniMapCam;
 
     void Start()

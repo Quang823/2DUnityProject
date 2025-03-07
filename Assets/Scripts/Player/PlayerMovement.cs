@@ -3,8 +3,15 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [Header("Audio Settings")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip runSound;
+    [SerializeField] private AudioClip jumpSound;
+    [SerializeField] private AudioClip dashSound;
+
     [Header("Movement Settings")]
-    public float speed = 20f;
+    public float speed = 10f;
+    public float acceleration = 15f;
     public float jumpForce = 20f;
     public float climbSpeed = 5f;
 
@@ -36,6 +43,9 @@ public class PlayerMovement : MonoBehaviour
     public GameObject miniMap;
     public GameObject fullMap;
     private bool isFullMapActive = false;
+    private bool isPlayingRunSound = false;
+
+    private float velocityX = 0f;
 
     private void Awake()
     {
@@ -44,6 +54,8 @@ public class PlayerMovement : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         playerStats = GetComponent<PlayerStats>();
         initialScale = transform.localScale;
+
+        body.interpolation = RigidbodyInterpolation2D.Interpolate;
     }
 
     private void Start()
@@ -63,10 +75,9 @@ public class PlayerMovement : MonoBehaviour
         HandleMovement();
     }
 
-
     private void HandleInput()
     {
-        horizontalInput = Input.GetAxis("Horizontal");
+        horizontalInput = Input.GetAxisRaw("Horizontal");
 
         if (Input.GetKeyDown(KeyCode.Space) && grounded)
         {
@@ -95,7 +106,9 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (!isDashing)
         {
-            body.linearVelocity = new Vector2(horizontalInput * speed, body.linearVelocity.y);
+            float targetVelocityX = horizontalInput * speed;
+            float smoothVelocity = Mathf.SmoothDamp(body.linearVelocity.x, targetVelocityX, ref velocityX, 0.1f);
+            body.linearVelocity = new Vector2(smoothVelocity, body.linearVelocity.y);
 
             if (horizontalInput > 0.01f)
             {
@@ -109,6 +122,30 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("run", horizontalInput != 0);
             anim.SetBool("grounded", grounded);
             anim.SetBool("isClimbing", false);
+
+            HandleRunSound();
+        }
+    }
+
+    private void HandleRunSound()
+    {
+        if (horizontalInput != 0 && grounded)
+        {
+            if (!isPlayingRunSound && runSound != null)
+            {
+                audioSource.clip = runSound;
+                audioSource.loop = true;
+                audioSource.Play();
+                isPlayingRunSound = true;
+            }
+        }
+        else
+        {
+            if (isPlayingRunSound)
+            {
+                audioSource.Stop();
+                isPlayingRunSound = false;
+            }
         }
     }
 
@@ -121,6 +158,11 @@ public class PlayerMovement : MonoBehaviour
     {
         body.linearVelocity = new Vector2(body.linearVelocity.x, jumpForce);
         anim.SetTrigger("jump");
+
+        if (jumpSound != null)
+        {
+            audioSource.PlayOneShot(jumpSound);
+        }
     }
 
     private void Dash()
@@ -136,8 +178,14 @@ public class PlayerMovement : MonoBehaviour
         playerStats.UseSkill(dashManaCost);
         lastDashTime = Time.time;
 
+        if (dashSound != null)
+        {
+            audioSource.PlayOneShot(dashSound);
+        }
+
         StartCoroutine(StopDash());
     }
+
     public void ToggleMap()
     {
         isFullMapActive = !isFullMapActive;
@@ -148,9 +196,9 @@ public class PlayerMovement : MonoBehaviour
     private IEnumerator StopDash()
     {
         yield return new WaitForSeconds(dashTime);
+        isDashing = false;
         body.linearVelocity = Vector2.zero;
         dashEffectObject.SetActive(false);
-        isDashing = false;
     }
 
     private void LimitPlayerPosition()
@@ -159,6 +207,11 @@ public class PlayerMovement : MonoBehaviour
         float clampedY = Mathf.Clamp(transform.position.y, minBounds.y, maxBounds.y);
 
         transform.position = new Vector3(clampedX, clampedY, transform.position.z);
+    }
+
+    private void ResetRunSound()
+    {
+        isPlayingRunSound = false;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

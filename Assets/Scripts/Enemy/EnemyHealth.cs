@@ -73,7 +73,7 @@ public class EnemyHealth : MonoBehaviour
 
     private System.Collections.IEnumerator HideAndDestroy()
     {
-        float animationLength = 1f;
+        float animationLength = 2f;
         if (animator != null)
         {
             AnimationClip[] clips = animator.runtimeAnimatorController.animationClips;

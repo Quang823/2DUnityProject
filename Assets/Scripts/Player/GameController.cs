@@ -19,7 +19,10 @@ public class GameController : MonoBehaviour
     [Header("Portal UI")]
     public GameObject portal;
     public Transform portalSpawnPoint;
-    public GameObject notifyEffect; 
+    public GameObject notifyEffect;
+
+    [Header("Audio Settings")]
+    [SerializeField] private AudioSource backgroundMusic;
 
 
     private int lives = 5;
@@ -39,6 +42,12 @@ public class GameController : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    public void StartGlobalCoroutine(IEnumerator coroutine)
+    {
+        StartCoroutine(coroutine);
+    }
+
     private void Start()
     {
         player = FindFirstObjectByType<PlayerStats>();
@@ -97,11 +106,18 @@ public class GameController : MonoBehaviour
 
     private void UpdateLivesUI()
     {
+        if (heartImages == null || heartImages.Length == 0)
+        {
+            Debug.LogError("HeartImages array is not assigned in the Inspector!");
+            return;
+        }
+
         for (int i = 0; i < heartImages.Length; i++)
         {
             heartImages[i].sprite = i < lives ? fullHeart : emptyHeart;
         }
     }
+
 
     private void CountEnemies()
     {
@@ -137,19 +153,34 @@ public class GameController : MonoBehaviour
         StartCoroutine(SpawnPortalSequence());
     }
 
+
+
     private IEnumerator SpawnPortalSequence()
     {
         if (notifyEffect != null)
         {
             notifyEffect.SetActive(true);
+
+           
             Animator notifyAnimator = notifyEffect.GetComponent<Animator>();
             if (notifyAnimator != null)
             {
                 notifyAnimator.SetTrigger("Notified");
             }
+            if (backgroundMusic != null && backgroundMusic.isPlaying)
+            {
+                backgroundMusic.Stop();
+            }
+           
+            AudioSource notifyAudio = notifyEffect.GetComponent<AudioSource>();
+            if (notifyAudio != null && notifyAudio.clip != null)
+            {
+                notifyAudio.Play();
+            }
         }
 
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(5f);
+
 
         if (notifyEffect != null)
         {
@@ -170,7 +201,6 @@ public class GameController : MonoBehaviour
             portals.SetActive(true);
 
             Vector3 cameraStartPos = Camera.main.transform.position;
-
             FollowPlayer followPlayerScript = Camera.main.GetComponent<FollowPlayer>();
             if (followPlayerScript != null)
             {
@@ -178,18 +208,15 @@ public class GameController : MonoBehaviour
             }
 
             yield return StartCoroutine(MoveCameraToPortal(portals, cameraStartPos));
-
             yield return new WaitForSeconds(3f);
-
             StartCoroutine(MoveCameraBackToPlayer(cameraStartPos));
+
             if (followPlayerScript != null)
             {
                 followPlayerScript.enabled = true;
             }
         }
     }
-
-
 
     private IEnumerator MoveCameraToPortal(GameObject portals, Vector3 cameraStartPos)
     {
@@ -228,11 +255,6 @@ public class GameController : MonoBehaviour
 
         Camera.main.transform.position = cameraStartPos; 
     }
-
-
-    
-
-
 
     public void SetCheckpoint(Vector2 checkpointPosition)
     {
