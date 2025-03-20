@@ -27,14 +27,6 @@ public class LightningTrapScript : MonoBehaviour
         filecol.enabled = false;
     }
 
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    if (collision.gameObject.tag == "Player")
-    //    {
-    //        playerStars = collision.gameObject.GetComponent<PlayerStars>();
-    //        playerStars.TakeDamage(damage);
-    //    }
-    //}
 
     private void OnTriggerStay2D(Collider2D collision)
     {
