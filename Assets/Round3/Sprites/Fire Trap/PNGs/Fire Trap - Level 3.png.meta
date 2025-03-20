@@ -102,7 +102,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 10
+  spritePixelsToUnits: 18
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -151,15 +151,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fire Trap - Level 3_0
+      name: Fire Trap - Level 3_11
       rect:
         serializedVersion: 2
-        x: 163
+        x: 323
         y: 0
         width: 26
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -176,12 +176,12 @@ TextureImporter:
       name: Fire Trap - Level 3_1
       rect:
         serializedVersion: 2
-        x: 199
-        y: 36
-        width: 17
-        height: 28
+        x: 3
+        y: 0
+        width: 26
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -198,12 +198,12 @@ TextureImporter:
       name: Fire Trap - Level 3_2
       rect:
         serializedVersion: 2
-        x: 231
-        y: 45
-        width: 17
-        height: 19
+        x: 35
+        y: 0
+        width: 26
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -220,12 +220,12 @@ TextureImporter:
       name: Fire Trap - Level 3_3
       rect:
         serializedVersion: 2
-        x: 259
+        x: 67
         y: 0
         width: 26
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -242,12 +242,12 @@ TextureImporter:
       name: Fire Trap - Level 3_4
       rect:
         serializedVersion: 2
-        x: 296
-        y: 36
-        width: 17
-        height: 28
+        x: 99
+        y: 0
+        width: 26
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -264,12 +264,12 @@ TextureImporter:
       name: Fire Trap - Level 3_5
       rect:
         serializedVersion: 2
-        x: 328
-        y: 45
-        width: 17
-        height: 19
+        x: 131
+        y: 0
+        width: 26
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -283,15 +283,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire Trap - Level 3_6
+      name: Fire Trap - Level 3_12
       rect:
         serializedVersion: 2
-        x: 360
-        y: 48
-        width: 17
-        height: 16
+        x: 355
+        y: 0
+        width: 26
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -305,59 +305,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire Trap - Level 3_7
+      name: Fire Trap - Level 3_6
       rect:
         serializedVersion: 2
-        x: 364
-        y: 56
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 57c4eb753e37b70d0800000000000000
-      internalID: -3424015671418270603
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fire Trap - Level 3_8
-      rect:
-        serializedVersion: 2
-        x: 3
+        x: 163
         y: 0
         width: 26
-        height: 8
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 100a772a6a4b260e0800000000000000
-      internalID: -2278059833712730111
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fire Trap - Level 3_9
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 0
-        width: 26
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -371,15 +327,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire Trap - Level 3_10
+      name: Fire Trap - Level 3_7
       rect:
         serializedVersion: 2
-        x: 67
+        x: 195
         y: 0
         width: 26
-        height: 8
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -393,15 +349,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire Trap - Level 3_11
+      name: Fire Trap - Level 3_8
       rect:
         serializedVersion: 2
-        x: 99
+        x: 227
         y: 0
         width: 26
-        height: 8
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -415,15 +371,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire Trap - Level 3_12
+      name: Fire Trap - Level 3_9
       rect:
         serializedVersion: 2
-        x: 131
+        x: 259
         y: 0
         width: 26
-        height: 39
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -437,15 +393,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire Trap - Level 3_13
+      name: Fire Trap - Level 3_10
       rect:
         serializedVersion: 2
-        x: 195
+        x: 291
         y: 0
         width: 26
-        height: 8
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -458,99 +414,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Fire Trap - Level 3_14
-      rect:
-        serializedVersion: 2
-        x: 227
-        y: 0
-        width: 26
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 044955e5b71b23090800000000000000
-      internalID: -8056181639990635456
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fire Trap - Level 3_15
-      rect:
-        serializedVersion: 2
-        x: 291
-        y: 0
-        width: 26
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 56ec916e3f083f1c0800000000000000
-      internalID: -4471088220022911387
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fire Trap - Level 3_16
-      rect:
-        serializedVersion: 2
-        x: 323
-        y: 0
-        width: 26
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0ff4139bb8ad65b80800000000000000
-      internalID: -8406291360798126096
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fire Trap - Level 3_17
-      rect:
-        serializedVersion: 2
-        x: 355
-        y: 0
-        width: 26
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 549e902cc060ff390800000000000000
-      internalID: -7782494979208124091
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c69b2aa6c9a4f5a49a6ffb18b60b383f
     internalID: 0
     vertices: []
     indices: 
@@ -560,24 +428,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Fire Trap - Level 3_0: 891201824779202277
       Fire Trap - Level 3_1: -2795609496377136073
-      Fire Trap - Level 3_10: -8051584506175764345
-      Fire Trap - Level 3_11: 1262701116516295653
-      Fire Trap - Level 3_12: 2353938696783352661
-      Fire Trap - Level 3_13: 8758830344410343515
-      Fire Trap - Level 3_14: -8056181639990635456
-      Fire Trap - Level 3_15: -4471088220022911387
-      Fire Trap - Level 3_16: -8406291360798126096
-      Fire Trap - Level 3_17: -7782494979208124091
+      Fire Trap - Level 3_10: 8758830344410343515
+      Fire Trap - Level 3_11: 891201824779202277
+      Fire Trap - Level 3_12: 818797842263086530
       Fire Trap - Level 3_2: 8207078077876061224
       Fire Trap - Level 3_3: 1839597913576663712
       Fire Trap - Level 3_4: -7277551406740795715
       Fire Trap - Level 3_5: -602544276684784892
-      Fire Trap - Level 3_6: 818797842263086530
-      Fire Trap - Level 3_7: -3424015671418270603
-      Fire Trap - Level 3_8: -2278059833712730111
-      Fire Trap - Level 3_9: 1845471437627970615
+      Fire Trap - Level 3_6: 1845471437627970615
+      Fire Trap - Level 3_7: -8051584506175764345
+      Fire Trap - Level 3_8: 1262701116516295653
+      Fire Trap - Level 3_9: 2353938696783352661
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

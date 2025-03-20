@@ -1,0 +1,858 @@
+fileFormatVersion: 2
+guid: 7ffc0a65d344f6040b00516384d9daa3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1165410998420459840
+    second: atlas-mouse_0
+  - first:
+      213: -6051255251899887866
+    second: atlas-mouse_1
+  - first:
+      213: -7054940269688060714
+    second: atlas-mouse_2
+  - first:
+      213: -8805236433036062389
+    second: atlas-mouse_3
+  - first:
+      213: 4574485380797244125
+    second: atlas-mouse_4
+  - first:
+      213: 2595964258593178588
+    second: atlas-mouse_5
+  - first:
+      213: -6068310219057615464
+    second: atlas-mouse_6
+  - first:
+      213: -1331673539328003478
+    second: atlas-mouse_7
+  - first:
+      213: 4180218120609890562
+    second: atlas-mouse_8
+  - first:
+      213: -2282047795843321197
+    second: atlas-mouse_9
+  - first:
+      213: 158335030943156673
+    second: atlas-mouse_10
+  - first:
+      213: -6895317965759116851
+    second: atlas-mouse_11
+  - first:
+      213: -7273405125475756688
+    second: atlas-mouse_12
+  - first:
+      213: 6801204015052625169
+    second: atlas-mouse_13
+  - first:
+      213: -5870745487598529723
+    second: atlas-mouse_14
+  - first:
+      213: 6438894528758238209
+    second: atlas-mouse_15
+  - first:
+      213: 2432938896715455932
+    second: atlas-mouse_16
+  - first:
+      213: -7837267241732443399
+    second: atlas-mouse_17
+  - first:
+      213: -5829490514508655519
+    second: atlas-mouse_18
+  - first:
+      213: 7081963985522884170
+    second: atlas-mouse_19
+  - first:
+      213: -423112355310028135
+    second: atlas-mouse_20
+  - first:
+      213: -8028261886403283118
+    second: atlas-mouse_21
+  - first:
+      213: -1326368130015972146
+    second: atlas-mouse_22
+  - first:
+      213: -5728933429391193868
+    second: atlas-mouse_23
+  - first:
+      213: 5228029779317391208
+    second: atlas-mouse_24
+  - first:
+      213: 2970360181811618218
+    second: atlas-mouse_25
+  - first:
+      213: -5280720640230309876
+    second: atlas-mouse_26
+  - first:
+      213: -9135091266087976388
+    second: atlas-mouse_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: atlas-mouse_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 136
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0415f22e02f5c2010800000000000000
+      internalID: 1165410998420459840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-mouse_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 150
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60f4a49c86f950ca0800000000000000
+      internalID: -6051255251899887866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-mouse_2
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 136
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d405a11431d71e90800000000000000
+      internalID: -7054940269688060714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-mouse_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 150
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b41de85cd148dc580800000000000000
+      internalID: -8805236433036062389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-mouse_4
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 136
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd223a89736db7f30800000000000000
+      internalID: 4574485380797244125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-mouse_5
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 150
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd38e0b3db7b60420800000000000000
+      internalID: 2595964258593178588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-mouse_6
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 136
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89da23ec10809cba0800000000000000
+      internalID: -6068310219057615464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-mouse_7
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 150
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a623193b8f1f48de0800000000000000
+      internalID: -1331673539328003478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-mouse_8
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 136
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2018a92ab3e130a30800000000000000
+      internalID: 4180218120609890562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-mouse_9
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 150
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 392bb48de998450e0800000000000000
+      internalID: -2282047795843321197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-mouse_10
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 70
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c90eda2fd4823200800000000000000
+      internalID: 158335030943156673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-mouse_11
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 70
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc90f85d7d8ee40a0800000000000000
+      internalID: -6895317965759116851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-mouse_12
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 118
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0751384139caf0b90800000000000000
+      internalID: -7273405125475756688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-mouse_13
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 78
+        width: 24
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1151c22740bb26e50800000000000000
+      internalID: 6801204015052625169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-mouse_14
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 78
+        width: 24
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54356f4651ce68ea0800000000000000
+      internalID: -5870745487598529723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-mouse_15
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 116
+        width: 36
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10c47dc857c8b5950800000000000000
+      internalID: 6438894528758238209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-mouse_16
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 78
+        width: 24
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbd94fa490983c120800000000000000
+      internalID: 2432938896715455932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-mouse_17
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 85
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f27bbe97fe6c3390800000000000000
+      internalID: -7837267241732443399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-mouse_18
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 85
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 164d335534d791fa0800000000000000
+      internalID: -5829490514508655519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-mouse_19
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 82
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4e733519b0384260800000000000000
+      internalID: 7081963985522884170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-mouse_20
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 82
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99abaa9fd8dc02af0800000000000000
+      internalID: -423112355310028135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-mouse_21
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 50
+        width: 35
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 257ff119952e59090800000000000000
+      internalID: -8028261886403283118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-mouse_22
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 66
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec4bff0963bc79de0800000000000000
+      internalID: -1326368130015972146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-mouse_23
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 66
+        width: 36
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f8074f266dbe70b0800000000000000
+      internalID: -5728933429391193868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-mouse_24
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 4
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86f706f8261bd8840800000000000000
+      internalID: 5228029779317391208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-mouse_25
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 17
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa1a8d309d6d83920800000000000000
+      internalID: 2970360181811618218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-mouse_26
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 17
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c00cff06e8c17b6b0800000000000000
+      internalID: -5280720640230309876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-mouse_27
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 0
+        width: 35
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c328d0ea4e2a93180800000000000000
+      internalID: -9135091266087976388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      atlas-mouse_0: 1165410998420459840
+      atlas-mouse_1: -6051255251899887866
+      atlas-mouse_10: 158335030943156673
+      atlas-mouse_11: -6895317965759116851
+      atlas-mouse_12: -7273405125475756688
+      atlas-mouse_13: 6801204015052625169
+      atlas-mouse_14: -5870745487598529723
+      atlas-mouse_15: 6438894528758238209
+      atlas-mouse_16: 2432938896715455932
+      atlas-mouse_17: -7837267241732443399
+      atlas-mouse_18: -5829490514508655519
+      atlas-mouse_19: 7081963985522884170
+      atlas-mouse_2: -7054940269688060714
+      atlas-mouse_20: -423112355310028135
+      atlas-mouse_21: -8028261886403283118
+      atlas-mouse_22: -1326368130015972146
+      atlas-mouse_23: -5728933429391193868
+      atlas-mouse_24: 5228029779317391208
+      atlas-mouse_25: 2970360181811618218
+      atlas-mouse_26: -5280720640230309876
+      atlas-mouse_27: -9135091266087976388
+      atlas-mouse_3: -8805236433036062389
+      atlas-mouse_4: 4574485380797244125
+      atlas-mouse_5: 2595964258593178588
+      atlas-mouse_6: -6068310219057615464
+      atlas-mouse_7: -1331673539328003478
+      atlas-mouse_8: 4180218120609890562
+      atlas-mouse_9: -2282047795843321197
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

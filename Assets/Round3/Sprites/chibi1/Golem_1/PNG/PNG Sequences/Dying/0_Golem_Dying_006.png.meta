@@ -103,12 +103,12 @@ TextureImporter:
       name: 0_Golem_Dying_006_0
       rect:
         serializedVersion: 2
-        x: 134
+        x: 114
         y: 260
-        width: 488
-        height: 495
+        width: 508
+        height: 554
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f99dd0a8c684b9a4f993398c5f0e326c
     internalID: 0
     vertices: []
     indices: 

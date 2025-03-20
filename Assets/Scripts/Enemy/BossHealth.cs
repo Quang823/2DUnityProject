@@ -19,13 +19,14 @@ public class BossHealth : MonoBehaviour
     [SerializeField] private BossPatrol bossPatrol;
 
     [Header("Rewards")]
-    public GameObject[] gems; // 5 viên ngọc
-    public Transform dropPoint; // Vị trí rơi ngọc
-    public CanvasGroup fadeScreen; // Hiệu ứng màn hình đen
-    public string menuSceneName = "MainMenu"; // Tên scene menu
+    public GameObject[] gems;
+    public Transform dropPoint;
+    public Image fadeScreen;
+
+    public string menuSceneName = "MAIN MENU";
 
     private bool isDead = false;
-    private bool gemCollected = false; // Kiểm tra xem viên ngọc đã được nhặt chưa
+    private bool gemCollected = false;
 
     private void Start()
     {
@@ -86,7 +87,6 @@ public class BossHealth : MonoBehaviour
     {
         yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
 
-        healthBar.transform.parent.gameObject.SetActive(false);
         GetComponent<Collider2D>().enabled = false;
 
         if (gems.Length > 0)
@@ -101,57 +101,50 @@ public class BossHealth : MonoBehaviour
             if (rb != null)
             {
                 rb.gravityScale = 1f;
-                float randomForceX = Random.Range(-1f, 1f);
-                float randomForceY = Random.Range(3f, 5f);
-                rb.AddForce(new Vector2(randomForceX, randomForceY), ForceMode2D.Impulse);
+                rb.AddForce(new Vector2(Random.Range(-1f, 1f), Random.Range(3f, 5f)), ForceMode2D.Impulse);
             }
-
-            yield return new WaitForSeconds(0.5f);
-            AdjustGemPosition(droppedGem);
         }
 
-        yield return new WaitForSeconds(5f);
         gameObject.SetActive(false);
-    }
-
-    private void AdjustGemPosition(GameObject gem)
-    {
-        Collider2D ground = Physics2D.OverlapCircle(gem.transform.position, 1f, LayerMask.GetMask("Ground"));
-        if (ground != null)
-        {
-            Vector3 newPos = ground.bounds.center;
-            newPos.y = ground.bounds.max.y + 0.2f; 
-            gem.transform.position = newPos;
-
-            Rigidbody2D rb = gem.GetComponent<Rigidbody2D>();
-            if (rb != null) rb.linearVelocity = Vector2.zero;
-        }
     }
 
     public void OnGemCollected()
     {
+        if (gemCollected) return;
         gemCollected = true;
-        GameController.instance.StartGlobalCoroutine(FadeAndReturnToMenu());
 
+        if (GameController.instance != null)
+        {
+            GameController.instance.StartGlobalCoroutine(FadeAndReturnToMenu());
+        }
+        else
+        {
+            Debug.LogError("GameController.instance is NULL!");
+        }
     }
 
     private IEnumerator FadeAndReturnToMenu()
     {
-        if (fadeScreen != null)
-        {
-            float fadeDuration = 1.5f;
-            float elapsedTime = 0f;
+        if (fadeScreen == null) yield break;
 
-            while (elapsedTime < fadeDuration)
-            {
-                fadeScreen.alpha = Mathf.Lerp(0, 1, elapsedTime / fadeDuration);
-                elapsedTime += Time.deltaTime;
-                yield return null;
-            }
-            fadeScreen.alpha = 1;
+        for (float t = 0; t < 1.5f; t += Time.deltaTime)
+        {
+            fadeScreen.color = new Color(0, 0, 0, t / 1.5f);
+            yield return null;
         }
 
-        yield return new WaitForSeconds(3f);
+        GameObject player = GameObject.FindWithTag("Player");
+        if (player != null)
+        {
+            Destroy(player);
+            Debug.Log("Player destroyed before returning to MAIN MENU");
+        }
+        else
+        {
+            Debug.LogWarning("No player found with tag 'Player'");
+        }
+
+        yield return new WaitForSeconds(2f);
         SceneManager.LoadScene(menuSceneName);
     }
 }

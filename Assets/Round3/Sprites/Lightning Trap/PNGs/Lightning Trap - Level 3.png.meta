@@ -486,7 +486,7 @@ TextureImporter:
       name: Lightning Trap - Level 3_16
       rect:
         serializedVersion: 2
-        x: 1559
+        x: 1558
         y: 0
         width: 58
         height: 96
@@ -527,7 +527,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lightning Trap - Level 3_22
+      name: Lightning Trap - Level 3_0
       rect:
         serializedVersion: 2
         x: 23
@@ -549,7 +549,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lightning Trap - Level 3_23
+      name: Lightning Trap - Level 3_1
       rect:
         serializedVersion: 2
         x: 119
@@ -571,7 +571,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lightning Trap - Level 3_24
+      name: Lightning Trap - Level 3_2
       rect:
         serializedVersion: 2
         x: 215
@@ -593,7 +593,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lightning Trap - Level 3_25
+      name: Lightning Trap - Level 3_18
       rect:
         serializedVersion: 2
         x: 1751
@@ -615,7 +615,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lightning Trap - Level 3_26
+      name: Lightning Trap - Level 3_19
       rect:
         serializedVersion: 2
         x: 1847
@@ -637,7 +637,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lightning Trap - Level 3_27
+      name: Lightning Trap - Level 3_20
       rect:
         serializedVersion: 2
         x: 1943
@@ -659,7 +659,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lightning Trap - Level 3_28
+      name: Lightning Trap - Level 3_21
       rect:
         serializedVersion: 2
         x: 2039
@@ -694,8 +694,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Lightning Trap - Level 3_0: 1563288809202932743
-      Lightning Trap - Level 3_1: 4033328721501983115
+      Lightning Trap - Level 3_0: -6974527217344040202
+      Lightning Trap - Level 3_1: -334706454877021448
       Lightning Trap - Level 3_10: -6666976471782173570
       Lightning Trap - Level 3_11: 297134496947650489
       Lightning Trap - Level 3_12: 2473234606633676681
@@ -704,18 +704,11 @@ TextureImporter:
       Lightning Trap - Level 3_15: 4759449670298847736
       Lightning Trap - Level 3_16: 8327132157781136460
       Lightning Trap - Level 3_17: -8954591125844099831
-      Lightning Trap - Level 3_18: -4388166988454375527
-      Lightning Trap - Level 3_19: 7777319170994250661
-      Lightning Trap - Level 3_2: 1736376592958943197
-      Lightning Trap - Level 3_20: 5698105318765070466
-      Lightning Trap - Level 3_21: -242825332383425587
-      Lightning Trap - Level 3_22: -6974527217344040202
-      Lightning Trap - Level 3_23: -334706454877021448
-      Lightning Trap - Level 3_24: -63644228433137005
-      Lightning Trap - Level 3_25: -2204269809553113853
-      Lightning Trap - Level 3_26: -895496539028370555
-      Lightning Trap - Level 3_27: 7648444074156940604
-      Lightning Trap - Level 3_28: 668721150479666799
+      Lightning Trap - Level 3_18: -2204269809553113853
+      Lightning Trap - Level 3_19: -895496539028370555
+      Lightning Trap - Level 3_2: -63644228433137005
+      Lightning Trap - Level 3_20: 7648444074156940604
+      Lightning Trap - Level 3_21: 668721150479666799
       Lightning Trap - Level 3_3: 2990044193353104516
       Lightning Trap - Level 3_4: -3838793987641220381
       Lightning Trap - Level 3_5: -4615739360998486654

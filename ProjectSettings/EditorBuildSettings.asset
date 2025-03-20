@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Screens/MENU.unity
     guid: 760307e528748fc4e87a462b4d770419
   - enabled: 1
+    path: Assets/Screens/Round1_1.unity
+    guid: 434a2ce125a06e94080748c5c3f78fb5
+  - enabled: 1
     path: Assets/Screens/Round2.unity
     guid: bf5afe8ceabf8d54db14fa18edc1cad4
   - enabled: 1

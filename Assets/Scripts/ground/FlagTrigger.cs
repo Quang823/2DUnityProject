@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class FlagTrigger : MonoBehaviour
 {
@@ -8,7 +8,7 @@ public class FlagTrigger : MonoBehaviour
     {
         if (collision.CompareTag("Player") && platform != null)
         {
-            platform.SetPlatformActive(true); 
+            platform.SetPlatformActive(true);
             collision.transform.SetParent(platform.transform); 
         }
     }
@@ -17,8 +17,8 @@ public class FlagTrigger : MonoBehaviour
     {
         if (collision.CompareTag("Player") && platform != null)
         {
-            platform.SetPlatformActive(false); 
-            collision.transform.SetParent(null);
+            platform.SetPlatformActive(false);
+            collision.transform.SetParent(null); 
         }
     }
 }

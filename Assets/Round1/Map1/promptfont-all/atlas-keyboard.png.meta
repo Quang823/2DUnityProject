@@ -1,0 +1,2392 @@
+fileFormatVersion: 2
+guid: 67827b474ddac6a41b98fd8dc63c7f4e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5780392282333676435
+    second: atlas-keyboard_0
+  - first:
+      213: -6953287575071226767
+    second: atlas-keyboard_1
+  - first:
+      213: -5023363511691571985
+    second: atlas-keyboard_2
+  - first:
+      213: 3094575894478722164
+    second: atlas-keyboard_3
+  - first:
+      213: 2621213307628756480
+    second: atlas-keyboard_4
+  - first:
+      213: 3234654850533437270
+    second: atlas-keyboard_5
+  - first:
+      213: -250166895745052418
+    second: atlas-keyboard_6
+  - first:
+      213: -2774942130227681807
+    second: atlas-keyboard_7
+  - first:
+      213: -2237005420788252550
+    second: atlas-keyboard_8
+  - first:
+      213: -8327636890409222147
+    second: atlas-keyboard_9
+  - first:
+      213: 5155081249043016748
+    second: atlas-keyboard_10
+  - first:
+      213: 1762442268791047410
+    second: atlas-keyboard_11
+  - first:
+      213: 4133127033335043566
+    second: atlas-keyboard_12
+  - first:
+      213: 7338818002461420639
+    second: atlas-keyboard_13
+  - first:
+      213: 8789257715986556662
+    second: atlas-keyboard_14
+  - first:
+      213: -6083603788994151706
+    second: atlas-keyboard_15
+  - first:
+      213: -8940926977834149801
+    second: atlas-keyboard_16
+  - first:
+      213: -5257898361926164391
+    second: atlas-keyboard_17
+  - first:
+      213: 8414428014447150391
+    second: atlas-keyboard_18
+  - first:
+      213: -9147836620476497927
+    second: atlas-keyboard_19
+  - first:
+      213: -6674342682012605150
+    second: atlas-keyboard_20
+  - first:
+      213: -7033438961815900644
+    second: atlas-keyboard_21
+  - first:
+      213: -5854902851963708575
+    second: atlas-keyboard_22
+  - first:
+      213: 320425040421005095
+    second: atlas-keyboard_23
+  - first:
+      213: -4394824937425907299
+    second: atlas-keyboard_24
+  - first:
+      213: -8716738314473220967
+    second: atlas-keyboard_25
+  - first:
+      213: 4036276602089774638
+    second: atlas-keyboard_26
+  - first:
+      213: -4338932731283089806
+    second: atlas-keyboard_27
+  - first:
+      213: -72997814345183522
+    second: atlas-keyboard_28
+  - first:
+      213: 8667728973940989198
+    second: atlas-keyboard_29
+  - first:
+      213: 1609319131955006631
+    second: atlas-keyboard_30
+  - first:
+      213: -7692144793562043701
+    second: atlas-keyboard_31
+  - first:
+      213: 5439471900139242356
+    second: atlas-keyboard_32
+  - first:
+      213: -3664558956768461307
+    second: atlas-keyboard_33
+  - first:
+      213: -6603038382068232336
+    second: atlas-keyboard_34
+  - first:
+      213: -1375913996901360849
+    second: atlas-keyboard_35
+  - first:
+      213: -8450587887021330960
+    second: atlas-keyboard_36
+  - first:
+      213: -174017064853409022
+    second: atlas-keyboard_37
+  - first:
+      213: 8607680047496309250
+    second: atlas-keyboard_38
+  - first:
+      213: -1706164354593760388
+    second: atlas-keyboard_39
+  - first:
+      213: 1169757065171776263
+    second: atlas-keyboard_40
+  - first:
+      213: 7686567889568121747
+    second: atlas-keyboard_41
+  - first:
+      213: 14203701465308290
+    second: atlas-keyboard_42
+  - first:
+      213: 7694116537126162981
+    second: atlas-keyboard_43
+  - first:
+      213: -1661699458680598867
+    second: atlas-keyboard_44
+  - first:
+      213: 226004405726186263
+    second: atlas-keyboard_45
+  - first:
+      213: -321741511444997728
+    second: atlas-keyboard_46
+  - first:
+      213: 218084299633774741
+    second: atlas-keyboard_47
+  - first:
+      213: -4618491103334683486
+    second: atlas-keyboard_48
+  - first:
+      213: -5793264585876019738
+    second: atlas-keyboard_49
+  - first:
+      213: -8380221924318744994
+    second: atlas-keyboard_50
+  - first:
+      213: -8463603856737371698
+    second: atlas-keyboard_51
+  - first:
+      213: -3736471233653666003
+    second: atlas-keyboard_52
+  - first:
+      213: -5958032061148436424
+    second: atlas-keyboard_53
+  - first:
+      213: 2755786372177112548
+    second: atlas-keyboard_54
+  - first:
+      213: -2014201589075261723
+    second: atlas-keyboard_55
+  - first:
+      213: 2284856025434143646
+    second: atlas-keyboard_56
+  - first:
+      213: 2969429400881782095
+    second: atlas-keyboard_57
+  - first:
+      213: 440140164278831248
+    second: atlas-keyboard_58
+  - first:
+      213: 2138478022401626735
+    second: atlas-keyboard_59
+  - first:
+      213: 3445383003781615758
+    second: atlas-keyboard_60
+  - first:
+      213: -3628648680245213951
+    second: atlas-keyboard_61
+  - first:
+      213: -1324029241905697750
+    second: atlas-keyboard_62
+  - first:
+      213: -4861313579711952728
+    second: atlas-keyboard_63
+  - first:
+      213: 6513601306811157863
+    second: atlas-keyboard_64
+  - first:
+      213: -5215713521094215063
+    second: atlas-keyboard_65
+  - first:
+      213: 5366378562311512771
+    second: atlas-keyboard_66
+  - first:
+      213: 2149179373705690328
+    second: atlas-keyboard_67
+  - first:
+      213: -8811683164463526830
+    second: atlas-keyboard_68
+  - first:
+      213: -2665904280796082177
+    second: atlas-keyboard_69
+  - first:
+      213: 6981919361293587937
+    second: atlas-keyboard_70
+  - first:
+      213: 868487496541191904
+    second: atlas-keyboard_71
+  - first:
+      213: -2353493098955395972
+    second: atlas-keyboard_72
+  - first:
+      213: 2153846823155376176
+    second: atlas-keyboard_73
+  - first:
+      213: 7398802144868129279
+    second: atlas-keyboard_74
+  - first:
+      213: -8301878743987983432
+    second: atlas-keyboard_75
+  - first:
+      213: 4873084950103072756
+    second: atlas-keyboard_76
+  - first:
+      213: 6224342747130931939
+    second: atlas-keyboard_77
+  - first:
+      213: 7728571559986526930
+    second: atlas-keyboard_78
+  - first:
+      213: 375584553078830326
+    second: atlas-keyboard_79
+  - first:
+      213: -764737710486638131
+    second: atlas-keyboard_80
+  - first:
+      213: 1038813428690548669
+    second: atlas-keyboard_81
+  - first:
+      213: -1552254401360649417
+    second: atlas-keyboard_82
+  - first:
+      213: -114020228233678198
+    second: atlas-keyboard_83
+  - first:
+      213: 7049971538423524238
+    second: atlas-keyboard_84
+  - first:
+      213: -3800987145280632832
+    second: atlas-keyboard_85
+  - first:
+      213: 5682676600841971270
+    second: atlas-keyboard_86
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: atlas-keyboard_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 531
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39388eaa724183050800000000000000
+      internalID: 5780392282333676435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_1
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 531
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1740eb26ac5f08f90800000000000000
+      internalID: -6953287575071226767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_2
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 531
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fec07f3408d694ab0800000000000000
+      internalID: -5023363511691571985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_3
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 531
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47414e8516422fa20800000000000000
+      internalID: 3094575894478722164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_4
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 531
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00e1db19d9b606420800000000000000
+      internalID: 2621213307628756480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_5
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 531
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65f2a09d27dc3ec20800000000000000
+      internalID: 3234654850533437270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_6
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 531
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef0dd84a88a378cf0800000000000000
+      internalID: -250166895745052418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_7
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 531
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f56387b5dc6d79d0800000000000000
+      internalID: -2774942130227681807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_8
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 531
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a700b450c6f84f0e0800000000000000
+      internalID: -2237005420788252550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_9
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 531
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dff38b0be5a4e6c80800000000000000
+      internalID: -8327636890409222147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_10
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 465
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2c6c7d45178a8740800000000000000
+      internalID: 5155081249043016748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_11
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 465
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f48c68d7e3757810800000000000000
+      internalID: 1762442268791047410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_12
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 465
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee5df797321db5930800000000000000
+      internalID: 4133127033335043566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_13
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 465
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5c64fb2718b8d560800000000000000
+      internalID: 7338818002461420639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_14
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 465
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f66db04357b9f970800000000000000
+      internalID: 8789257715986556662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_15
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 465
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ea78c21692b29ba0800000000000000
+      internalID: -6083603788994151706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_16
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 465
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7581d73e8427be380800000000000000
+      internalID: -8940926977834149801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_17
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 465
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95068402c413807b0800000000000000
+      internalID: -5257898361926164391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_18
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 465
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 735c73592bd06c470800000000000000
+      internalID: 8414428014447150391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_19
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 465
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ff303d9f0b5c0180800000000000000
+      internalID: -9147836620476497927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_20
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 399
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 225296161b8ff53a0800000000000000
+      internalID: -6674342682012605150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_21
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 399
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1e229b6784346e90800000000000000
+      internalID: -7033438961815900644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_22
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 399
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16b184270e43fbea0800000000000000
+      internalID: -5854902851963708575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_23
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 405
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7272f6760e0627400800000000000000
+      internalID: 320425040421005095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_24
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 405
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9153b211027203c0800000000000000
+      internalID: -4394824937425907299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_25
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 405
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99459cdaface70780800000000000000
+      internalID: -8716738314473220967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_26
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 405
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2e18ca3f2cb30830800000000000000
+      internalID: 4036276602089774638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_27
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 399
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2765e876ba309c3c0800000000000000
+      internalID: -4338932731283089806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_28
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 413
+        width: 60
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ede4396efd8acfef0800000000000000
+      internalID: -72997814345183522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_29
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 399
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0d1d150495f94870800000000000000
+      internalID: 8667728973940989198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_30
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 339
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ac0b665933755610800000000000000
+      internalID: 1609319131955006631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_31
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 339
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bca2dd2a013004590800000000000000
+      internalID: -7692144793562043701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_32
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 339
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 473c485afd2ec7b40800000000000000
+      internalID: 5439471900139242356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_33
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 339
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50ef6536b0fd42dc0800000000000000
+      internalID: -3664558956768461307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_34
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 333
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07f8d8e639b4d54a0800000000000000
+      internalID: -6603038382068232336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_35
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 333
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2bd43d7285c7ece0800000000000000
+      internalID: -1375913996901360849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_36
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 333
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fdefd2071b79ba80800000000000000
+      internalID: -8450587887021330960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_37
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 333
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2037e88c664c59df0800000000000000
+      internalID: -174017064853409022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_38
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 339
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20a2c33d56f947770800000000000000
+      internalID: 8607680047496309250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_39
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 333
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7b51042f8c7258e0800000000000000
+      internalID: -1706164354593760388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_40
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 266
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70331176adfcb3010800000000000000
+      internalID: 1169757065171776263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_41
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 267
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 393c1a735cc2caa60800000000000000
+      internalID: 7686567889568121747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_42
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 267
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28cd554f036723000800000000000000
+      internalID: 14203701465308290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_43
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 267
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5221ddfa93ef6ca60800000000000000
+      internalID: 7694116537126162981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_44
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 267
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dae42e9752570f8e0800000000000000
+      internalID: -1661699458680598867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_45
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 267
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71b8bf04fcde22300800000000000000
+      internalID: 226004405726186263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_46
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 267
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a9d2dcccc1f88bf0800000000000000
+      internalID: -321741511444997728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_47
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 267
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 590d2cad38ac60300800000000000000
+      internalID: 218084299633774741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_48
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 274
+        width: 62
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ac2f63bfc2d7efb0800000000000000
+      internalID: -4618491103334683486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_49
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 299
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e5620d9d803a9fa0800000000000000
+      internalID: -5793264585876019738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_50
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 267
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5e6a066f8873bb80800000000000000
+      internalID: -8380221924318744994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_51
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 201
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec9fa87622d3b8a80800000000000000
+      internalID: -8463603856737371698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_52
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 201
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2f8b9ca533652cc0800000000000000
+      internalID: -3736471233653666003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_53
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 207
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 838ebda4861d05da0800000000000000
+      internalID: -5958032061148436424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_54
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 201
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4edaa7eca158e3620800000000000000
+      internalID: 2755786372177112548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_55
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 201
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e64421935e1c04e0800000000000000
+      internalID: -2014201589075261723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_56
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 213
+        width: 62
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9bb9ee037075bf10800000000000000
+      internalID: 2284856025434143646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_57
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 201
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4dd821be48853920800000000000000
+      internalID: 2969429400881782095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_58
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 201
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 098c83fb521bb1600800000000000000
+      internalID: 440140164278831248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_59
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 201
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f629a356e666dad10800000000000000
+      internalID: 2138478022401626735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_60
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 201
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e805297669570df20800000000000000
+      internalID: 3445383003781615758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_61
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 135
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1054b4f204374adc0800000000000000
+      internalID: -3628648680245213951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_62
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 135
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2c2bf36b6a10ade0800000000000000
+      internalID: -1324029241905697750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_63
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 135
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a88c7b3e05298cb0800000000000000
+      internalID: -4861313579711952728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_64
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 135
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76dcff4c0e5f46a50800000000000000
+      internalID: 6513601306811157863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_65
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 135
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96a3af4cf201e97b0800000000000000
+      internalID: -5215713521094215063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_66
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 135
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c269d0ced4397a40800000000000000
+      internalID: 5366378562311512771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_67
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 135
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dcf258e04b63dd10800000000000000
+      internalID: 2149179373705690328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_68
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 135
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25c8cd429dc96b580800000000000000
+      internalID: -8811683164463526830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_69
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 135
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fffc4f16e2ec00bd0800000000000000
+      internalID: -2665904280796082177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_70
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 135
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e59354daa2c4e060800000000000000
+      internalID: 6981919361293587937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_71
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 75
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eeb433d6cc7d0c00800000000000000
+      internalID: 868487496541191904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_72
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 75
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7c2e6fee76b65fd0800000000000000
+      internalID: -2353493098955395972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_73
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 75
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 030a7ca264004ed10800000000000000
+      internalID: 2153846823155376176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_74
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 83
+        width: 60
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff95348a953dda660800000000000000
+      internalID: 7398802144868129279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_75
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 75
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bbea30844dc9cc80800000000000000
+      internalID: -8301878743987983432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_76
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 69
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ff123381fca0a340800000000000000
+      internalID: 4873084950103072756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_77
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 75
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eaa40320ce416650800000000000000
+      internalID: 6224342747130931939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_78
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 69
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dafe26d2e6614b60800000000000000
+      internalID: 7728571559986526930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_79
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 69
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f4336d3928563500800000000000000
+      internalID: 375584553078830326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_80
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 69
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc13914aa1b1365f0800000000000000
+      internalID: -764737710486638131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_81
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 3
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db7710d3f4b9a6e00800000000000000
+      internalID: 1038813428690548669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_82
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 10
+        width: 62
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 733acdd98d8457ae0800000000000000
+      internalID: -1552254401360649417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_83
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 35
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a823ceed43bea6ef0800000000000000
+      internalID: -114020228233678198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_84
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 3
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8b295803c786d160800000000000000
+      internalID: 7049971538423524238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_85
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 3
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 008c8b1745e204bc0800000000000000
+      internalID: -3800987145280632832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas-keyboard_86
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 3
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6462c96a24cecde40800000000000000
+      internalID: 5682676600841971270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      atlas-keyboard_0: 5780392282333676435
+      atlas-keyboard_1: -6953287575071226767
+      atlas-keyboard_10: 5155081249043016748
+      atlas-keyboard_11: 1762442268791047410
+      atlas-keyboard_12: 4133127033335043566
+      atlas-keyboard_13: 7338818002461420639
+      atlas-keyboard_14: 8789257715986556662
+      atlas-keyboard_15: -6083603788994151706
+      atlas-keyboard_16: -8940926977834149801
+      atlas-keyboard_17: -5257898361926164391
+      atlas-keyboard_18: 8414428014447150391
+      atlas-keyboard_19: -9147836620476497927
+      atlas-keyboard_2: -5023363511691571985
+      atlas-keyboard_20: -6674342682012605150
+      atlas-keyboard_21: -7033438961815900644
+      atlas-keyboard_22: -5854902851963708575
+      atlas-keyboard_23: 320425040421005095
+      atlas-keyboard_24: -4394824937425907299
+      atlas-keyboard_25: -8716738314473220967
+      atlas-keyboard_26: 4036276602089774638
+      atlas-keyboard_27: -4338932731283089806
+      atlas-keyboard_28: -72997814345183522
+      atlas-keyboard_29: 8667728973940989198
+      atlas-keyboard_3: 3094575894478722164
+      atlas-keyboard_30: 1609319131955006631
+      atlas-keyboard_31: -7692144793562043701
+      atlas-keyboard_32: 5439471900139242356
+      atlas-keyboard_33: -3664558956768461307
+      atlas-keyboard_34: -6603038382068232336
+      atlas-keyboard_35: -1375913996901360849
+      atlas-keyboard_36: -8450587887021330960
+      atlas-keyboard_37: -174017064853409022
+      atlas-keyboard_38: 8607680047496309250
+      atlas-keyboard_39: -1706164354593760388
+      atlas-keyboard_4: 2621213307628756480
+      atlas-keyboard_40: 1169757065171776263
+      atlas-keyboard_41: 7686567889568121747
+      atlas-keyboard_42: 14203701465308290
+      atlas-keyboard_43: 7694116537126162981
+      atlas-keyboard_44: -1661699458680598867
+      atlas-keyboard_45: 226004405726186263
+      atlas-keyboard_46: -321741511444997728
+      atlas-keyboard_47: 218084299633774741
+      atlas-keyboard_48: -4618491103334683486
+      atlas-keyboard_49: -5793264585876019738
+      atlas-keyboard_5: 3234654850533437270
+      atlas-keyboard_50: -8380221924318744994
+      atlas-keyboard_51: -8463603856737371698
+      atlas-keyboard_52: -3736471233653666003
+      atlas-keyboard_53: -5958032061148436424
+      atlas-keyboard_54: 2755786372177112548
+      atlas-keyboard_55: -2014201589075261723
+      atlas-keyboard_56: 2284856025434143646
+      atlas-keyboard_57: 2969429400881782095
+      atlas-keyboard_58: 440140164278831248
+      atlas-keyboard_59: 2138478022401626735
+      atlas-keyboard_6: -250166895745052418
+      atlas-keyboard_60: 3445383003781615758
+      atlas-keyboard_61: -3628648680245213951
+      atlas-keyboard_62: -1324029241905697750
+      atlas-keyboard_63: -4861313579711952728
+      atlas-keyboard_64: 6513601306811157863
+      atlas-keyboard_65: -5215713521094215063
+      atlas-keyboard_66: 5366378562311512771
+      atlas-keyboard_67: 2149179373705690328
+      atlas-keyboard_68: -8811683164463526830
+      atlas-keyboard_69: -2665904280796082177
+      atlas-keyboard_7: -2774942130227681807
+      atlas-keyboard_70: 6981919361293587937
+      atlas-keyboard_71: 868487496541191904
+      atlas-keyboard_72: -2353493098955395972
+      atlas-keyboard_73: 2153846823155376176
+      atlas-keyboard_74: 7398802144868129279
+      atlas-keyboard_75: -8301878743987983432
+      atlas-keyboard_76: 4873084950103072756
+      atlas-keyboard_77: 6224342747130931939
+      atlas-keyboard_78: 7728571559986526930
+      atlas-keyboard_79: 375584553078830326
+      atlas-keyboard_8: -2237005420788252550
+      atlas-keyboard_80: -764737710486638131
+      atlas-keyboard_81: 1038813428690548669
+      atlas-keyboard_82: -1552254401360649417
+      atlas-keyboard_83: -114020228233678198
+      atlas-keyboard_84: 7049971538423524238
+      atlas-keyboard_85: -3800987145280632832
+      atlas-keyboard_86: 5682676600841971270
+      atlas-keyboard_9: -8327636890409222147
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

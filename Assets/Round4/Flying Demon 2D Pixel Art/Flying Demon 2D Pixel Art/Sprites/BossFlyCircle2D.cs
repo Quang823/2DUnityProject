@@ -14,14 +14,7 @@ public class BossFlyCircle2D : MonoBehaviour
         //float x = centerPoint.position.x + Mathf.Cos(angle) * radius;
         //float y = centerPoint.position.y + Mathf.Sin(angle) * radius;
         //transform.position = new Vector2(x, y);
-
-
         Vector2 startPosition = centerPoint.position;
         transform.position = new Vector2(startPosition.x + Mathf.PingPong(Time.time * speed, 6) - 3, startPosition.y);
-
-
-
-
-
     }
 }

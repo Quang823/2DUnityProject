@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MenuButton : MonoBehaviour
@@ -14,43 +12,20 @@ public class MenuButton : MonoBehaviour
 
     private bool isSelectingMap = false; // Kiểm soát trạng thái chọn map
 
-    //void Update()
-    //{
-    //    if (menuButtonController.index == thisIndex)
-    //    {
-    //        animator.SetBool("selected", true);
-    //        if (Input.GetAxis("Submit") == 1)
-    //        {
-    //            animator.SetBool("pressed", true);
-    //            HandleButtonClick();
-    //        }
-    //        else if (animator.GetBool("pressed"))
-    //        {
-    //            animator.SetBool("pressed", false);
-    //            animatorFunctions.disableOnce = true;
-    //        }
-    //    }
-    //    else
-    //    {
-    //        animator.SetBool("selected", false);
-    //    }
-    //}
     void Update()
     {
-        if (menuButtonController.currentState == MenuState.MainMenu && menuButtonController.index == thisIndex)
+        if (menuButtonController.index == thisIndex)
         {
             animator.SetBool("selected", true);
-            if (Input.GetButtonDown("Submit"))
+            if (Input.GetAxis("Submit") == 1)
             {
                 animator.SetBool("pressed", true);
                 HandleButtonClick();
             }
-        }
-        else if (menuButtonController.currentState == MenuState.MapSelection && gameObject.name.StartsWith("Map"))
-        {
-            if (menuButtonController.index == thisIndex && Input.GetButtonDown("Submit"))
+            else if (animator.GetBool("pressed"))
             {
-                LoadLevel(gameObject.name);
+                animator.SetBool("pressed", false);
+                animatorFunctions.disableOnce = true;
             }
         }
         else
@@ -58,6 +33,29 @@ public class MenuButton : MonoBehaviour
             animator.SetBool("selected", false);
         }
     }
+    //void Update()
+    //{
+    //    if (menuButtonController.currentState == MenuState.MainMenu && menuButtonController.index == thisIndex)
+    //    {
+    //        animator.SetBool("selected", true);
+    //        if (Input.GetButtonDown("Submit"))
+    //        {
+    //            animator.SetBool("pressed", true);
+    //            HandleButtonClick();
+    //        }
+    //    }
+    //    else if (menuButtonController.currentState == MenuState.MapSelection && gameObject.name.StartsWith("Map"))
+    //    {
+    //        if (menuButtonController.index == thisIndex && Input.GetButtonDown("Submit"))
+    //        {
+    //            LoadLevel(gameObject.name);
+    //        }
+    //    }
+    //    else
+    //    {
+    //        animator.SetBool("selected", false);
+    //    }
+    //}
 
 
     private void HandleButtonClick()

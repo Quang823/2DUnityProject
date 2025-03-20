@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GemPickup : MonoBehaviour
@@ -30,15 +31,30 @@ public class GemPickup : MonoBehaviour
         if (other.CompareTag("Player") && !isCollected)
         {
             isCollected = true;
-            AddGemToUI();
+
+            int levelIndex = SceneManager.GetActiveScene().buildIndex - 1;
+
+            if (GemManager.instance != null)
+            {
+                GemManager.instance.AddGem(gemSprite, levelIndex);
+            }
+
             gameObject.SetActive(false);
 
             if (bossHealth != null)
             {
-                bossHealth.OnGemCollected();
+                Invoke(nameof(DelayTransition), 0.5f);
             }
         }
     }
+
+
+    private void DelayTransition()
+    {
+        bossHealth.OnGemCollected();
+    }
+
+
 
     private bool IsOnGround()
     {

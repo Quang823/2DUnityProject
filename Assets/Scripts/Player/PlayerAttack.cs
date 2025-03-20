@@ -106,6 +106,10 @@ public class PlayerAttack : MonoBehaviour
             {
                 enemyHealth.TakeDamage(meleeAttackDamage);
             }
+            else if (enemy.TryGetComponent<EnemyHealthRound3>(out EnemyHealthRound3 enemyHealthRound3))
+            {
+                enemyHealthRound3.TakeDamage(meleeAttackDamage);
+            }
             else if (enemy.TryGetComponent<BossHealth>(out BossHealth bossHealth))
             {
                 bossHealth.TakeDamage(meleeAttackDamage);
