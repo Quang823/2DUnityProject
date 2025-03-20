@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -29,6 +30,18 @@ public class PlayerMovement : MonoBehaviour
     [Header("References")]
     public GameObject dashEffectObject;
 
+    // UI Images cho các mũi tên
+    [Header("UI Arrows")]
+    public Image upArrow;
+    public Image leftArrow;
+    public Image rightArrow;
+
+    // UI Images cho A, D, Space (chỉ để hiển thị)
+    [Header("UI Keys (Display Only)")]
+    public Image aKey;
+    public Image dKey;
+    public Image spaceKey;
+
     private Rigidbody2D body;
     private Animator anim;
     private SpriteRenderer spriteRenderer;
@@ -39,11 +52,13 @@ public class PlayerMovement : MonoBehaviour
     private bool isClimbing;
     private bool isDashing = false;
     private float horizontalInput;
+    private float verticalInput;
     private Vector3 initialScale;
     public GameObject miniMap;
     public GameObject fullMap;
     private bool isFullMapActive = false;
     private bool isPlayingRunSound = false;
+    private bool isJumping = false; // Biến để kiểm tra trạng thái nhảy
 
     private float velocityX = 0f;
 
@@ -62,12 +77,16 @@ public class PlayerMovement : MonoBehaviour
     {
         miniMap.SetActive(true);
         fullMap.SetActive(false);
+
+        // Ẩn các mũi tên ban đầu
+        HideAllArrows();
     }
 
     private void Update()
     {
         HandleInput();
         LimitPlayerPosition();
+        UpdateArrowHighlights(); // Cập nhật trạng thái mũi tên
     }
 
     private void FixedUpdate()
@@ -78,6 +97,7 @@ public class PlayerMovement : MonoBehaviour
     private void HandleInput()
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
+        verticalInput = Input.GetAxisRaw("Vertical");
 
         if (Input.GetKeyDown(KeyCode.Space) && grounded)
         {
@@ -99,7 +119,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isClimbing)
         {
-            float verticalInput = Input.GetAxis("Vertical");
             body.linearVelocity = new Vector2(horizontalInput * speed, verticalInput * climbSpeed);
             anim.SetBool("isClimbing", verticalInput != 0);
             anim.SetBool("grounded", false);
@@ -125,6 +144,50 @@ public class PlayerMovement : MonoBehaviour
 
             HandleRunSound();
         }
+    }
+
+    // Cập nhật trạng thái hiển thị và màu của các mũi tên
+    private void UpdateArrowHighlights()
+    {
+        // Ẩn tất cả các mũi tên trước
+        HideAllArrows();
+
+        if (isClimbing)
+        {
+            if (verticalInput > 0)
+            {
+                upArrow.gameObject.SetActive(true); // Hiện mũi tên lên
+                upArrow.color = Color.yellow; // Sáng lên khi leo lên
+            }
+        }
+        else
+        {
+            if (horizontalInput > 0)
+            {
+                rightArrow.gameObject.SetActive(true); // Hiện mũi tên phải
+                rightArrow.color = Color.yellow; // Sáng lên khi di chuyển phải
+            }
+            else if (horizontalInput < 0)
+            {
+                leftArrow.gameObject.SetActive(true); // Hiện mũi tên trái
+                leftArrow.color = Color.yellow; // Sáng lên khi di chuyển trái
+            }
+        }
+
+        // Nếu đang nhảy, hiện và làm sáng UpArrow
+        if (isJumping)
+        {
+            upArrow.gameObject.SetActive(true);
+            upArrow.color = Color.yellow;
+        }
+    }
+
+    // Ẩn tất cả các mũi tên
+    private void HideAllArrows()
+    {
+        upArrow.gameObject.SetActive(false);
+        leftArrow.gameObject.SetActive(false);
+        rightArrow.gameObject.SetActive(false);
     }
 
     private void HandleRunSound()
@@ -163,6 +226,16 @@ public class PlayerMovement : MonoBehaviour
         {
             audioSource.PlayOneShot(jumpSound);
         }
+
+        isJumping = true; // Đặt trạng thái nhảy
+        StartCoroutine(ResetJumpState()); // Reset trạng thái nhảy sau một khoảng thời gian
+    }
+
+    // Coroutine để reset trạng thái nhảy
+    private IEnumerator ResetJumpState()
+    {
+        yield return new WaitForSeconds(0.5f); // Thời gian nhảy (có thể điều chỉnh)
+        isJumping = false;
     }
 
     private void Dash()
@@ -219,6 +292,7 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             grounded = true;
+            isJumping = false; // Reset trạng thái nhảy khi chạm đất
         }
     }
 
