@@ -20,4 +20,19 @@ public class EnemyAttack : MonoBehaviour
             }
         }
     }
+private void OnTriggerEnter2D(Collider2D collision)
+{
+    if (collision.CompareTag("Player") && Time.time > lastAttackTime + attackCooldown)
+    {
+        PlayerStats playerStats = collision.GetComponent<PlayerStats>();
+        if (playerStats != null)
+        {
+            playerStats.TakeDamage(damage);
+            Debug.Log("Boss tấn công! Máu còn lại của Player: " + playerStats.GetCurrentHealth());
+            lastAttackTime = Time.time;
+        }
+    }
+}
+
+
 }
