@@ -26,7 +26,7 @@ public class EnemyRound2 : MonoBehaviour
 
         startPosition = transform.position;
         animator = GetComponent<Animator>();
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        FindPlayer(); // Tìm player trong Start
 
         animator.SetBool("isRunning", true);
     }
@@ -34,6 +34,13 @@ public class EnemyRound2 : MonoBehaviour
     void Update()
     {
         if (isDead || isAttacking) return;
+
+        // Kiểm tra và tìm lại player nếu cần
+        if (player == null)
+        {
+            FindPlayer();
+            if (player == null) return; // Nếu vẫn không tìm thấy player, dừng Update
+        }
 
         float leftBoundary = startPosition.x - distance;
         float rightBoundary = startPosition.x + distance;
@@ -64,6 +71,19 @@ public class EnemyRound2 : MonoBehaviour
         }
     }
 
+    private void FindPlayer()
+    {
+        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+        if (playerObject != null)
+        {
+            player = playerObject.transform;
+        }
+        else
+        {
+            player = null;
+        }
+    }
+
     void Flip()
     {
         Vector3 scaler = transform.localScale;
@@ -89,28 +109,4 @@ public class EnemyRound2 : MonoBehaviour
         isAttacking = false;
         speed = 2f;
     }
-
-    public void TakeDamage()
-    {
-        if (isDead) return;
-
-        health--;
-        if (health <= 0)
-        {
-            Die();
-        }
-    }
-
-   void Die()
-{
-    if (isDead) return;
-    isDead = true;
-    
-    Debug.Log("EnemyRound2 Die() called");
-    
-    animator.SetBool("dead", true);
-    GetComponent<Collider2D>().enabled = false;
-    Destroy(gameObject, 2f);
-}
-
 }

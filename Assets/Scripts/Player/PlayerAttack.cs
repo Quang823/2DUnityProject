@@ -54,7 +54,7 @@ public class PlayerAttack : MonoBehaviour
     private void Update()
     {
         cooldownTimer += Time.deltaTime;
-        meleecooldownTimer += Time.deltaTime; 
+        meleecooldownTimer += Time.deltaTime;
 
         if (Input.GetKeyDown(KeyCode.J) && playerMovement.canAttack() && meleecooldownTimer >= meleeattackCooldown)
         {
@@ -67,7 +67,7 @@ public class PlayerAttack : MonoBehaviour
         {
             if (playerStats.CanUseSkill(manaCost))
             {
-                cooldownTimer = 0; 
+                cooldownTimer = 0;
                 FireAttack();
                 playerStats.UseSkill(manaCost);
             }
@@ -85,7 +85,7 @@ public class PlayerAttack : MonoBehaviour
     {
         anim.SetTrigger("attack");
 
-  
+
         if (meleeAttackSound != null && audioSource != null)
         {
             audioSource.PlayOneShot(meleeAttackSound);
@@ -113,6 +113,10 @@ public class PlayerAttack : MonoBehaviour
             else if (enemy.TryGetComponent<BossHealth>(out BossHealth bossHealth))
             {
                 bossHealth.TakeDamage(meleeAttackDamage);
+            }
+            else if (enemy.TryGetComponent<BossHealthRound3>(out BossHealthRound3 bossHealthRound3))
+            {
+                bossHealthRound3.TakeDamage(meleeAttackDamage);
             }
         }
     }

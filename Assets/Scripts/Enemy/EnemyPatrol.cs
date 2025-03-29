@@ -9,32 +9,87 @@ public class EnemyPatrol : MonoBehaviour
     [Header("Enemy")]
     [SerializeField] private Transform enemy;
 
+    [Header("Player")]
+    [SerializeField] private Transform player;
+
     [Header("Movement parameters")]
-    [SerializeField] private float speed;
+    [SerializeField] private float speed = 4f;
+    [SerializeField] private float chaseSpeed = 6f;
     private Vector2 initScale;
     private bool movingLeft;
 
     [Header("Idle Behaviour")]
-    [SerializeField] private float idleDuration;
+    [SerializeField] private float idleDuration = 1f;
     private float idleTimer;
 
-    [Header("EnemyAnamitor")]
+    [Header("Y Range Check")]
+    [SerializeField] private float yTolerance = 0.5f;
+
+    [Header("EnemyAnimator")]
     [SerializeField] private Animator anim;
     private bool isPaused = false;
+
     private void Awake()
     {
         initScale = enemy.localScale;
-    }
-    private void OnDisable()
-    {
-        anim.SetBool("moving", false);
+        if (enemy == null) enemy = transform;
     }
 
+    private void OnDisable()
+    {
+        if (anim != null) anim.SetBool("moving", false);
+    }
 
     private void Update()
     {
         if (isPaused) return;
 
+        if (player == null || leftEdge == null || rightEdge == null)
+        {
+            Patrol();
+            return;
+        }
+
+        if (IsPlayerInRange())
+        {
+            ChasePlayer();
+        }
+        else
+        {
+            Patrol();
+        }
+    }
+
+    private bool IsPlayerInRange()
+    {
+        float playerX = player.position.x;
+        float playerY = player.position.y;
+        float enemyY = enemy.position.y;
+        float leftX = leftEdge.position.x;
+        float rightX = rightEdge.position.x;
+
+
+        bool inXRange = playerX > leftX && playerX < rightX;
+        bool inYRange = Mathf.Abs(playerY - enemyY) <= yTolerance;
+
+        return inXRange && inYRange;
+    }
+
+    private void ChasePlayer()
+    {
+        if (anim != null) anim.SetBool("moving", true);
+        idleTimer = 0;
+
+        float direction = Mathf.Sign(player.position.x - enemy.position.x);
+        enemy.localScale = new Vector2(Mathf.Abs(initScale.x) * direction, initScale.y);
+
+        float moveSpeed = chaseSpeed > 0 ? chaseSpeed : speed;
+        float newX = enemy.position.x + Time.deltaTime * direction * moveSpeed;
+        enemy.position = new Vector2(newX, enemy.position.y);
+    }
+
+    private void Patrol()
+    {
         if (movingLeft)
         {
             if (enemy.position.x >= leftEdge.position.x)
@@ -58,46 +113,29 @@ public class EnemyPatrol : MonoBehaviour
             }
         }
     }
+
     public void PausePatrol()
     {
         isPaused = true;
-        anim.SetBool("moving", false);
+        if (anim != null) anim.SetBool("moving", false);
     }
 
     private void DirectionChange()
     {
-        anim.SetBool("moving", false);
+        if (anim != null) anim.SetBool("moving", false);
         idleTimer += Time.deltaTime;
         if (idleTimer > idleDuration)
         {
             movingLeft = !movingLeft;
         }
     }
+
     private void MoveinDirection(int _direction)
     {
         idleTimer = 0;
-        anim.SetBool("moving", true);
+        if (anim != null) anim.SetBool("moving", true);
         enemy.localScale = new Vector2(Mathf.Abs(initScale.x) * _direction, initScale.y);
-        enemy.position = new Vector2(enemy.position.x + Time.deltaTime * _direction * speed,
-            enemy.position.y);
+        float newX = enemy.position.x + Time.deltaTime * _direction * speed;
+        enemy.position = new Vector2(newX, enemy.position.y);
     }
 }
-
-//private void DirectionChange()
-//    {
-//        anim.SetBool("moving", false);
-//        idleTimer += Time.deltaTime;
-//        if (idleTimer > idleDuration)
-//        {
-//            movingLeft = !movingLeft;
-//        }      
-//    }
-//    private void MoveinDirection(int _direction)
-//    {
-//        idleTimer = 0;
-//        anim.SetBool("moving", true);      
-//        enemy.localScale = new Vector2(Mathf.Abs(initScale.x) * _direction, initScale.y);
-//        enemy.position = new Vector2(enemy.position.x + Time.deltaTime * _direction * speed,
-//            enemy.position.y);
-//    }
-//}

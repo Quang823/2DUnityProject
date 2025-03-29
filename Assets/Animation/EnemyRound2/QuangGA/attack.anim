@@ -30,6 +30,20 @@ AnimationClip:
       value: {fileID: -8053095777402275025, guid: bba4bbde3916c5f4a9ee1ee7c1dd7615, type: 3}
     - time: 0.73333335
       value: {fileID: 4688295478533005478, guid: bba4bbde3916c5f4a9ee1ee7c1dd7615, type: 3}
+    - time: 0.9
+      value: {fileID: -8910899737472627771, guid: 09d5dc46210205647b70d3e22cb31fed, type: 3}
+    - time: 1.1333333
+      value: {fileID: -5464336490339650859, guid: 09d5dc46210205647b70d3e22cb31fed, type: 3}
+    - time: 1.3166667
+      value: {fileID: -1132038362817505424, guid: 09d5dc46210205647b70d3e22cb31fed, type: 3}
+    - time: 1.55
+      value: {fileID: -6574224857763752514, guid: 09d5dc46210205647b70d3e22cb31fed, type: 3}
+    - time: 1.7833333
+      value: {fileID: -6827800710642968084, guid: 09d5dc46210205647b70d3e22cb31fed, type: 3}
+    - time: 1.9666667
+      value: {fileID: -241614906349035404, guid: 09d5dc46210205647b70d3e22cb31fed, type: 3}
+    - time: 2.2
+      value: {fileID: -6599260265685524675, guid: 09d5dc46210205647b70d3e22cb31fed, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -57,12 +71,19 @@ AnimationClip:
     - {fileID: 4416717768442454902, guid: bba4bbde3916c5f4a9ee1ee7c1dd7615, type: 3}
     - {fileID: -8053095777402275025, guid: bba4bbde3916c5f4a9ee1ee7c1dd7615, type: 3}
     - {fileID: 4688295478533005478, guid: bba4bbde3916c5f4a9ee1ee7c1dd7615, type: 3}
+    - {fileID: -8910899737472627771, guid: 09d5dc46210205647b70d3e22cb31fed, type: 3}
+    - {fileID: -5464336490339650859, guid: 09d5dc46210205647b70d3e22cb31fed, type: 3}
+    - {fileID: -1132038362817505424, guid: 09d5dc46210205647b70d3e22cb31fed, type: 3}
+    - {fileID: -6574224857763752514, guid: 09d5dc46210205647b70d3e22cb31fed, type: 3}
+    - {fileID: -6827800710642968084, guid: 09d5dc46210205647b70d3e22cb31fed, type: 3}
+    - {fileID: -241614906349035404, guid: 09d5dc46210205647b70d3e22cb31fed, type: 3}
+    - {fileID: -6599260265685524675, guid: 09d5dc46210205647b70d3e22cb31fed, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.75
+    m_StopTime: 2.2166667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -83,6 +104,13 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.73333335
+    functionName: DamagePalyer
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.5666667
     functionName: DamagePalyer
     data: 
     objectReferenceParameter: {fileID: 0}

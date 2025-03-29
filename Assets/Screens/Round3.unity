@@ -318,7 +318,7 @@ MonoBehaviour:
   healthText: {fileID: 324805533}
   maxHealth: 100
   animator: {fileID: 136505754}
-  enemyPatrol: {fileID: 0}
+  enemyPatrol: {fileID: 561402276}
 --- !u!114 &136505756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -582,8 +582,8 @@ GameObject:
   - component: {fileID: 156019579}
   - component: {fileID: 156019583}
   - component: {fileID: 156019582}
-  - component: {fileID: 156019585}
   - component: {fileID: 156019586}
+  - component: {fileID: 156019587}
   m_Layer: 8
   m_Name: Boss
   m_TagString: Boss
@@ -756,28 +756,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.2555237, y: 3.6236908}
   m_EdgeRadius: 0
---- !u!114 &156019585
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 156019578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16c191c07cebe5240b870601f5ccf3d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 1262560100}
-  healthText: {fileID: 1920582966}
-  maxHealth: 300
-  animator: {fileID: 156019579}
-  bossPatrol: {fileID: 1282947735}
-  gems:
-  - {fileID: 781991406}
-  dropPoint: {fileID: 164432569}
-  fadeScreen: {fileID: 740751348}
-  menuSceneName: MENU
 --- !u!114 &156019586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -791,13 +769,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackCooldown: 0
-  range: 2.65
+  range: 2.4
   damage: 20
-  colliderDistance: -0.63
+  colliderDistance: -1.21
   boxCollider: {fileID: 156019583}
   playerLayer:
     serializedVersion: 2
     m_Bits: 128
+--- !u!114 &156019587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156019578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af05c01c18d57264fad8d689fcbbcdae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 1262560100}
+  healthText: {fileID: 1920582966}
+  maxHealth: 300
+  animator: {fileID: 156019579}
+  bossPatrol: {fileID: 1282947735}
+  gems:
+  - {fileID: 781991406}
+  dropPoint: {fileID: 164432569}
+  fadeScreen: {fileID: 740751348}
+  doorController: {fileID: 1175896514}
+  menuSceneName: MAIN MENU
 --- !u!1 &164432568
 GameObject:
   m_ObjectHideFlags: 0
@@ -828,51 +829,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1282947736}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &177462707
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 177462709}
-  - component: {fileID: 177462708}
-  m_Layer: 0
-  m_Name: GemManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &177462708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 177462707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10aaf058fa742224da89f99d74519634, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collectedGems: []
---- !u!4 &177462709
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 177462707}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1674.0621, y: 1968.3815, z: -1.8683629}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &177941469
 GameObject:
@@ -2117,8 +2073,11 @@ MonoBehaviour:
   leftEdge: {fileID: 1123678652}
   rightEdge: {fileID: 1931835339}
   enemy: {fileID: 1396424342}
-  speed: 5
+  player: {fileID: 845393106}
+  speed: 8
+  chaseSpeed: 8
   idleDuration: 5
+  yTolerance: 0.5
   anim: {fileID: 1396424336}
 --- !u!4 &335370920
 Transform:
@@ -2463,7 +2422,7 @@ MonoBehaviour:
   healthText: {fileID: 1705156138}
   maxHealth: 100
   animator: {fileID: 370783914}
-  enemyPatrol: {fileID: 0}
+  enemyPatrol: {fileID: 610708872}
 --- !u!114 &370783916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3423,8 +3382,11 @@ MonoBehaviour:
   leftEdge: {fileID: 1556118306}
   rightEdge: {fileID: 838302239}
   enemy: {fileID: 1784432490}
-  speed: 5
+  player: {fileID: 845393106}
+  speed: 8
+  chaseSpeed: 8
   idleDuration: 5
+  yTolerance: 0.5
   anim: {fileID: 1784432484}
 --- !u!4 &509644978
 Transform:
@@ -3976,8 +3938,11 @@ MonoBehaviour:
   leftEdge: {fileID: 477405181}
   rightEdge: {fileID: 1022968424}
   enemy: {fileID: 136505760}
-  speed: 5
+  player: {fileID: 845393106}
+  speed: 8
+  chaseSpeed: 8
   idleDuration: 5
+  yTolerance: 0.5
   anim: {fileID: 136505754}
 --- !u!4 &561402277
 Transform:
@@ -4215,8 +4180,11 @@ MonoBehaviour:
   leftEdge: {fileID: 1837933164}
   rightEdge: {fileID: 961828400}
   enemy: {fileID: 370783920}
-  speed: 5
+  player: {fileID: 845393106}
+  speed: 8
+  chaseSpeed: 8
   idleDuration: 5
+  yTolerance: 0.5
   anim: {fileID: 370783914}
 --- !u!4 &610708873
 Transform:
@@ -4632,7 +4600,7 @@ MonoBehaviour:
   healthText: {fileID: 750991429}
   maxHealth: 100
   animator: {fileID: 644780318}
-  enemyPatrol: {fileID: 0}
+  enemyPatrol: {fileID: 1078555888}
 --- !u!114 &644780320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5886,6 +5854,24 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 133345855535586093, guid: 452dd352d9b00664f948fa59898592be, type: 3}
   m_PrefabInstance: {fileID: 1245425364}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &781991413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781991406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8f384d31c89f64468a5e51fa2820626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gemSprite: {fileID: 4556848500220727168, guid: f655a4aa53599bf438f1b48d9618e68e, type: 3}
+  bossHealth: {fileID: 156019587}
+  groundCheck: {fileID: 303359906}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &798694257
 GameObject:
   m_ObjectHideFlags: 0
@@ -5911,7 +5897,7 @@ Transform:
   m_GameObject: {fileID: 798694257}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 51, y: -3.5, z: 0}
+  m_LocalPosition: {x: 44.31, y: -3.41, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6882,8 +6868,11 @@ MonoBehaviour:
   leftEdge: {fileID: 404585138}
   rightEdge: {fileID: 1616528097}
   enemy: {fileID: 1085883730}
-  speed: 5
+  player: {fileID: 845393106}
+  speed: 8
+  chaseSpeed: 8
   idleDuration: 5
+  yTolerance: 0.5
   anim: {fileID: 1085883724}
 --- !u!4 &892915571
 Transform:
@@ -6960,7 +6949,7 @@ Transform:
   m_GameObject: {fileID: 970120865}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 74.88, y: -3.34, z: 0}
+  m_LocalPosition: {x: 79.67, y: -3.48, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7341,8 +7330,11 @@ MonoBehaviour:
   leftEdge: {fileID: 2089543198}
   rightEdge: {fileID: 1762848287}
   enemy: {fileID: 644780324}
-  speed: 5
+  player: {fileID: 845393106}
+  speed: 8
+  chaseSpeed: 8
   idleDuration: 5
+  yTolerance: 0.5
   anim: {fileID: 644780318}
 --- !u!4 &1078555889
 Transform:
@@ -7423,7 +7415,7 @@ MonoBehaviour:
   healthText: {fileID: 410706354}
   maxHealth: 100
   animator: {fileID: 1085883724}
-  enemyPatrol: {fileID: 0}
+  enemyPatrol: {fileID: 892915570}
 --- !u!114 &1085883726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7901,7 +7893,8 @@ GameObject:
   - component: {fileID: 1175896511}
   - component: {fileID: 1175896510}
   - component: {fileID: 1175896513}
-  - component: {fileID: 1175896512}
+  - component: {fileID: 1175896514}
+  - component: {fileID: 1175896515}
   m_Layer: 0
   m_Name: door_0
   m_TagString: Untagged
@@ -7979,18 +7972,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1175896512
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1175896509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eef3e6a211e32204da28f6e703e16e08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &1175896513
 Animator:
   serializedVersion: 7
@@ -8013,6 +7994,66 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1175896514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175896509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eef3e6a211e32204da28f6e703e16e08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeScreen: {fileID: 740751348}
+  menuSceneName: MENU
+--- !u!61 &1175896515
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175896509}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.012248993, y: -0.14693683}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2.875}
+    newSize: {x: 2, y: 2.875}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.2898026, y: 2.5811262}
+  m_EdgeRadius: 0
 --- !u!1 &1177275557
 GameObject:
   m_ObjectHideFlags: 0
@@ -8647,11 +8688,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4292997187244029770, guid: 2dcc99001de92cc4d96bb594beb9e49b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 73.42
+      value: -4.9
       objectReference: {fileID: 0}
     - target: {fileID: 4292997187244029770, guid: 2dcc99001de92cc4d96bb594beb9e49b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.97
+      value: -1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4292997187244029770, guid: 2dcc99001de92cc4d96bb594beb9e49b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8821,6 +8862,10 @@ PrefabInstance:
       propertyPath: minBounds.y
       value: -11
       objectReference: {fileID: 0}
+    - target: {fileID: 8401070054834422073, guid: 2dcc99001de92cc4d96bb594beb9e49b, type: 3}
+      propertyPath: acceleration
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 8411596005341843499, guid: 2dcc99001de92cc4d96bb594beb9e49b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.6
@@ -8967,7 +9012,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5484502523515229319, guid: 452dd352d9b00664f948fa59898592be, type: 3}
       propertyPath: m_Size.y
-      value: 3.528792
+      value: 3.628915
       objectReference: {fileID: 0}
     - target: {fileID: 5484502523515229319, guid: 452dd352d9b00664f948fa59898592be, type: 3}
       propertyPath: m_Offset.x
@@ -8975,7 +9020,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5484502523515229319, guid: 452dd352d9b00664f948fa59898592be, type: 3}
       propertyPath: m_Offset.y
-      value: 0.053052902
+      value: 0.0029913187
       objectReference: {fileID: 0}
     - target: {fileID: 5699370636907307224, guid: 452dd352d9b00664f948fa59898592be, type: 3}
       propertyPath: m_Size.x
@@ -8983,7 +9028,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5699370636907307224, guid: 452dd352d9b00664f948fa59898592be, type: 3}
       propertyPath: m_Size.y
-      value: 3.5199547
+      value: 3.6325965
       objectReference: {fileID: 0}
     - target: {fileID: 5699370636907307224, guid: 452dd352d9b00664f948fa59898592be, type: 3}
       propertyPath: m_Offset.x
@@ -8991,7 +9036,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5699370636907307224, guid: 452dd352d9b00664f948fa59898592be, type: 3}
       propertyPath: m_Offset.y
-      value: 0.048627794
+      value: -0.0076929927
       objectReference: {fileID: 0}
     - target: {fileID: 7743829821268061066, guid: 452dd352d9b00664f948fa59898592be, type: 3}
       propertyPath: gemSprite
@@ -9000,15 +9045,23 @@ PrefabInstance:
     - target: {fileID: 7743829821268061066, guid: 452dd352d9b00664f948fa59898592be, type: 3}
       propertyPath: bossHealth
       value: 
-      objectReference: {fileID: 156019585}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7743829821268061066, guid: 452dd352d9b00664f948fa59898592be, type: 3}
+      propertyPath: levelIndex
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7743829821268061066, guid: 452dd352d9b00664f948fa59898592be, type: 3}
       propertyPath: groundCheck
       value: 
       objectReference: {fileID: 303359906}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7743829821268061066, guid: 452dd352d9b00664f948fa59898592be, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 133345855535586093, guid: 452dd352d9b00664f948fa59898592be, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 781991413}
   m_SourcePrefab: {fileID: 100100000, guid: 452dd352d9b00664f948fa59898592be, type: 3}
 --- !u!1 &1253833742
 GameObject:
@@ -15782,8 +15835,11 @@ MonoBehaviour:
   leftEdge: {fileID: 798694258}
   rightEdge: {fileID: 970120866}
   boss: {fileID: 156019581}
-  speed: 5
-  idleDuration: 4
+  player: {fileID: 845393106}
+  speed: 8
+  chaseSpeed: 8
+  idleDuration: -1
+  yOffset: -3
   anim: {fileID: 156019579}
 --- !u!4 &1282947736
 Transform:
@@ -16487,7 +16543,7 @@ MonoBehaviour:
   healthText: {fileID: 2055664995}
   maxHealth: 100
   animator: {fileID: 1396424336}
-  enemyPatrol: {fileID: 0}
+  enemyPatrol: {fileID: 335370919}
 --- !u!114 &1396424338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35911,7 +35967,7 @@ MonoBehaviour:
   healthText: {fileID: 353931577}
   maxHealth: 100
   animator: {fileID: 1661214022}
-  enemyPatrol: {fileID: 0}
+  enemyPatrol: {fileID: 1775029196}
 --- !u!114 &1661214024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36767,8 +36823,11 @@ MonoBehaviour:
   leftEdge: {fileID: 1456130643}
   rightEdge: {fileID: 887620612}
   enemy: {fileID: 1661214028}
-  speed: 5
+  player: {fileID: 845393106}
+  speed: 8
+  chaseSpeed: 8
   idleDuration: 5
+  yTolerance: 0.5
   anim: {fileID: 1661214022}
 --- !u!4 &1775029197
 Transform:
@@ -36849,7 +36908,7 @@ MonoBehaviour:
   healthText: {fileID: 1791268897}
   maxHealth: 100
   animator: {fileID: 1784432484}
-  enemyPatrol: {fileID: 0}
+  enemyPatrol: {fileID: 509644977}
 --- !u!114 &1784432486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38992,7 +39051,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1237667928}
-  - {fileID: 177462709}
   - {fileID: 1078555889}
   - {fileID: 509644978}
   - {fileID: 1775029197}

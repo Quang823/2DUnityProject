@@ -161,10 +161,10 @@ TextureImporter:
       name: Plant2_Idle_full_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 204
-        width: 32
-        height: 38
+        x: 0
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,10 +183,10 @@ TextureImporter:
       name: Plant2_Idle_full_1
       rect:
         serializedVersion: 2
-        x: 81
-        y: 204
-        width: 29
-        height: 38
+        x: 64
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,10 +205,10 @@ TextureImporter:
       name: Plant2_Idle_full_2
       rect:
         serializedVersion: 2
-        x: 147
-        y: 204
-        width: 24
-        height: 39
+        x: 128
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,10 +227,10 @@ TextureImporter:
       name: Plant2_Idle_full_3
       rect:
         serializedVersion: 2
-        x: 210
-        y: 204
-        width: 28
-        height: 38
+        x: 192
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -249,10 +249,10 @@ TextureImporter:
       name: Plant2_Idle_full_4
       rect:
         serializedVersion: 2
-        x: 14
-        y: 140
-        width: 32
-        height: 38
+        x: 0
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,10 +271,10 @@ TextureImporter:
       name: Plant2_Idle_full_5
       rect:
         serializedVersion: 2
-        x: 80
-        y: 140
-        width: 29
-        height: 38
+        x: 64
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -293,10 +293,10 @@ TextureImporter:
       name: Plant2_Idle_full_6
       rect:
         serializedVersion: 2
-        x: 147
-        y: 140
-        width: 24
-        height: 39
+        x: 128
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -315,10 +315,10 @@ TextureImporter:
       name: Plant2_Idle_full_7
       rect:
         serializedVersion: 2
-        x: 208
-        y: 140
-        width: 28
-        height: 38
+        x: 192
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -337,10 +337,10 @@ TextureImporter:
       name: Plant2_Idle_full_8
       rect:
         serializedVersion: 2
-        x: 14
-        y: 76
-        width: 35
-        height: 38
+        x: 0
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -359,10 +359,10 @@ TextureImporter:
       name: Plant2_Idle_full_9
       rect:
         serializedVersion: 2
-        x: 78
-        y: 76
-        width: 33
-        height: 38
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -381,10 +381,10 @@ TextureImporter:
       name: Plant2_Idle_full_10
       rect:
         serializedVersion: 2
-        x: 142
-        y: 76
-        width: 33
-        height: 39
+        x: 128
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -403,10 +403,10 @@ TextureImporter:
       name: Plant2_Idle_full_11
       rect:
         serializedVersion: 2
-        x: 206
-        y: 76
-        width: 36
-        height: 40
+        x: 192
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -425,10 +425,10 @@ TextureImporter:
       name: Plant2_Idle_full_12
       rect:
         serializedVersion: 2
-        x: 15
-        y: 12
-        width: 35
-        height: 38
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -447,10 +447,10 @@ TextureImporter:
       name: Plant2_Idle_full_13
       rect:
         serializedVersion: 2
-        x: 81
-        y: 12
-        width: 33
-        height: 38
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -469,10 +469,10 @@ TextureImporter:
       name: Plant2_Idle_full_14
       rect:
         serializedVersion: 2
-        x: 145
-        y: 12
-        width: 33
-        height: 39
+        x: 128
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -491,10 +491,10 @@ TextureImporter:
       name: Plant2_Idle_full_15
       rect:
         serializedVersion: 2
-        x: 206
-        y: 12
-        width: 36
-        height: 40
+        x: 192
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -513,7 +513,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 194d12a9330f2e943983123a4af159f3
     internalID: 0
     vertices: []
     indices: 

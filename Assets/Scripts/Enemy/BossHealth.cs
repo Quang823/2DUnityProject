@@ -137,7 +137,6 @@ public class BossHealth : MonoBehaviour
         if (player != null)
         {
             Destroy(player);
-            Debug.Log("Player destroyed before returning to MAIN MENU");
         }
         else
         {

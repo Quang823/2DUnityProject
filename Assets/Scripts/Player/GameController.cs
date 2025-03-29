@@ -102,6 +102,44 @@ public class GameController : MonoBehaviour
     {
         Debug.Log("Game Over!");
         player.gameObject.SetActive(false);
+        StartCoroutine(GameOverRoutine()); 
+    }
+
+    private IEnumerator GameOverRoutine()
+    {
+        yield return new WaitForSeconds(2f); 
+        ResetGame();
+    }
+
+    private void ResetGame()
+    {
+        lives = 5;
+        remainingEnemies = totalEnemies;
+
+        UpdateLivesUI();
+        UpdateEnemyUI();
+
+        if (player != null)
+        {
+            player.gameObject.SetActive(true);
+            player.Respawn(startPos);
+        }
+
+        if (portal != null)
+        {
+            portal.SetActive(false);
+        }
+
+        if (notifyEffect != null)
+        {
+            notifyEffect.SetActive(false);
+        }
+
+        if (backgroundMusic != null && !backgroundMusic.isPlaying)
+        {
+            backgroundMusic.Play();
+        }
+        CountEnemies();
     }
 
     private void UpdateLivesUI()

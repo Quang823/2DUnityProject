@@ -36,7 +36,6 @@ public class EnemyControllerMap1 : MonoBehaviour
 
     public void DealDamage()
     {
-        Debug.Log("DealDamage() được gọi!");
 
         if (playerCollider != null)
         {
@@ -59,21 +58,19 @@ public class EnemyControllerMap1 : MonoBehaviour
 
     private void ResetAttack()
     {
-        isAttacking = false; // Cho phép Attack lại
-        canAttack = true; // Mở lại khả năng tấn công
+        isAttacking = false; 
+        canAttack = true;
         anim.SetBool("isAttack", false);
         if (walkScript != null)
         {
-            walkScript.StartMoving(); // Tiếp tục di chuyển sau khi tấn công
+            walkScript.StartMoving(); 
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        // Check if the player left the collision area
         if (collision.CompareTag("Player"))
         {
-            // Revert to the previous animation (e.g., Idle)
             anim.SetBool("isAttack", false);
         }
     }

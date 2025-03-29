@@ -23,7 +23,6 @@ public class FollowPlayer : MonoBehaviour
             FindPlayer();
             if (player == null)
             {
-                Debug.LogWarning("Player not found. FollowPlayer stopped.");
                 return;
             }
         }
@@ -41,7 +40,7 @@ public class FollowPlayer : MonoBehaviour
 
     private void FindPlayer()
     {
-        GameObject playerObj = GameObject.FindWithTag("Player"); // Thay "Player" bằng tag của player
+        GameObject playerObj = GameObject.FindWithTag("Player");
         if (playerObj != null)
         {
             player = playerObj.transform;

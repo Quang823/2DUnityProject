@@ -45,6 +45,11 @@ public class ProjecTile : MonoBehaviour
         {
             bossHealth.TakeDamage(farAttackDamage);
         }
+        BossHealthRound3 bossHealthRound3 = collision.GetComponent<BossHealthRound3>();
+        if (bossHealthRound3 != null)
+        {
+            bossHealthRound3.TakeDamage(farAttackDamage);
+        }
     }
 
 

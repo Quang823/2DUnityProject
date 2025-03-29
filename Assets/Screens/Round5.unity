@@ -15060,7 +15060,7 @@ Transform:
   m_GameObject: {fileID: 307879060}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -192.37, y: 5.39, z: 0.2432292}
+  m_LocalPosition: {x: -183.2, y: 5.1, z: 0.2432292}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -15086,8 +15086,11 @@ MonoBehaviour:
   leftEdge: {fileID: 2023538888}
   rightEdge: {fileID: 834160730}
   boss: {fileID: 1855891321}
-  speed: 5
+  player: {fileID: 670637836}
+  speed: 8
+  chaseSpeed: 10
   idleDuration: 4
+  yOffset: -5
   anim: {fileID: 1855891322}
 --- !u!1 &308215309
 GameObject:
@@ -22927,8 +22930,11 @@ MonoBehaviour:
   leftEdge: {fileID: 214260542}
   rightEdge: {fileID: 1962772663}
   enemy: {fileID: 1417556422}
-  speed: 5
+  player: {fileID: 670637836}
+  speed: 8
+  chaseSpeed: 12
   idleDuration: 5
+  yTolerance: 5
   anim: {fileID: 1417556425}
 --- !u!1 &459650450
 GameObject:
@@ -27404,7 +27410,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &595878268
 Transform:
   m_ObjectHideFlags: 0
@@ -27439,8 +27445,11 @@ MonoBehaviour:
   leftEdge: {fileID: 458235789}
   rightEdge: {fileID: 1301069560}
   enemy: {fileID: 91736991}
-  speed: 5
-  idleDuration: 7
+  player: {fileID: 670637836}
+  speed: 8
+  chaseSpeed: 12
+  idleDuration: 5
+  yTolerance: 5
   anim: {fileID: 91736992}
 --- !u!1 &601822745
 GameObject:
@@ -29348,7 +29357,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19da60e647da6e0468af681cf79de095, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 670637836}
   offset: {x: 0, y: 0, z: -5}
   minBounds: {x: -382, y: 3}
   maxBounds: {x: 70, y: 68}
@@ -30002,8 +30010,11 @@ MonoBehaviour:
   leftEdge: {fileID: 111809222}
   rightEdge: {fileID: 286356162}
   enemy: {fileID: 338077011}
-  speed: 5
+  player: {fileID: 670637836}
+  speed: 8
+  chaseSpeed: 12
   idleDuration: 5
+  yTolerance: 7
   anim: {fileID: 338077004}
 --- !u!4 &647787621
 Transform:
@@ -30929,8 +30940,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 53.199997, y: 2.8999996}
-  m_SizeDelta: {x: 30.9178, y: 4.8108}
+  m_AnchoredPosition: {x: 57.88, y: -3.12}
+  m_SizeDelta: {x: 14.6521, y: 2.0636}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &675831038
 MonoBehaviour:
@@ -30962,7 +30973,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1855891321}
-  offset: {x: -2, y: 12, z: 0}
+  offset: {x: 0, y: 6, z: 0}
 --- !u!114 &675831040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36860,8 +36871,11 @@ MonoBehaviour:
   leftEdge: {fileID: 446989686}
   rightEdge: {fileID: 1872077590}
   enemy: {fileID: 1312305984}
-  speed: 5
+  player: {fileID: 670637836}
+  speed: 8
+  chaseSpeed: 12
   idleDuration: 5
+  yTolerance: 5
   anim: {fileID: 1312305979}
 --- !u!1 &778863461
 GameObject:
@@ -39365,7 +39379,7 @@ Transform:
   m_GameObject: {fileID: 834160729}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 84.3, y: -14.1, z: 0}
+  m_LocalPosition: {x: 113.9, y: -14.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -51528,7 +51542,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1109547161
 Transform:
   m_ObjectHideFlags: 0
@@ -59618,8 +59632,11 @@ MonoBehaviour:
   leftEdge: {fileID: 1951322652}
   rightEdge: {fileID: 227306462}
   enemy: {fileID: 1674054315}
-  speed: 5
+  player: {fileID: 670637836}
+  speed: 8
+  chaseSpeed: 10
   idleDuration: 10
+  yTolerance: 5
   anim: {fileID: 1674054316}
 --- !u!4 &1276562820
 Transform:
@@ -60164,6 +60181,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1301493257
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1301493258}
+  m_Layer: 0
+  m_Name: CenterPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1301493258
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301493257}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -116.67, y: -4.83, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1799690476}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1302820675
 GameObject:
   m_ObjectHideFlags: 0
@@ -60969,7 +61017,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 5.5, y: -3.7, z: -0.05762319}
-  m_LocalScale: {x: -7, y: 7, z: 5}
+  m_LocalScale: {x: 7, y: 7, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 778301195}
@@ -61036,7 +61084,7 @@ MonoBehaviour:
   healthText: {fileID: 909501732}
   maxHealth: 100
   animator: {fileID: 1312305979}
-  enemyPatrol: {fileID: 778301196}
+  enemyPatrol: {fileID: 0}
 --- !u!114 &1312305989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68251,7 +68299,7 @@ Transform:
   m_GameObject: {fileID: 1451660647}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 67.3, y: -11.8, z: 0}
+  m_LocalPosition: {x: 57.64, y: -9.24, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -90880,8 +90928,11 @@ MonoBehaviour:
   leftEdge: {fileID: 2021546490}
   rightEdge: {fileID: 1827958498}
   enemy: {fileID: 466981341}
-  speed: 5
+  player: {fileID: 670637836}
+  speed: 8
+  chaseSpeed: 12
   idleDuration: 5
+  yTolerance: 5
   anim: {fileID: 466981334}
 --- !u!4 &1528742645
 Transform:
@@ -95462,8 +95513,11 @@ MonoBehaviour:
   leftEdge: {fileID: 1898173665}
   rightEdge: {fileID: 1430983947}
   enemy: {fileID: 411066339}
-  speed: 5
+  player: {fileID: 670637836}
+  speed: 8
+  chaseSpeed: 10
   idleDuration: 10
+  yTolerance: 5
   anim: {fileID: 411066348}
 --- !u!1 &1634449048
 GameObject:
@@ -95655,7 +95709,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1641454917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95671,8 +95725,11 @@ MonoBehaviour:
   leftEdge: {fileID: 1525735474}
   rightEdge: {fileID: 141163629}
   enemy: {fileID: 1551278026}
-  speed: 5
+  player: {fileID: 670637836}
+  speed: 8
+  chaseSpeed: 12
   idleDuration: 5
+  yTolerance: 5
   anim: {fileID: 1551278019}
 --- !u!4 &1641454918
 Transform:
@@ -102989,6 +103046,7 @@ Transform:
   - {fileID: 227062530}
   - {fileID: 307879061}
   - {fileID: 958014850}
+  - {fileID: 1301493258}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1802169547
@@ -106196,7 +106254,7 @@ Transform:
   m_GameObject: {fileID: 1855891319}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 57.3, y: -8.8, z: -0.057623193}
+  m_LocalPosition: {x: 57.23, y: -8.54, z: -0.057623193}
   m_LocalScale: {x: 13, y: 13, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -106331,14 +106389,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 1971458560}
   healthText: {fileID: 310235964}
-  maxHealth: 300
+  maxHealth: 500
   animator: {fileID: 1855891322}
   bossPatrol: {fileID: 307879062}
   gems:
   - {fileID: 813162795}
   dropPoint: {fileID: 1451660648}
-  fadeScreen: {fileID: 0}
-  menuSceneName: MENU
+  fadeScreen: {fileID: 2137652776}
+  menuSceneName: Round6
 --- !u!1 &1858155502
 GameObject:
   m_ObjectHideFlags: 0
@@ -112113,7 +112171,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.43, y: -5.95}
+  m_AnchoredPosition: {x: 0.3, y: -0.05}
   m_SizeDelta: {x: 14.8528, y: 0.93035}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1962390348
@@ -114499,7 +114557,7 @@ Transform:
   m_GameObject: {fileID: 2023538887}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 33.7, y: -14.64, z: 0}
+  m_LocalPosition: {x: 22.2, y: -13.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -114893,8 +114951,11 @@ MonoBehaviour:
   leftEdge: {fileID: 1097271816}
   rightEdge: {fileID: 740428693}
   enemy: {fileID: 211644588}
-  speed: 5
-  idleDuration: 7
+  player: {fileID: 670637836}
+  speed: 8
+  chaseSpeed: 12
+  idleDuration: 5
+  yTolerance: 5
   anim: {fileID: 211644589}
 --- !u!1 &2031454954
 GameObject:
@@ -139684,6 +139745,22 @@ PrefabInstance:
       propertyPath: miniMap
       value: 
       objectReference: {fileID: 533361242}
+    - target: {fileID: 8401070054834422073, guid: 2dcc99001de92cc4d96bb594beb9e49b, type: 3}
+      propertyPath: jumpForce
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8401070054834422073, guid: 2dcc99001de92cc4d96bb594beb9e49b, type: 3}
+      propertyPath: acceleration
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8401070054834422073, guid: 2dcc99001de92cc4d96bb594beb9e49b, type: 3}
+      propertyPath: fallMultiplier
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8401070054834422073, guid: 2dcc99001de92cc4d96bb594beb9e49b, type: 3}
+      propertyPath: lowJumpMultiplier
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -139858,6 +139935,46 @@ PrefabInstance:
       propertyPath: pickupSound
       value: 
       objectReference: {fileID: 4149810892199192018}
+    - target: {fileID: 5254646198264360245, guid: 452dd352d9b00664f948fa59898592be, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5254646198264360245, guid: 452dd352d9b00664f948fa59898592be, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5484502523515229319, guid: 452dd352d9b00664f948fa59898592be, type: 3}
+      propertyPath: m_Size.x
+      value: 3.0487213
+      objectReference: {fileID: 0}
+    - target: {fileID: 5484502523515229319, guid: 452dd352d9b00664f948fa59898592be, type: 3}
+      propertyPath: m_Size.y
+      value: 3.7208061
+      objectReference: {fileID: 0}
+    - target: {fileID: 5484502523515229319, guid: 452dd352d9b00664f948fa59898592be, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.041389465
+      objectReference: {fileID: 0}
+    - target: {fileID: 5484502523515229319, guid: 452dd352d9b00664f948fa59898592be, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.015752792
+      objectReference: {fileID: 0}
+    - target: {fileID: 5699370636907307224, guid: 452dd352d9b00664f948fa59898592be, type: 3}
+      propertyPath: m_Size.x
+      value: 3.0590515
+      objectReference: {fileID: 0}
+    - target: {fileID: 5699370636907307224, guid: 452dd352d9b00664f948fa59898592be, type: 3}
+      propertyPath: m_Size.y
+      value: 3.697422
+      objectReference: {fileID: 0}
+    - target: {fileID: 5699370636907307224, guid: 452dd352d9b00664f948fa59898592be, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.046569824
+      objectReference: {fileID: 0}
+    - target: {fileID: 5699370636907307224, guid: 452dd352d9b00664f948fa59898592be, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.02744484
+      objectReference: {fileID: 0}
     - target: {fileID: 6707765587299010104, guid: 452dd352d9b00664f948fa59898592be, type: 3}
       propertyPath: pickupSound
       value: 
@@ -139870,6 +139987,10 @@ PrefabInstance:
       propertyPath: bossHealth
       value: 
       objectReference: {fileID: 1855891329}
+    - target: {fileID: 7743829821268061066, guid: 452dd352d9b00664f948fa59898592be, type: 3}
+      propertyPath: levelIndex
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7743829821268061066, guid: 452dd352d9b00664f948fa59898592be, type: 3}
       propertyPath: groundCheck
       value: 

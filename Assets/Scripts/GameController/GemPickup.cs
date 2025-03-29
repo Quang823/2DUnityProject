@@ -12,7 +12,7 @@ public class GemPickup : MonoBehaviour
     private Rigidbody2D rb;
     private bool isCollected = false;
     private bool hasLanded = false;
-
+    public int levelIndex;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -31,8 +31,6 @@ public class GemPickup : MonoBehaviour
         if (other.CompareTag("Player") && !isCollected)
         {
             isCollected = true;
-
-            int levelIndex = SceneManager.GetActiveScene().buildIndex - 1;
 
             if (GemManager.instance != null)
             {

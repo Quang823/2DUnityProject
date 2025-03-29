@@ -11,9 +11,11 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Movement Settings")]
     public float speed = 10f;
-    public float acceleration = 15f;
+    public float acceleration = 20f; // Tăng acceleration để phản hồi nhanh hơn
     public float jumpForce = 20f;
     public float climbSpeed = 5f;
+    [SerializeField] private float fallMultiplier = 2.5f; // Tăng tốc độ rơi
+    [SerializeField] private float lowJumpMultiplier = 2f; // Giảm độ cao khi nhả phím nhảy sớm
 
     [Header("Dash Settings")]
     public float dashForce = 150f;
@@ -46,6 +48,8 @@ public class PlayerMovement : MonoBehaviour
     private bool isPlayingRunSound = false;
 
     private float velocityX = 0f;
+    private float coyoteTime = 0.1f; // Thời gian ân huệ để nhảy sau khi rời đất
+    private float coyoteTimeCounter;
 
     private void Awake()
     {
@@ -67,21 +71,33 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         HandleInput();
+
+        if (grounded)
+            coyoteTimeCounter = coyoteTime;
+        else
+            coyoteTimeCounter -= Time.deltaTime;
+
         LimitPlayerPosition();
     }
 
     private void FixedUpdate()
     {
         HandleMovement();
+        ApplyGravityModifiers();
     }
 
     private void HandleInput()
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
 
-        if (Input.GetKeyDown(KeyCode.Space) && grounded)
+        if (Input.GetKeyDown(KeyCode.Space) && coyoteTimeCounter > 0f)
         {
             Jump();
+        }
+
+        if (Input.GetKeyUp(KeyCode.Space) && body.linearVelocity.y > 0f)
+        {
+            body.linearVelocity = new Vector2(body.linearVelocity.x, body.linearVelocity.y * 0.5f); 
         }
 
         if (Input.GetKeyDown(KeyCode.L) && Time.time >= lastDashTime + dashCooldown && playerStats.CanUseSkill(dashManaCost))
@@ -107,7 +123,7 @@ public class PlayerMovement : MonoBehaviour
         else if (!isDashing)
         {
             float targetVelocityX = horizontalInput * speed;
-            float smoothVelocity = Mathf.SmoothDamp(body.linearVelocity.x, targetVelocityX, ref velocityX, 0.1f);
+            float smoothVelocity = Mathf.SmoothDamp(body.linearVelocity.x, targetVelocityX, ref velocityX, 0.05f, acceleration); 
             body.linearVelocity = new Vector2(smoothVelocity, body.linearVelocity.y);
 
             if (horizontalInput > 0.01f)
@@ -124,6 +140,18 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("isClimbing", false);
 
             HandleRunSound();
+        }
+    }
+
+    private void ApplyGravityModifiers()
+    {
+        if (body.linearVelocity.y < 0) 
+        {
+            body.linearVelocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.fixedDeltaTime;
+        }
+        else if (body.linearVelocity.y > 0 && !Input.GetKey(KeyCode.Space)) 
+        {
+            body.linearVelocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.fixedDeltaTime;
         }
     }
 
@@ -158,6 +186,7 @@ public class PlayerMovement : MonoBehaviour
     {
         body.linearVelocity = new Vector2(body.linearVelocity.x, jumpForce);
         anim.SetTrigger("jump");
+        coyoteTimeCounter = 0f; 
 
         if (jumpSound != null)
         {
@@ -170,7 +199,7 @@ public class PlayerMovement : MonoBehaviour
         float dashDirection = transform.localScale.x > 0 ? 1f : -1f;
         body.linearVelocity = new Vector2(dashForce * dashDirection, body.linearVelocity.y);
         isDashing = true;
-
+        body.gravityScale = 0f;
         dashEffectObject.SetActive(false);
         dashEffectObject.transform.position = transform.position;
         dashEffectObject.SetActive(true);
@@ -197,6 +226,7 @@ public class PlayerMovement : MonoBehaviour
     {
         yield return new WaitForSeconds(dashTime);
         isDashing = false;
+        body.gravityScale = 1f;
         body.linearVelocity = Vector2.zero;
         dashEffectObject.SetActive(false);
     }
@@ -207,11 +237,6 @@ public class PlayerMovement : MonoBehaviour
         float clampedY = Mathf.Clamp(transform.position.y, minBounds.y, maxBounds.y);
 
         transform.position = new Vector3(clampedX, clampedY, transform.position.z);
-    }
-
-    private void ResetRunSound()
-    {
-        isPlayingRunSound = false;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
